@@ -1,0 +1,30 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+@prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
+
+karstlink: a owl:Ontology ;
+  rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
+  rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> .
+
+karstlink:UndergroundCavity a owl:Class ;
+  rdfs:label "Underground Cavity"@en ;
+  rdfs:label "Cavité"@fr ;
+  rdfs:comment """An underground cavity can be natural or artificial (mine, quarry, sewer, tunnel, etc.), penetrable or not, karstic or not (volcanic, etc.), or certain types of superficial karst phenomena (source, drain, polje, mega-doline, etc.)."""@en ; 
+  rdfs:comment """Une cavité souterraine peut être naturelle ou artificielle (mine, carrière, égout, tunnel, etc.), pénétrable ou non, karstique ou non (volcanique, etc.), ou être certains types de phénomènes karstiques superficiels (source, drain, polje, méga -doline, etc.). """@fr .
+
+karstlink:extentAboveEntrance a owl:DatatypeProperty ;
+  rdfs:domain karstlink:UndergroundCavity ;
+  rdfs:range xsd:integer ;
+  rdfs:label "extent Above Entrance"@en ;
+  rdfs:label "hauteur au-dessus Entrée"@fr .
+  
+
+karstlink:extentBelowEntrance a owl:DatatypeProperty ;
+  rdfs:domain karstlink:UndergroundCavity ;
+  rdfs:range xsd:integer ;
+  rdfs:label "extent Below Entrance"@en ;
+  rdfs:label "hauteur en-dessous Entrée"@fr .
+
