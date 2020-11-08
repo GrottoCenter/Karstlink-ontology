@@ -10,7 +10,7 @@
  <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> a <http://www.w3.org/2002/07/owl#Property> .
- <http://www.geonames.org/ontology/documentation.html#countryCode> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://www.geonames.org/ontology#countryCode> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#Property> .
  <http://purl.org/dc/terms/isReferencedBy> a <http://www.w3.org/2002/07/owl#Property> .
