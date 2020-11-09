@@ -33,18 +33,18 @@
  <http://purl.org/dc/elements/1.1/identifier> a <http://www.w3.org/2002/07/owl#Property> .
  <http://purl.org/dc/elements/1.1/source> a <http://www.w3.org/2002/07/owl#Property> .
  <http://purl.org/dc/elements/1.1/relation> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_Person> a <http://www.w3.org/2002/07/owl#Class> .
- <http://xmlns.com/foaf/spec/#term_firstName> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_lastName> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_nick> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_Organization> a <http://www.w3.org/2002/07/owl#Class> .
- <http://xmlns.com/foaf/spec/#term_mbox> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_homepage> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/Person> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://xmlns.com/foaf/0.1/firstName> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/lastName> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/nick> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/Organization> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://xmlns.com/foaf/0.1/mbox> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/homepage> a <http://www.w3.org/2002/07/owl#Property> .
  <https://schema.org/streetAddress> a <http://www.w3.org/2002/07/owl#Property> .
  <https://schema.org/postalCode> a <http://www.w3.org/2002/07/owl#Property> .
  <https://schema.org/addressLocality> a <http://www.w3.org/2002/07/owl#Property> .
  <https://schema.org/addressCountry> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_member> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/member> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#Observation> a <http://www.w3.org/2002/07/owl#Class> .
  <https://dwc.tdwg.org/list/#dwc_Occurrence> a <http://www.w3.org/2002/07/owl#Class> .
  <http://rs.tdwg.org/dwc/terms/recordedBy> a <http://www.w3.org/2002/07/owl#Property> .
@@ -53,7 +53,7 @@
  <http://rs.tdwg.org/dwc/terms/eventDate> a <http://www.w3.org/2002/07/owl#Property> .
  <http://rs.tdwg.org/dwc/terms/individualCount> a <http://www.w3.org/2002/07/owl#Property> .
  <http://rs.tdwg.org/dwc/terms/associatedTaxa> a <http://www.w3.org/2002/07/owl#Property> .
- <http://xmlns.com/foaf/spec/#term_Agent> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://xmlns.com/foaf/0.1/Agent> a <http://www.w3.org/2002/07/owl#Class> .
  <#Person> a <http://www.w3.org/2002/07/owl#Class> .
  <#Organization> a <http://www.w3.org/2002/07/owl#Class> .
  <http://purl.org/dc/terms/LicenseDocument> a <http://www.w3.org/2002/07/owl#Class> .
