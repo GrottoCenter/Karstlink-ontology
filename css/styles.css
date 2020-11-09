@@ -9794,7 +9794,6 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important;
-  margin-top: 4em;
 }
 
 .text-primary {
@@ -10262,9 +10261,9 @@ form .row:first-child .floating-label-form-group {
 }
 
 .saut {
-  margin-bottom: 12em;
+  margin-bottom: 10em;
 }
 
 .saut2 {
-  margin-bottom: 8em;
+  margin-bottom: 5em;
 }
