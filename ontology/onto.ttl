@@ -1,123 +1,895 @@
-<https://ontology.uis-speleo.org/ontology/#UndergroundCavity> a <http://www.w3.org/2002/07/owl#Class> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+ <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> rdfs:label """Underground cavity """ .
+ <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> rdfs:comment """An underground cavity can be natural or artificial
+            (mine, quarry, sewer, tunnel, etc.), penetrable or not,
+            karstic or not (volcanic, etc.), or certain types of
+            superficial karst phenomena (source, drain, polje,
+            mega-doline, etc.)."""@en .
+ <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> rdfs:comment """Une cavité souterraine peut être naturelle ou
+            artificielle (mine, carrière, égout, tunnel, etc.),
+            pénétrable ou non, karstique ou non (volcanique, etc.),
+            ou être certains types de phénomènes karstiques
+            superficiels (source, drain, polje, méga -doline,
+            etc.)."""@fr .
  <http://www.geonames.org/ontology/#name> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://www.geonames.org/ontology/#name> rdfs:label """name """ .
+ <http://www.geonames.org/ontology/#name> rdfs:comment """Name that identifies the ressource."""@en .
+ <http://www.geonames.org/ontology/#name> rdfs:comment """Nom qui prmet d'identifier la ressource"""@fr .
  <http://www.geonames.org/ontology/#alternateName> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://www.geonames.org/ontology/#alternateName> rdfs:label """alternate name """ .
+ <http://www.geonames.org/ontology/#alternateName> rdfs:comment """Another name or code that identifies the
+            ressource."""@en .
+ <http://www.geonames.org/ontology/#alternateName> rdfs:comment """Un autre nom ou un code qui permet de désigner la
+            ressource"""@fr .
  <http://purl.org/dc/terms/hasPart> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/terms/hasPart> rdfs:label """has part """ .
+ <http://purl.org/dc/terms/hasPart> rdfs:comment """A related resource that is included either
+            physically or logically in the described resource."""@en .
+ <http://purl.org/dc/terms/hasPart> rdfs:comment """Une ressource associée qui est incluse physiquement
+            ou logiquement dans la ressource décrite."""@fr .
  <https://www.w3.org/2003/01/geo/wgs84_pos#lat> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#lat> rdfs:label """latitude """ .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#lat> rdfs:comment """The WGS84 latitude of a SpatialThing (decimal
+            degrees)."""@en .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#lat> rdfs:comment """La lattitude exprimée en WGS84 (degrés décimaux)
+            d'une ressource géoréférencée"""@fr .
  <https://www.w3.org/2003/01/geo/wgs84_pos#long> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#long> rdfs:label """longitude """ .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#long> rdfs:comment """The WGS84 longitude of a SpatialThing (decimal
+            degrees)."""@en .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#long> rdfs:comment """La longitude exprimée en WGS84 (degrés décimaux)
+            d'une ressource géoréférencée"""@fr .
  <https://www.w3.org/2003/01/geo/wgs84_pos#alt> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#alt> rdfs:label """altitude """ .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#alt> rdfs:comment """The WGS84 altitude of a SpatialThing (decimal
+            meters above the local reference ellipsoid)."""@en .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#alt> rdfs:comment """L'altitude exprimée en WGS84 (mètres décimaux à
+            partir de la réfèrence locale de l'ellipsoïde) d'une
+            ressource géoréférencée"""@fr .
  <https://dwc.tdwg.org/list/#dwc_coordinatePrecision> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://dwc.tdwg.org/list/#dwc_coordinatePrecision> rdfs:label """coordinate precision """ .
+ <https://dwc.tdwg.org/list/#dwc_coordinatePrecision> rdfs:comment """A decimal representation (in meters) of the
+            precision of the coordinates given in the Latitude and
+            Longitude."""@en .
+ <https://dwc.tdwg.org/list/#dwc_coordinatePrecision> rdfs:comment """Une représentation décimale en mètres de la
+            précision des coordonnées données dans Latitude et
+            Longitude."""@fr .
  <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#length> rdfs:label """length """ .
+ <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """The real development of all the galleries of the
+            underground cavity in meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """Le développement réel de l'ensemble des galeries de
+            la cavité en mètres"""@fr .
  <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> rdfs:label """extent above entrance """ .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> rdfs:comment """The vertical distance between the entrance to the
+            underground cavity and the highest point in meters La distance verticale entre l'entrée de la cavité
+            et le point le plus haut exprimé en mètres"""@en .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> rdfs:comment """"""@fr .
  <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> rdfs:label """extent below entrance """ .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> rdfs:comment """The vertical distance between the entrance of the
+            cavity and the lowest point in meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> rdfs:comment """La distance verticale entre l'entrée de la cavité
+            et le point le plus bas exprimé en mètres"""@fr .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:label """vertical extent """ .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """The vertical distance between the highest point and
+            the lowest point of the underground cavity in
+            meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut
+            et le point le plus bas de la cavité exprimé en
+            mètres"""@fr .
  <http://www.geonames.org/ontology#countryCode> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://www.geonames.org/ontology#countryCode> rdfs:label """country code """ .
+ <http://www.geonames.org/ontology#countryCode> rdfs:comment """iso country code, 2 characters"""@en .
+ <http://www.geonames.org/ontology#countryCode> rdfs:comment """Code ISO des pays 2 caractères"""@fr .
  <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """discovered """ .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (person or organization) who discovered the
+            underground cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (personne ou organisation) ayant découvert la
+            cavité"""@fr .
  <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """visited """ .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (person or organization) who visited the
+            underground cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (personne ou organisation) ayant visité la
+            cavité"""@fr .
  <http://purl.org/dc/terms/isReferencedBy> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/terms/isReferencedBy> rdfs:label """is referenced by """ .
+ <http://purl.org/dc/terms/isReferencedBy> rdfs:comment """A related resource that references, cites, or
+            otherwise points to the described resource."""@en .
+ <http://purl.org/dc/terms/isReferencedBy> rdfs:comment """Une ressource associée qui fait référence, cite ou
+            pointe d'une autre manière vers la ressource
+            décrite."""@fr .
  <http://purl.org/dc/terms/isPartOf> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/terms/isPartOf> rdfs:label """is part of """ .
+ <http://purl.org/dc/terms/isPartOf> rdfs:comment """A related resource in which the described resource
+            is physically or logically included."""@en .
+ <http://purl.org/dc/terms/isPartOf> rdfs:comment """Une ressource associée dans laquelle la ressource
+            décrite est physiquement ou logiquement incluse."""@fr .
  <http://purl.org/dc/terms/rights> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/terms/rights> rdfs:label """rights""" .
+ <http://purl.org/dc/terms/rights> rdfs:comment """Information about rights held in and over the
+            resource."""@en .
+ <http://purl.org/dc/terms/rights> rdfs:comment """Informations sur les droits détenus sur la
+            ressource."""@fr .
  <https://www.w3.org/2003/01/geo/wgs84_pos#Point> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#Point> rdfs:label """Point """ .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#Point> rdfs:comment """A point, typically described using a coordinate
+            system relative to Earth, WGS84 for us"""@en .
+ <https://www.w3.org/2003/01/geo/wgs84_pos#Point> rdfs:comment """Un point, peut être décrit à l'aide d'un système de
+            coordonnées par rapport à la Terre, WGS84 pour
+            nous"""@fr .
  <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """point type """ .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Link to a point type defined in a collection of
+            expressions"""@en .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Lien vers un type de point défini dans une
+            collection d'expressions"""@fr .
  <https://ontology.uis-speleo.org/ontology/#Area> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Area> rdfs:label """Area """ .
+ <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """An area is a polygon corresponding to a geographic
+            unit that we want to identify."""@en .
+ <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """Une zone est un polygone correspondant à une unité
+            géographique que l'on souhaite identifier."""@fr .
  <https://ontology.uis-speleo.org/ontology/#areaType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:label """area type""" .
+ <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Link to a area type defined in a collection of
+            expressions"""@en .
+ <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Lien vers un type de zone défini dans une
+            collection d'expressions"""@fr .
  <https://schema.org/polygon> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://schema.org/polygon> rdfs:label """polygon """ .
+ <https://schema.org/polygon> rdfs:comment """A polygon is the area enclosed by a point-to-point
+            path for which the starting and ending points are the
+            same. A polygon is expressed as a series of four or
+            more space delimited points where the first and final
+            points are identical."""@en .
+ <https://schema.org/polygon> rdfs:comment """Un polygone est une zone délimitée par un chemin de
+            point à point dont les points de départ et d'arrivée
+            sont les mêmes. Un polygone est exprimé sous la forme
+            d'une série de quatre points ou plus délimités par des
+            espaces où les premier et dernier points sont
+            identiques."""@fr .
  <http://purl.org/dc/terms/BibliographicResource> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/terms/BibliographicResource> rdfs:label """Bibliographic Resource """ .
+ <http://purl.org/dc/terms/BibliographicResource> rdfs:comment """A book, article, or other documentary
+            resource."""@en .
+ <http://purl.org/dc/terms/BibliographicResource> rdfs:comment """Un livre, un article ou toute ressource
+            bibliographiqyue"""@fr .
  <http://purl.org/dc/elements/1.1/type> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/type> rdfs:label """type""" .
+ <http://purl.org/dc/elements/1.1/type> rdfs:comment """The nature or genre of the resource issued from the
+            controlled vocabulary"""@en .
+ <http://purl.org/dc/elements/1.1/type> rdfs:comment """La nature ou le genre de rerssource issu du
+            vocabulaire contrôlé"""@fr .
  <http://purl.org/dc/elements/1.1/title> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/title> rdfs:label """title """ .
+ <http://purl.org/dc/elements/1.1/title> rdfs:comment """A name given to the resource."""@en .
+ <http://purl.org/dc/elements/1.1/title> rdfs:comment """Un nom donné à la ressource"""@fr .
  <http://purl.org/dc/elements/1.1/subject> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/subject> rdfs:label """subject """ .
+ <http://purl.org/dc/elements/1.1/subject> rdfs:comment """The topic of the resource issued from the BBS
+            controlled vocabulary"""@en .
+ <http://purl.org/dc/elements/1.1/subject> rdfs:comment """Le sujet de la ressource issu du vocabulaire
+            contrôlé du BBS"""@fr .
  <http://purl.org/dc/elements/1.1/language> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/language> rdfs:label """language """ .
+ <http://purl.org/dc/elements/1.1/language> rdfs:comment """A language of the resource"""@en .
+ <http://purl.org/dc/elements/1.1/language> rdfs:comment """Une langue utilisée dans la ressource"""@fr .
  <http://purl.org/dc/elements/1.1/publisher> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/publisher> rdfs:label """publisher """ .
+ <http://purl.org/dc/elements/1.1/publisher> rdfs:comment """An entity responsible for making the resource
+            available."""@en .
+ <http://purl.org/dc/elements/1.1/publisher> rdfs:comment """L'entité qui est responsable du fait que la
+            resource est disponible"""@fr .
  <http://purl.org/dc/elements/1.1/creator> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/creator> rdfs:label """creator """ .
+ <http://purl.org/dc/elements/1.1/creator> rdfs:comment """An entity primarily responsible for making the
+            resource."""@en .
+ <http://purl.org/dc/elements/1.1/creator> rdfs:comment """L'entité qui est responsable du fait que la
+            resource existe"""@fr .
  <http://purl.org/dc/elements/1.1/date> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/date> rdfs:label """date """ .
+ <http://purl.org/dc/elements/1.1/date> rdfs:comment """A point or period of time associated with an event
+            in the lifecycle of the resource"""@en .
+ <http://purl.org/dc/elements/1.1/date> rdfs:comment """Une date ou une période associé à un évenement dans
+            le cycle de vie de la ressource"""@fr .
  <https://purl.org/dc/elements/1.1/format> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://purl.org/dc/elements/1.1/format> rdfs:label """format """ .
+ <https://purl.org/dc/elements/1.1/format> rdfs:comment """The file format, physical medium, or dimensions of
+            the resource."""@en .
+ <https://purl.org/dc/elements/1.1/format> rdfs:comment """Le format du fichier, du support physique ou les
+            dimensions de la ressource"""@fr .
  <http://purl.org/dc/elements/1.1/identifier> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/identifier> rdfs:label """identifier """ .
+ <http://purl.org/dc/elements/1.1/identifier> rdfs:comment """An unambiguous reference to the resource"""@en .
+ <http://purl.org/dc/elements/1.1/identifier> rdfs:comment """Une référence sans ambiguité à la ressource la
+            ressource"""@fr .
  <http://purl.org/dc/elements/1.1/source> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/source> rdfs:label """source """ .
+ <http://purl.org/dc/elements/1.1/source> rdfs:comment """A related resource from which the described
+            resource is derived."""@en .
+ <http://purl.org/dc/elements/1.1/source> rdfs:comment """Une ressource liée qui expose la ressource
+            décrite"""@fr .
  <http://purl.org/dc/elements/1.1/relation> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/relation> rdfs:label """relation """ .
+ <http://purl.org/dc/elements/1.1/relation> rdfs:comment """A related resource."""@en .
+ <http://purl.org/dc/elements/1.1/relation> rdfs:comment """Une ressource liée"""@fr .
  <http://xmlns.com/foaf/0.1/Person> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://xmlns.com/foaf/0.1/Person> rdfs:label """Person """ .
+ <http://xmlns.com/foaf/0.1/Person> rdfs:comment """The Person class represents people. Something is a
+            Person if it is a person. We don't nitpic about whether
+            they're alive, dead, real, or imaginary"""@en .
+ <http://xmlns.com/foaf/0.1/Person> rdfs:comment """La personne peut être vivante, décédée, réelle ou
+            imaginaire"""@fr .
  <http://xmlns.com/foaf/0.1/firstName> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/firstName> rdfs:label """first name """ .
+ <http://xmlns.com/foaf/0.1/firstName> rdfs:comment """The first name of a person."""@en .
+ <http://xmlns.com/foaf/0.1/firstName> rdfs:comment """Le prénom d'une personne."""@fr .
  <http://xmlns.com/foaf/0.1/lastName> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/lastName> rdfs:label """last name """ .
+ <http://xmlns.com/foaf/0.1/lastName> rdfs:comment """The last name of a person."""@en .
+ <http://xmlns.com/foaf/0.1/lastName> rdfs:comment """Le nom de famille d'une personne."""@fr .
  <http://xmlns.com/foaf/0.1/nick> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/nick> rdfs:label """nickname """ .
+ <http://xmlns.com/foaf/0.1/nick> rdfs:comment """A short informal nickname characterising a
+            Person"""@en .
+ <http://xmlns.com/foaf/0.1/nick> rdfs:comment """Un court surnom informel caractérisant une
+            Personne."""@fr .
  <http://xmlns.com/foaf/0.1/Organization> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://xmlns.com/foaf/0.1/Organization> rdfs:label """Organization """ .
+ <http://xmlns.com/foaf/0.1/Organization> rdfs:comment """An organization."""@en .
+ <http://xmlns.com/foaf/0.1/Organization> rdfs:comment """Une organisation."""@fr .
  <http://xmlns.com/foaf/0.1/mbox> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/mbox> rdfs:label """mailbox """ .
+ <http://xmlns.com/foaf/0.1/mbox> rdfs:comment """An Internet mailbox."""@en .
+ <http://xmlns.com/foaf/0.1/mbox> rdfs:comment """Une adresse mel"""@fr .
  <http://xmlns.com/foaf/0.1/homepage> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/homepage> rdfs:label """home page """ .
+ <http://xmlns.com/foaf/0.1/homepage> rdfs:comment """A Homepage is a public Web document with an
+            URI."""@en .
+ <http://xmlns.com/foaf/0.1/homepage> rdfs:comment """Une page personnelle est un document web accessible
+            grace à une URI"""@fr .
  <https://schema.org/streetAddress> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://schema.org/streetAddress> rdfs:label """street address """ .
+ <https://schema.org/streetAddress> rdfs:comment """The street address"""@en .
+ <https://schema.org/streetAddress> rdfs:comment """La ligne de l'adresse postale comportant la
+            rue"""@fr .
  <https://schema.org/postalCode> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://schema.org/postalCode> rdfs:label """postal code """ .
+ <https://schema.org/postalCode> rdfs:comment """The postal code"""@en .
+ <https://schema.org/postalCode> rdfs:comment """le code postal"""@fr .
  <https://schema.org/addressLocality> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://schema.org/addressLocality> rdfs:label """address locality """ .
+ <https://schema.org/addressLocality> rdfs:comment """The locality in which the street address is"""@en .
+ <https://schema.org/addressLocality> rdfs:comment """La localité correspondant à la rue indiquée dans le
+            champ streetAdress"""@fr .
  <https://schema.org/addressCountry> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://schema.org/addressCountry> rdfs:label """address country""" .
+ <https://schema.org/addressCountry> rdfs:comment """The country code"""@en .
+ <https://schema.org/addressCountry> rdfs:comment """Le code du pays"""@fr .
  <http://xmlns.com/foaf/0.1/member> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://xmlns.com/foaf/0.1/member> rdfs:label """member """ .
+ <http://xmlns.com/foaf/0.1/member> rdfs:comment """Indicates a member of a Group"""@en .
+ <http://xmlns.com/foaf/0.1/member> rdfs:comment """Indique le membre d'un groupe"""@fr .
  <https://ontology.uis-speleo.org/ontology/#Observation> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:label """Observation """ .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """An Observation."""@en .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """Une Observation."""@fr .
  <https://dwc.tdwg.org/list/#dwc_Occurrence> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://dwc.tdwg.org/list/#dwc_Occurrence> rdfs:label """Occurence """ .
+ <https://dwc.tdwg.org/list/#dwc_Occurrence> rdfs:comment """An existence of an Organism at a particular place
+            at a particular time."""@en .
+ <https://dwc.tdwg.org/list/#dwc_Occurrence> rdfs:comment """L'existence d'un organisme à un endroit particulier
+            à une période particulière"""@fr .
  <http://rs.tdwg.org/dwc/terms/recordedBy> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://rs.tdwg.org/dwc/terms/recordedBy> rdfs:label """recorded by """ .
+ <http://rs.tdwg.org/dwc/terms/recordedBy> rdfs:comment """A list (concatenated and separated) of names of
+            people, groups, or organizations responsible for
+            recording the original Occurrence. The primary
+            collector or observer, should be listed first."""@en .
+ <http://rs.tdwg.org/dwc/terms/recordedBy> rdfs:comment """Une liste (concaténée et séparée) de noms de
+            personnes, de groupes ou d'organisations responsables
+            de l'enregistrement de l'occurrence d'origine. Le
+            collecteur ou observateur principal, doit être
+            répertorié en premier."""@fr .
  <http://rs.tdwg.org/dwc/terms/identifiedBy> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://rs.tdwg.org/dwc/terms/identifiedBy> rdfs:label """identified by """ .
+ <http://rs.tdwg.org/dwc/terms/identifiedBy> rdfs:comment """A list (concatenated and separated) of names of
+            people, groups, or organizations who assigned the Taxon
+            to the subject."""@en .
+ <http://rs.tdwg.org/dwc/terms/identifiedBy> rdfs:comment """Une liste (concaténée et séparée) de noms de
+            personnes, de groupes ou d'organisations qui ont
+            attribué le taxon au sujet."""@fr .
  <http://rs.tdwg.org/dwc/terms/dateIdentified> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://rs.tdwg.org/dwc/terms/dateIdentified> rdfs:label """date identified """ .
+ <http://rs.tdwg.org/dwc/terms/dateIdentified> rdfs:comment """The date on which the subject was determined as
+            representing the Taxon."""@en .
+ <http://rs.tdwg.org/dwc/terms/dateIdentified> rdfs:comment """La date à laquelle le sujet a été déterminé comme
+            représentant le taxon."""@fr .
  <http://rs.tdwg.org/dwc/terms/eventDate> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://rs.tdwg.org/dwc/terms/eventDate> rdfs:label """event date """ .
+ <http://rs.tdwg.org/dwc/terms/eventDate> rdfs:comment """The date-time or interval during which an Event
+            occurred. For occurrences, this is the date-time when
+            the event was recorded. Not suitable for a time in a
+            geological context."""@en .
+ <http://rs.tdwg.org/dwc/terms/eventDate> rdfs:comment """La date-heure ou l'intervalle pendant lequel un
+            événement s'est produit. Pour les occurrences, il
+            s'agit de la date-heure à laquelle l'événement a été
+            enregistré. Ne convient pas pour un temps dans un
+            contexte géologique."""@fr .
  <http://rs.tdwg.org/dwc/terms/individualCount> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://rs.tdwg.org/dwc/terms/individualCount> rdfs:label """individual count """ .
+ <http://rs.tdwg.org/dwc/terms/individualCount> rdfs:comment """The number of individuals represented present at
+            the time of the Occurrence."""@en .
+ <http://rs.tdwg.org/dwc/terms/individualCount> rdfs:comment """Le nombre d'individus présents au moment de
+            l'événement."""@fr .
  <http://rs.tdwg.org/dwc/terms/associatedTaxa> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://rs.tdwg.org/dwc/terms/associatedTaxa> rdfs:label """associated taxa """ .
+ <http://rs.tdwg.org/dwc/terms/associatedTaxa> rdfs:comment """A list (concatenated and separated) of identifiers
+            or names of taxa and their associations with the
+            Occurrence."""@en .
+ <http://rs.tdwg.org/dwc/terms/associatedTaxa> rdfs:comment """Une liste (concaténée et séparée) d'identificateurs
+            ou de noms de taxons et de leurs associations avec
+            l'occurrence."""@fr .
  <http://xmlns.com/foaf/0.1/Agent> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://xmlns.com/foaf/0.1/Agent> rdfs:label """Agent """ .
+ <http://xmlns.com/foaf/0.1/Agent> rdfs:comment """Things that do stuff"""@en .
+ <http://xmlns.com/foaf/0.1/Agent> rdfs:comment """Les choses qui font des trucs"""@fr .
  <#Person> a <http://www.w3.org/2002/07/owl#Class> .
+ <#Person> rdfs:label """Agent """ .
+ <#Person> rdfs:comment """Things that do stuff"""@en .
+ <#Person> rdfs:comment """Les choses qui font des trucs"""@fr .
  <#Organization> a <http://www.w3.org/2002/07/owl#Class> .
+ <#Organization> rdfs:label """Agent """ .
+ <#Organization> rdfs:comment """Things that do stuff"""@en .
+ <#Organization> rdfs:comment """Les choses qui font des trucs"""@fr .
  <http://purl.org/dc/terms/LicenseDocument> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/terms/LicenseDocument> rdfs:label """License Document """ .
+ <http://purl.org/dc/terms/LicenseDocument> rdfs:comment """A legal document giving official permission to do
+            something with a resource."""@en .
+ <http://purl.org/dc/terms/LicenseDocument> rdfs:comment """Un document juridique donnant l'autorisation
+            officielle de faire quelque chose avec une
+            ressource."""@fr .
  <https://creativecommons.org/ns#attributionName> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://creativecommons.org/ns#attributionName> rdfs:label """attribution name """ .
+ <https://creativecommons.org/ns#attributionName> rdfs:comment """The name the creator of a Work would like used when
+            attributing re-use."""@en .
+ <https://creativecommons.org/ns#attributionName> rdfs:comment """Le nom que le créateur d'une Œuvre souhaiterait
+            utiliser lors de l'attribution d'une
+            réutilisation."""@fr .
  <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """ .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être
+            utilisées"""@fr .
  <http://purl.org/dc/terms/created> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/terms/created> rdfs:label """created """ .
+ <http://purl.org/dc/terms/created> rdfs:comment """Date of creation of the resource."""@en .
+ <http://purl.org/dc/terms/created> rdfs:comment """Date de création de la ressource."""@fr .
  <http://purl.org/dc/terms/modified> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/terms/modified> rdfs:label """modified """ .
+ <http://purl.org/dc/terms/modified> rdfs:comment """Date on which the resource was changed."""@en .
+ <http://purl.org/dc/terms/modified> rdfs:comment """Date à laquelle la ressource a été modifiée."""@fr .
  <https://creativecommons.org/ns#attributionURL> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://creativecommons.org/ns#attributionURL> rdfs:label """attribution URL """ .
+ <https://creativecommons.org/ns#attributionURL> rdfs:comment """The URL the creator of a Work would like used when
+            attributing re-use."""@en .
+ <https://creativecommons.org/ns#attributionURL> rdfs:comment """L'URL que le créateur d'une œuvre souhaite utiliser
+            lors de l'attribution de la réutilisation."""@fr .
  <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:label """Description """ .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document used to describe an entity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document qui permet de décrire une entité"""@fr .
  <http://purl.org/dc/elements/1.1/description> a <http://www.w3.org/2002/07/owl#Property> .
+ <http://purl.org/dc/elements/1.1/description> rdfs:label """description """ .
+ <http://purl.org/dc/elements/1.1/description> rdfs:comment """An account of the resource."""@en .
+ <http://purl.org/dc/elements/1.1/description> rdfs:comment """Une présentation de la ressource."""@fr .
  <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Access """ .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document that describes access to the resource"""@en .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document qui décrit l'accès à la ressource"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """document type """ .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Type-controlled list for documents"""@en .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
  <http://id.loc.gov/vocabulary/marcgt/abs> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:label """abstract or summary """ .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Brief summary that provides the essential points of
+            written works, such as the content of a publication or
+            of a journal."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Bref résumé qui fournit les points essentiels des
+            travaux écrits, comme le contenu d'une publication ou
+            d'une revue."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/art> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/art> rdfs:label """article """ .
+ <http://id.loc.gov/vocabulary/marcgt/art> rdfs:comment """Composition prepared for publication as an
+            independent portion of a magazine, newspaper,
+            encyclopedia, or other work."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/art> rdfs:comment """Composition préparée pour publication en tant que
+            partie indépendante d'un magazine, journal,
+            encyclopédie ou autre ouvrage."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/abs> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:label """book """ .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Item comprising a collection of leaves of paper,
+            parchment, wood, stiffened textile, ivory, metal
+            tablets, or other flat material, that are blank,
+            written on, or printed, and are strung or bound
+            together in a volume. Includes e-book or electronic
+            resource structured like a book."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Article comprenant une collection de feuilles de
+            papier, de parchemin, de bois, de textile renforcé,
+            d'ivoire, de tablettes de métal ou d'un autre matériau
+            plat, vierges, écrites ou imprimées et enfilées ou
+            reliées ensemble en un volume. Comprend un livre
+            électronique ou une ressource électronique structurée
+            comme un livre."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/cal> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/cal> rdfs:label """calendar """ .
+ <http://id.loc.gov/vocabulary/marcgt/cal> rdfs:comment """Published system of organizing days. These may be
+            academic calendars or almanacs, calendars published by
+            bodies, such as labor organizations, library
+            associations, etc."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/cal> rdfs:comment """Système d'organisation des journées ayant fait
+            l'objet d'une publication. Il peut s'agir de
+            calendriers académiques ou d'almanachs, de calendriers
+            publiés par des organismes, tels que des organisations
+            syndicales, des associations de bibliothèques,
+            etc."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/cat> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/cat> rdfs:label """catalog """ .
+ <http://id.loc.gov/vocabulary/marcgt/cat> rdfs:comment """List of items in a collection, such as a collection
+            of books, a collection of art objects, etc."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/cat> rdfs:comment """Liste des éléments d'une collection, tels qu'une
+            collection de livres, une collection d'objets d'art,
+            etc."""@fr .
  <http://purl.org/dc/dcmitype/Collection> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Collection> rdfs:label """Collection """ .
+ <http://purl.org/dc/dcmitype/Collection> rdfs:comment """An aggregation of resources."""@en .
+ <http://purl.org/dc/dcmitype/Collection> rdfs:comment """Un ensemble de ressources."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/cpb> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/cpb> rdfs:label """conference publication """ .
+ <http://id.loc.gov/vocabulary/marcgt/cpb> rdfs:comment """Proceedings, reports, or summaries of a
+            conference."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/cpb> rdfs:comment """Actes, rapports ou résumés d'une conférence."""@fr .
  <http://purl.org/dc/dcmitype/Dataset> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Dataset> rdfs:label """Dataset """ .
+ <http://purl.org/dc/dcmitype/Dataset> rdfs:comment """Data encoded in a defined structure."""@en .
+ <http://purl.org/dc/dcmitype/Dataset> rdfs:comment """Données encodées dans une structure définie."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/abs> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:label """dictionary """ .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Dictionary, glossary, or gazeteer"""@en .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Une occurrence non persistante basée sur le
+            temps."""@fr .
  <http://purl.org/dc/dcmitype/Event> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Event> rdfs:label """Event """ .
+ <http://purl.org/dc/dcmitype/Event> rdfs:comment """A non-persistent, time-based occurrence."""@en .
+ <http://purl.org/dc/dcmitype/Event> rdfs:comment """Bref résumé qui fournit les points essentiels des
+            travaux écrits, comme le contenu d'une publication ou
+            d'une revue."""@fr .
  <http://purl.org/dc/dcmitype/Image> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Image> rdfs:label """Image """ .
+ <http://purl.org/dc/dcmitype/Image> rdfs:comment """A visual representation other than text."""@en .
+ <http://purl.org/dc/dcmitype/Image> rdfs:comment """Une représentation visuelle autre que du
+            texte."""@fr .
  <http://purl.org/dc/dcmitype/InteractiveResource> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://purl.org/dc/dcmitype/InteractiveResource> rdfs:label """instruction """ .
+ <http://purl.org/dc/dcmitype/InteractiveResource> rdfs:comment """Instruction on how to accomplish a task, learn an
+            art, etc.."""@en .
+ <http://purl.org/dc/dcmitype/InteractiveResource> rdfs:comment """Instruction pour accomplir une tâche, apprendre un
+            art, etc."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/abs> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:label """Interactive Resource """ .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """A resource requiring interaction from the user to
+            be understood, executed, or experienced."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Une ressource nécessitant une interaction de
+            l'utilisateur pour être comprise, exécutée ou
+            expérimentée."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/jou> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/jou> rdfs:label """journal """ .
+ <http://id.loc.gov/vocabulary/marcgt/jou> rdfs:comment """Periodical publication, particularly those
+            containing scholarly articles or otherwise
+            disseminating information on developments in a
+            particular subject field."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/jou> rdfs:comment """Publication périodique, en particulier celles
+            contenant des articles scientifiques ou diffusant d'une
+            autre manière des informations sur les développements
+            dans un domaine particulier."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/let> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/let> rdfs:label """letter """ .
+ <http://id.loc.gov/vocabulary/marcgt/let> rdfs:comment """Single letter or collection of correspondence."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/let> rdfs:comment """Lettre unique ou collection de
+            correspondances."""@fr .
  <http://id.loc.gov/vocabulary/marcgt/man> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://id.loc.gov/vocabulary/marcgt/man> rdfs:label """manuscript """ .
+ <http://id.loc.gov/vocabulary/marcgt/man> rdfs:comment """Handwritten documents, particularly books and other
+            documents created before the invention of the printing
+            press. Includes originals of compiled maps, drawn but
+            not printed; loosely, any map drawn by hand."""@en .
+ <http://id.loc.gov/vocabulary/marcgt/man> rdfs:comment """Documents manuscrits, en particulier livres et
+            autres documents créés avant l'invention de
+            l'imprimerie. Comprend les originaux des cartes
+            compilées, dessinées mais non imprimées; globalement,
+            toute carte dessinée à la main.."""@fr .
  <http://purl.org/dc/dcmitype/StillImage> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/StillImage> rdfs:label """Still image """ .
+ <http://purl.org/dc/dcmitype/StillImage> rdfs:comment """A static visual representation."""@en .
+ <http://purl.org/dc/dcmitype/StillImage> rdfs:comment """Une représentation visuelle statique."""@fr .
  <http://purl.org/dc/dcmitype/MovingImage> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/MovingImage> rdfs:label """Moving image """ .
+ <http://purl.org/dc/dcmitype/MovingImage> rdfs:comment """A series of visual representations imparting an
+            impression of motion when shown in succession."""@en .
+ <http://purl.org/dc/dcmitype/MovingImage> rdfs:comment """Une série de représentations visuelles donnant une
+            impression de mouvement lorsqu'elles sont montrées
+            successivement."""@fr .
  <http://purl.org/dc/dcmitype/PhysicalObject> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/PhysicalObject> rdfs:label """Physical object """ .
+ <http://purl.org/dc/dcmitype/PhysicalObject> rdfs:comment """An inanimate, three-dimensional object or
+            substance."""@en .
+ <http://purl.org/dc/dcmitype/PhysicalObject> rdfs:comment """Un objet ou une substance inanimée en trois
+            dimensions."""@fr .
  <http://purl.org/dc/dcmitype/Service> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Service> rdfs:label """Service """ .
+ <http://purl.org/dc/dcmitype/Service> rdfs:comment """A system that provides one or more functions."""@en .
+ <http://purl.org/dc/dcmitype/Service> rdfs:comment """Un système qui fournit une ou plusieurs
+            fonctions."""@fr .
  <http://purl.org/dc/dcmitype/Software> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Software> rdfs:label """Software """ .
+ <http://purl.org/dc/dcmitype/Software> rdfs:comment """A computer program in source or compiled form."""@en .
+ <http://purl.org/dc/dcmitype/Software> rdfs:comment """Un programme informatique sous forme de code source
+            ou sous forme compilée."""@fr .
  <http://purl.org/dc/dcmitype/Sound> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Sound> rdfs:label """Sound """ .
+ <http://purl.org/dc/dcmitype/Sound> rdfs:comment """A resource primarily intended to be heard."""@en .
+ <http://purl.org/dc/dcmitype/Sound> rdfs:comment """Une ressource principalement destinée à être
+            entendue."""@fr .
  <http://purl.org/dc/dcmitype/Text> a <http://www.w3.org/2002/07/owl#Class> .
+ <http://purl.org/dc/dcmitype/Text> rdfs:label """Text """ .
+ <http://purl.org/dc/dcmitype/Text> rdfs:comment """A resource consisting primarily of words for
+            reading."""@en .
+ <http://purl.org/dc/dcmitype/Text> rdfs:comment """Une ressource composée principalement de mots à
+            lire."""@fr .
  <https://ontology.uis-speleo.org/ontology/#topographicData> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """Topographic data """ .
+ <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Data set corresponding to the topography of an
+            underground cavity."""@en .
+ <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Ensemble de données correspondant à la topographie
+            d'une cavité souterraine."""@fr .
  <https://ontology.uis-speleo.org/ontology/#topography> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#topography> rdfs:label """topography """ .
+ <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """A graphic representation of an underground
+            cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """Une représentation graphique d'une cavité
+            souterraine"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorization to publish """ .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attesting to the authorization to publish
+            other documents under a defined licence"""@en .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attestant l'autorisation de publier
+            d'autres documents sous une licence définie"""@fr .
  <https://ontology.uis-speleo.org/ontology/#reefnet> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:label """reefnet """ .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """A document produced by a Reefnet brand device"""@en .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """Un document produit par un appareil de marque
+            Reefnet"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """Document subject """ .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Controlled list for documents subject issued from
+            BBS"""@en .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Liste contrôlée de sujets pour les documents, issus
+            du BBS"""@fr .
  <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:label """geospeleology and karstology
+            """ .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:comment """Karst morphology and morphogenesis, hydrology,
+            geology and pedology, climatology and biology of karst
+            regions, fossil karst, hydrothermal karst, morphology
+            and speleogenesis in carbonatic rocks, para-,pseudo-
+            et/and hypokarst, subterranean deposits and fillings,
+            subterranean climatology, geophysics, chronology of
+            subterranean fillings, special karsts, parakarst in
+            evaporites, parakarst in siliceous rocks, pseudokarst,
+            ice hypokarst; thermokarst, hypo- and pseudokarst in
+            volcanic rocks ."""@en .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:comment """Morphologie et morphogenèse karstiques, hydrologie,
+            géologie et pédologie, climatologie et biologie des
+            régions karstiques, karst fossile, karst hydrothermal,
+            morphologie et spéléogenèse dans les roches
+            carbonatiques, para-, pseudo- et / et hypokarst, dépôts
+            et remblais souterrains, climatologie souterraine,
+            géophysique , chronologie des remblais souterrains,
+            karsts spéciaux, parakarst dans les évaporites,
+            parakarst dans les roches siliceuses, pseudokarst,
+            hypokarst de glace; thermokarst, hypo- et pseudokarst
+            dans les roches volcaniques."""@fr .
  <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:label """regional speleology and karstology
+            """ .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:comment """Example: descriptions, expeditions reports, acces
+            restrictions, exploration history, exploration status
+            of specific sites. Regional history of speleology.
+            Regional lists, catalogues, databases, inventories.
+            Regional accidents and rescues. Regional karstology.
+            Regional applied speleology. Regional technical
+            speleology. Regional documentary speleology. ."""@en .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:comment """Exemple : descriptions, rapports d'expéditions,
+            restrictions d'accès, historique d'exploration, statut
+            d'exploration de sites spécifiques. Histoire régionale
+            de la spéléologie. Listes régionales, catalogues, bases
+            de données, inventaires. Accidents régionaux et
+            sauvetages. Karstologie régionale. Spéléologie
+            appliquée régionale. Spéléologie technique régionale.
+            Spéléologie documentaire régionale."""@fr .
  <https://ontology.uis-speleo.org/ontology/#biospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:label """biospeleology """ .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:comment """Sytematics, crustacea, hexapoda, arachnida,
+            mollusca, onychophora, vermes, other invertebrata,
+            vertebrata, microbiology soil- air- water, hypogean
+            flora, fungi, algae, regional biospeleology"""@en .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:comment """Sytématique, crustacés, hexapodes, arachnides,
+            mollusques, onychophores, vermes, autres invertébrés,
+            vertébrés, microbiologie sol-air-eau, flore hypogée,
+            champignons, algues, biospéléologie régionale"""@fr .
  <https://ontology.uis-speleo.org/ontology/#anthropospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:label """anthropospeleology """ .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:comment """Archaeology, prehistorical and historical
+            cultures."""@en .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:comment """Archéologie; cultures préhistoriques et
+            historiques."""@fr .
  <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:label """palaeonthospeleology """ .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:comment """Palaeonthospeleology, fossil and subfossil faunas
+            and floras (quaternary)"""@en .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:comment """Paléonthospéléologie, faunes et flores fossiles et
+            subfossiles (quaternaire)"""@fr .
  <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:label """applied speleology """ .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:comment """Environment and hygiene, mines, engineering, law,
+            protection, recreation, tourism, geosystem,
+            subterranean therapy, research management"""@en .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:comment """Environnement et hygiène, mines, ingénierie, droit,
+            protection, loisirs, tourisme, géosystème, thérapie
+            souterraine, gestion de la recherche."""@fr .
  <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:label """technical speleology """ .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:comment """Exploration techniques and materials, diving,
+            prospection, accidents and rescue, medicine, education,
+            activities."""@en .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:comment """Techniques et matériaux d'exploration, plongée,
+            prospection, accidents et sauvetage, médecine,
+            éducation, activités."""@fr .
  <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:label """documentary speleology """ .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:comment """Topography, terminology, toponymy, bibliography,
+            photo and film, photographic methods and materials,
+            films and audio-visual devices, cadastres, cartes,
+            archives, inventories, surveys, maps, archives"""@en .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:comment """Topographie, terminologie, toponymie,
+            bibliographie, photo et film, méthodes et matériels
+            photographiques, films et dispositifs audiovisuels,
+            cadastres, cartes, archives, inventaires, levés,
+            cartes, archives"""@fr .
  <https://ontology.uis-speleo.org/ontology/#other> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#other> rdfs:label """other """ .
+ <https://ontology.uis-speleo.org/ontology/#other> rdfs:comment """Others subjects"""@en .
+ <https://ontology.uis-speleo.org/ontology/#other> rdfs:comment """Autres sujets"""@fr .
  <https://ontology.uis-speleo.org/ontology/#PointType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:label """point type """ .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection of terms that can be used to describ
+            type of point related to Karst"""@en .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection de termes pouvant être utilisés pour
+            décrire le type de point lié au Karst"""@fr .
  <https://ontology.uis-speleo.org/ontology/#entry> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entry """ .
+ <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point corresponding to the entry of an Underground
+            Cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point correspondant à l'entrée d'une cavité
+            souterraine"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AreaType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """Area Type """ .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection of terms that can be used to describ
+            type of area related to Karst"""@en .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection de termes pouvant être utilisés pour
+            décrire le type de zone liée au Karst"""@fr .
  <http://www.geonames.org/ontology#L.AREA> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.AREA> rdfs:label """area """ .
+ <http://www.geonames.org/ontology#L.AREA> rdfs:comment """"""@en .
+ <http://www.geonames.org/ontology#L.AREA> rdfs:comment """"""@fr .
  <http://www.geonames.org/ontology#L.RESN> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.RESN> rdfs:label """nature reserve """ .
+ <http://www.geonames.org/ontology#L.RESN> rdfs:comment """"""@en .
+ <http://www.geonames.org/ontology#L.RESN> rdfs:comment """"""@fr .
  <http://www.geonames.org/ontology#L.RESW> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.RESW> rdfs:label """wildlife reserve """ .
+ <http://www.geonames.org/ontology#L.RESW> rdfs:comment """"""@en .
+ <http://www.geonames.org/ontology#L.RESW> rdfs:comment """"""@fr .
  <http://www.geonames.org/ontology#L.BSND> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.BSND> rdfs:label """drainage basin""" .
+ <http://www.geonames.org/ontology#L.BSND> rdfs:comment """Point corresponding to the entry of an Underground
+            Cavity"""@en .
+ <http://www.geonames.org/ontology#L.BSND> rdfs:comment """Point correspondant à l'entrée d'une cavité
+            souterraine"""@fr .
  <http://www.geonames.org/ontology#L.MNA> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.MNA> rdfs:label """mining area """ .
+ <http://www.geonames.org/ontology#L.MNA> rdfs:comment """"""@en .
+ <http://www.geonames.org/ontology#L.MNA> rdfs:comment """"""@fr .
  <http://www.geonames.org/ontology#L.RGN> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.RGN> rdfs:label """region """ .
+ <http://www.geonames.org/ontology#L.RGN> rdfs:comment """"""@en .
+ <http://www.geonames.org/ontology#L.RGN> rdfs:comment """"""@fr .
  <http://www.geonames.org/ontology#T.KRST> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
+ <http://www.geonames.org/ontology#T.KRST> rdfs:comment """"""@en .
+ <http://www.geonames.org/ontology#T.KRST> rdfs:comment """"""@fr .
  <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """ .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection of terms that can be used to describe
+            type of Licence"""@en .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection de termes pouvant être utilisés pour
+            décrire le type de licence"""@fr .
  <https://ontology.uis-speleo.org/ontology/#CC-BY> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:label """CC-BY """ .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. No additional
+            restrictions — You may not apply legal terms or
+            technological measures that legally restrict others
+            from doing anything the license permits."""@en .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. Aucune restriction supplémentaire - Vous
+            ne pouvez pas appliquer les conditions légales ou les
+            mesures technologiques qui empêchent légalement les
+            autres de faire tout ce que la licence permet."""@fr .
  <https://creativecommons.org/licenses/by/3.0/> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://creativecommons.org/licenses/by/3.0/> rdfs:label """CC-BY """ .
+ <https://creativecommons.org/licenses/by/3.0/> rdfs:comment """You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. No additional
+            restrictions — You may not apply legal terms or
+            technological measures that legally restrict others
+            from doing anything the license permits."""@en .
+ <https://creativecommons.org/licenses/by/3.0/> rdfs:comment """Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. Aucune restriction supplémentaire - Vous
+            ne pouvez pas appliquer les conditions légales ou les
+            mesures technologiques qui empêchent légalement les
+            autres de faire tout ce que la licence permet."""@fr .
  <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:label """CC-BY-SA """ .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. ShareAlike — If you
+            remix, transform, or build upon the material, you must
+            distribute your contributions under the same license as
+            the original. No additional restrictions — You may not
+            apply legal terms or technological measures that
+            legally restrict others from doing anything the license
+            permits."""@en .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. ShareAlike - Si vous remixez, transformez
+            ou construisez sur le matériel, vous devez distribuer
+            vos contributions sous la même licence que l'original.
+            Aucune restriction supplémentaire - Vous ne pouvez pas
+            appliquer les conditions légales ou les mesures
+            technologiques qui empêchent légalement les autres de
+            faire tout ce que la licence permet."""@fr .
  <https://creativecommons.org/licenses/by-sa/3.0/> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://creativecommons.org/licenses/by-sa/3.0/> rdfs:label """CC-BY-SA """ .
+ <https://creativecommons.org/licenses/by-sa/3.0/> rdfs:comment """You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. ShareAlike — If you
+            remix, transform, or build upon the material, you must
+            distribute your contributions under the same license as
+            the original. No additional restrictions — You may not
+            apply legal terms or technological measures that
+            legally restrict others from doing anything the license
+            permits."""@en .
+ <https://creativecommons.org/licenses/by-sa/3.0/> rdfs:comment """Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. ShareAlike - Si vous remixez, transformez
+            ou construisez sur le matériel, vous devez distribuer
+            vos contributions sous la même licence que l'original.
+            Aucune restriction supplémentaire - Vous ne pouvez pas
+            appliquer les conditions légales ou les mesures
+            technologiques qui empêchent légalement les autres de
+            faire tout ce que la licence permet."""@fr .
  <https://ontology.uis-speleo.org/ontology/#ODBL> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:label """ODBL """ .
+ <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """The Open Database License (ODbL) is a copyleft
+            ("share alike") license agreement intended to allow
+            users to freely share, modify, and use a database while
+            maintaining this same freedom for others"""@en .
+ <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """La licence Open Database (ODbL) est un accord de
+            licence copyleft («partager à l'identique») destiné à
+            permettre aux utilisateurs de partager, modifier et
+            utiliser librement une base de données tout en
+            conservant cette même liberté pour les autres"""@fr .
  <https://opendatacommons.org/licenses/odbl/> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://opendatacommons.org/licenses/odbl/> rdfs:label """ODBL """ .
+ <https://opendatacommons.org/licenses/odbl/> rdfs:comment """The Open Database License (ODbL) is a copyleft
+            ("share alike") license agreement intended to allow
+            users to freely share, modify, and use a database while
+            maintaining this same freedom for others"""@en .
+ <https://opendatacommons.org/licenses/odbl/> rdfs:comment """La licence Open Database (ODbL) est un accord de
+            licence copyleft («partager à l'identique») destiné à
+            permettre aux utilisateurs de partager, modifier et
+            utiliser librement une base de données tout en
+            conservant cette même liberté pour les autres"""@fr .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:label """ODC-By """ .
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution for Data/Databases"""@en .
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution des données / bases de données"""@fr .
