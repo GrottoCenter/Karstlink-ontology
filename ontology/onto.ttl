@@ -12,6 +12,7 @@
             ou être certains types de phénomènes karstiques
             superficiels (source, drain, polje, méga -doline,
             etc.)."""@fr .
+
  <http://www.geonames.org/ontology/#name> a <http://www.w3.org/2002/07/owl#Property> .
  <http://www.geonames.org/ontology/#name> rdfs:label """name """ .
  <http://www.geonames.org/ontology/#name> rdfs:comment """Name that identifies the ressource."""@en .
@@ -55,6 +56,7 @@
  <https://dwc.tdwg.org/list/#dwc_coordinatePrecision> rdfs:comment """Une représentation décimale en mètres de la
             précision des coordonnées données dans Latitude et
             Longitude."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:label """length """ .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """The real development of all the galleries of the
@@ -81,10 +83,12 @@
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut
             et le point le plus bas de la cavité exprimé en
             mètres"""@fr .
+ 
  <http://www.geonames.org/ontology#countryCode> a <http://www.w3.org/2002/07/owl#Property> .
  <http://www.geonames.org/ontology#countryCode> rdfs:label """country code """ .
  <http://www.geonames.org/ontology#countryCode> rdfs:comment """iso country code, 2 characters"""@en .
  <http://www.geonames.org/ontology#countryCode> rdfs:comment """Code ISO des pays 2 caractères"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """discovered """ .
  <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (person or organization) who discovered the
@@ -97,6 +101,7 @@
             underground cavity"""@en .
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (personne ou organisation) ayant visité la
             cavité"""@fr .
+
  <http://purl.org/dc/terms/isReferencedBy> a <http://www.w3.org/2002/07/owl#Property> .
  <http://purl.org/dc/terms/isReferencedBy> rdfs:label """is referenced by """ .
  <http://purl.org/dc/terms/isReferencedBy> rdfs:comment """A related resource that references, cites, or
@@ -123,6 +128,7 @@
  <https://www.w3.org/2003/01/geo/wgs84_pos#Point> rdfs:comment """Un point, peut être décrit à l'aide d'un système de
             coordonnées par rapport à la Terre, WGS84 pour
             nous"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """point type """ .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Link to a point type defined in a collection of
@@ -141,6 +147,7 @@
             expressions"""@en .
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Lien vers un type de zone défini dans une
             collection d'expressions"""@fr .
+
  <https://schema.org/polygon> a <http://www.w3.org/2002/07/owl#Property> .
  <https://schema.org/polygon> rdfs:label """polygon """ .
  <https://schema.org/polygon> rdfs:comment """A polygon is the area enclosed by a point-to-point
@@ -276,10 +283,12 @@
  <http://xmlns.com/foaf/0.1/member> rdfs:label """member """ .
  <http://xmlns.com/foaf/0.1/member> rdfs:comment """Indicates a member of a Group"""@en .
  <http://xmlns.com/foaf/0.1/member> rdfs:comment """Indique le membre d'un groupe"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#Observation> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:label """Observation """ .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """An Observation."""@en .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """Une Observation."""@fr .
+
  <https://dwc.tdwg.org/list/#dwc_Occurrence> a <http://www.w3.org/2002/07/owl#Class> .
  <https://dwc.tdwg.org/list/#dwc_Occurrence> rdfs:label """Occurence """ .
  <https://dwc.tdwg.org/list/#dwc_Occurrence> rdfs:comment """An existence of an Organism at a particular place
@@ -362,11 +371,13 @@
  <https://creativecommons.org/ns#attributionName> rdfs:comment """Le nom que le créateur d'une Œuvre souhaiterait
             utiliser lors de l'attribution d'une
             réutilisation."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Property> .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """ .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être
             utilisées"""@fr .
+
  <http://purl.org/dc/terms/created> a <http://www.w3.org/2002/07/owl#Property> .
  <http://purl.org/dc/terms/created> rdfs:label """created """ .
  <http://purl.org/dc/terms/created> rdfs:comment """Date of creation of the resource."""@en .
@@ -381,14 +392,17 @@
             attributing re-use."""@en .
  <https://creativecommons.org/ns#attributionURL> rdfs:comment """L'URL que le créateur d'une œuvre souhaite utiliser
             lors de l'attribution de la réutilisation."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:label """Description """ .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document used to describe an entity"""@en .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document qui permet de décrire une entité"""@fr .
+
  <http://purl.org/dc/elements/1.1/description> a <http://www.w3.org/2002/07/owl#Property> .
  <http://purl.org/dc/elements/1.1/description> rdfs:label """description """ .
  <http://purl.org/dc/elements/1.1/description> rdfs:comment """An account of the resource."""@en .
  <http://purl.org/dc/elements/1.1/description> rdfs:comment """Une présentation de la ressource."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Access """ .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document that describes access to the resource"""@en .
@@ -397,6 +411,7 @@
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """document type """ .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Type-controlled list for documents"""@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
+
  <http://id.loc.gov/vocabulary/marcgt/abs> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:label """abstract or summary """ .
  <http://id.loc.gov/vocabulary/marcgt/abs> rdfs:comment """Brief summary that provides the essential points of
@@ -553,6 +568,7 @@
             reading."""@en .
  <http://purl.org/dc/dcmitype/Text> rdfs:comment """Une ressource composée principalement de mots à
             lire."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#topographicData> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """Topographic data """ .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Data set corresponding to the topography of an
@@ -695,6 +711,7 @@
             type of area related to Karst"""@en .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection de termes pouvant être utilisés pour
             décrire le type de zone liée au Karst"""@fr .
+
  <http://www.geonames.org/ontology#L.AREA> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <http://www.geonames.org/ontology#L.AREA> rdfs:label """area """ .
  <http://www.geonames.org/ontology#L.AREA> rdfs:comment """"""@en .
@@ -725,6 +742,7 @@
  <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
  <http://www.geonames.org/ontology#T.KRST> rdfs:comment """"""@en .
  <http://www.geonames.org/ontology#T.KRST> rdfs:comment """"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Collection> .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """ .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection of terms that can be used to describe
@@ -762,6 +780,7 @@
             ne pouvez pas appliquer les conditions légales ou les
             mesures technologiques qui empêchent légalement les
             autres de faire tout ce que la licence permet."""@fr .
+
  <https://creativecommons.org/licenses/by/3.0/> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://creativecommons.org/licenses/by/3.0/> rdfs:label """CC-BY """ .
  <https://creativecommons.org/licenses/by/3.0/> rdfs:comment """You are free to: Share — copy and redistribute the
@@ -793,6 +812,7 @@
             ne pouvez pas appliquer les conditions légales ou les
             mesures technologiques qui empêchent légalement les
             autres de faire tout ce que la licence permet."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:label """CC-BY-SA """ .
  <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """You are free to: Share — copy and redistribute the
@@ -830,6 +850,7 @@
             appliquer les conditions légales ou les mesures
             technologiques qui empêchent légalement les autres de
             faire tout ce que la licence permet."""@fr .
+	    
  <https://creativecommons.org/licenses/by-sa/3.0/> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://creativecommons.org/licenses/by-sa/3.0/> rdfs:label """CC-BY-SA """ .
  <https://creativecommons.org/licenses/by-sa/3.0/> rdfs:comment """You are free to: Share — copy and redistribute the
@@ -867,6 +888,7 @@
             appliquer les conditions légales ou les mesures
             technologiques qui empêchent légalement les autres de
             faire tout ce que la licence permet."""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#ODBL> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:label """ODBL """ .
  <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """The Open Database License (ODbL) is a copyleft
@@ -878,6 +900,7 @@
             permettre aux utilisateurs de partager, modifier et
             utiliser librement une base de données tout en
             conservant cette même liberté pour les autres"""@fr .
+
  <https://opendatacommons.org/licenses/odbl/> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://opendatacommons.org/licenses/odbl/> rdfs:label """ODBL """ .
  <https://opendatacommons.org/licenses/odbl/> rdfs:comment """The Open Database License (ODbL) is a copyleft
@@ -889,6 +912,7 @@
             permettre aux utilisateurs de partager, modifier et
             utiliser librement une base de données tout en
             conservant cette même liberté pour les autres"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#ODC-By> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:label """ODC-By """ .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution for Data/Databases"""@en .

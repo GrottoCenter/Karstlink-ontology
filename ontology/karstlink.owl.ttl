@@ -7,7 +7,20 @@
 
 karstlink: a owl:Ontology ;
   rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
-  rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> .
+  rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> ;
+  owl:imports foaf: ,
+              <http://www.geonames.org/ontology/#> ,
+	      <https://www.w3.org/2003/01/geo/wgs84_pos#> ,
+	      <http://purl.org/dc/terms/> ,
+	      <https://schema.org/> ,
+	      <http://purl.org/dc/elements/1.1/> ,
+	      <http://rs.tdwg.org/dwc/terms/> ,
+	      <https://creativecommons.org/ns#> , # marche pas! ; aussi https://creativecommons.org/schema.rdf ?
+              <http://id.loc.gov/vocabulary/marcgt/> ,
+              <http://purl.org/dc/dcmitype/>
+  # ; foaf:maker <urien>
+  .
+
 
 karstlink:UndergroundCavity a owl:Class ;
   rdfs:label "Underground Cavity"@en ;
@@ -27,4 +40,334 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
   rdfs:range xsd:integer ;
   rdfs:label "extent Below Entrance"@en ;
   rdfs:label "hauteur en-dessous Entrée"@fr .
+
+# From XHTML
+ <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#length> rdfs:label """length """ .
+ <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """The real development of all the galleries of the
+            underground cavity in meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """Le développement réel de l'ensemble des galeries de
+            la cavité en mètres"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> rdfs:label """extent above entrance """ .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> rdfs:comment """The vertical distance between the entrance to the
+            underground cavity and the highest point in meters La distance verticale entre l'entrée de la cavité
+            et le point le plus haut exprimé en mètres"""@en .
+ <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> rdfs:comment """"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> rdfs:label """extent below entrance """ .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> rdfs:comment """The vertical distance between the entrance of the
+            cavity and the lowest point in meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> rdfs:comment """La distance verticale entre l'entrée de la cavité
+            et le point le plus bas exprimé en mètres"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:label """vertical extent """ .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """The vertical distance between the highest point and
+            the lowest point of the underground cavity in
+            meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut
+            et le point le plus bas de la cavité exprimé en
+            mètres"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """discovered """ .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (person or organization) who discovered the
+            underground cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (personne ou organisation) ayant découvert la
+            cavité"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """visited """ .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (person or organization) who visited the
+            underground cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (personne ou organisation) ayant visité la
+            cavité"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """point type """ .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Link to a point type defined in a collection of
+            expressions"""@en .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Lien vers un type de point défini dans une
+            collection d'expressions"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#Area> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Area> rdfs:label """Area """ .
+ <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """An area is a polygon corresponding to a geographic
+            unit that we want to identify."""@en .
+ <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """Une zone est un polygone correspondant à une unité
+            géographique que l'on souhaite identifier."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#areaType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:label """area type""" .
+ <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Link to a area type defined in a collection of
+            expressions"""@en .
+ <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Lien vers un type de zone défini dans une
+            collection d'expressions"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#Observation> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:label """Observation """ .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """An Observation."""@en .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """Une Observation."""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """ .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être
+            utilisées"""@fr .
+
+  <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:label """Description """ .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document used to describe an entity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document qui permet de décrire une entité"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Access """ .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document that describes access to the resource"""@en .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document qui décrit l'accès à la ressource"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """document type """ .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Type-controlled list for documents"""@en .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Access """ .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document that describes access to the resource"""@en .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document qui décrit l'accès à la ressource"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """document type """ .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Type-controlled list for documents"""@en .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#topographicData> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """Topographic data """ .
+ <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Data set corresponding to the topography of an
+            underground cavity."""@en .
+ <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Ensemble de données correspondant à la topographie
+            d'une cavité souterraine."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#topography> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#topography> rdfs:label """topography """ .
+ <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """A graphic representation of an underground
+            cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """Une représentation graphique d'une cavité
+            souterraine"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorization to publish """ .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attesting to the authorization to publish
+            other documents under a defined licence"""@en .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attestant l'autorisation de publier
+            d'autres documents sous une licence définie"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:label """reefnet """ .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """A document produced by a Reefnet brand device"""@en .
+ <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """Un document produit par un appareil de marque
+            Reefnet"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """Document subject """ .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Controlled list for documents subject issued from
+            BBS"""@en .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Liste contrôlée de sujets pour les documents, issus
+            du BBS"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:label """geospeleology and karstology
+            """ .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:comment """Karst morphology and morphogenesis, hydrology,
+            geology and pedology, climatology and biology of karst
+            regions, fossil karst, hydrothermal karst, morphology
+            and speleogenesis in carbonatic rocks, para-,pseudo-
+            et/and hypokarst, subterranean deposits and fillings,
+            subterranean climatology, geophysics, chronology of
+            subterranean fillings, special karsts, parakarst in
+            evaporites, parakarst in siliceous rocks, pseudokarst,
+            ice hypokarst; thermokarst, hypo- and pseudokarst in
+            volcanic rocks ."""@en .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:comment """Morphologie et morphogenèse karstiques, hydrologie,
+            géologie et pédologie, climatologie et biologie des
+            régions karstiques, karst fossile, karst hydrothermal,
+            morphologie et spéléogenèse dans les roches
+            carbonatiques, para-, pseudo- et / et hypokarst, dépôts
+            et remblais souterrains, climatologie souterraine,
+            géophysique , chronologie des remblais souterrains,
+            karsts spéciaux, parakarst dans les évaporites,
+            parakarst dans les roches siliceuses, pseudokarst,
+            hypokarst de glace; thermokarst, hypo- et pseudokarst
+            dans les roches volcaniques."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:label """regional speleology and karstology
+            """ .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:comment """Example: descriptions, expeditions reports, acces
+            restrictions, exploration history, exploration status
+            of specific sites. Regional history of speleology.
+            Regional lists, catalogues, databases, inventories.
+            Regional accidents and rescues. Regional karstology.
+            Regional applied speleology. Regional technical
+            speleology. Regional documentary speleology. ."""@en .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:comment """Exemple : descriptions, rapports d'expéditions,
+            restrictions d'accès, historique d'exploration, statut
+            d'exploration de sites spécifiques. Histoire régionale
+            de la spéléologie. Listes régionales, catalogues, bases
+            de données, inventaires. Accidents régionaux et
+            sauvetages. Karstologie régionale. Spéléologie
+            appliquée régionale. Spéléologie technique régionale.
+            Spéléologie documentaire régionale."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:label """biospeleology """ .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:comment """Sytematics, crustacea, hexapoda, arachnida,
+            mollusca, onychophora, vermes, other invertebrata,
+            vertebrata, microbiology soil- air- water, hypogean
+            flora, fungi, algae, regional biospeleology"""@en .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:comment """Sytématique, crustacés, hexapodes, arachnides,
+            mollusques, onychophores, vermes, autres invertébrés,
+            vertébrés, microbiologie sol-air-eau, flore hypogée,
+            champignons, algues, biospéléologie régionale"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:label """anthropospeleology """ .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:comment """Archaeology, prehistorical and historical
+            cultures."""@en .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:comment """Archéologie; cultures préhistoriques et
+            historiques."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:label """palaeonthospeleology """ .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:comment """Palaeonthospeleology, fossil and subfossil faunas
+            and floras (quaternary)"""@en .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:comment """Paléonthospéléologie, faunes et flores fossiles et
+            subfossiles (quaternaire)"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:label """applied speleology """ .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:comment """Environment and hygiene, mines, engineering, law,
+            protection, recreation, tourism, geosystem,
+            subterranean therapy, research management"""@en .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:comment """Environnement et hygiène, mines, ingénierie, droit,
+            protection, loisirs, tourisme, géosystème, thérapie
+            souterraine, gestion de la recherche."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:label """technical speleology """ .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:comment """Exploration techniques and materials, diving,
+            prospection, accidents and rescue, medicine, education,
+            activities."""@en .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:comment """Techniques et matériaux d'exploration, plongée,
+            prospection, accidents et sauvetage, médecine,
+            éducation, activités."""@fr .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:label """documentary speleology """ .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:comment """Topography, terminology, toponymy, bibliography,
+            photo and film, photographic methods and materials,
+            films and audio-visual devices, cadastres, cartes,
+            archives, inventories, surveys, maps, archives"""@en .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:comment """Topographie, terminologie, toponymie,
+            bibliographie, photo et film, méthodes et matériels
+            photographiques, films et dispositifs audiovisuels,
+            cadastres, cartes, archives, inventaires, levés,
+            cartes, archives"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#other> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#other> rdfs:label """other """ .
+ <https://ontology.uis-speleo.org/ontology/#other> rdfs:comment """Others subjects"""@en .
+ <https://ontology.uis-speleo.org/ontology/#other> rdfs:comment """Autres sujets"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#PointType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:label """point type """ .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection of terms that can be used to describ
+            type of point related to Karst"""@en .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection de termes pouvant être utilisés pour
+            décrire le type de point lié au Karst"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#entry> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entry """ .
+ <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point corresponding to the entry of an Underground
+            Cavity"""@en .
+ <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point correspondant à l'entrée d'une cavité
+            souterraine"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """Area Type """ .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection of terms that can be used to describ
+            type of area related to Karst"""@en .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection de termes pouvant être utilisés pour
+            décrire le type de zone liée au Karst"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """ .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection of terms that can be used to describe
+            type of Licence"""@en .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection de termes pouvant être utilisés pour
+            décrire le type de licence"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:label """CC-BY """ .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. No additional
+            restrictions — You may not apply legal terms or
+            technological measures that legally restrict others
+            from doing anything the license permits."""@en .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. Aucune restriction supplémentaire - Vous
+            ne pouvez pas appliquer les conditions légales ou les
+            mesures technologiques qui empêchent légalement les
+            autres de faire tout ce que la licence permet."""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:label """CC-BY-SA """ .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. ShareAlike — If you
+            remix, transform, or build upon the material, you must
+            distribute your contributions under the same license as
+            the original. No additional restrictions — You may not
+            apply legal terms or technological measures that
+            legally restrict others from doing anything the license
+            permits."""@en .
+ <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. ShareAlike - Si vous remixez, transformez
+            ou construisez sur le matériel, vous devez distribuer
+            vos contributions sous la même licence que l'original.
+            Aucune restriction supplémentaire - Vous ne pouvez pas
+            appliquer les conditions légales ou les mesures
+            technologiques qui empêchent légalement les autres de
+            faire tout ce que la licence permet."""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#ODBL> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:label """ODBL """ .
+ <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """The Open Database License (ODbL) is a copyleft
+            ("share alike") license agreement intended to allow
+            users to freely share, modify, and use a database while
+            maintaining this same freedom for others"""@en .
+ <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """La licence Open Database (ODbL) est un accord de
+            licence copyleft («partager à l'identique») destiné à
+            permettre aux utilisateurs de partager, modifier et
+            utiliser librement une base de données tout en
+            conservant cette même liberté pour les autres"""@fr .
+
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:label """ODC-By """ .
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution for Data/Databases"""@en .
+ <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution des données / bases de données"""@fr .	    
 
