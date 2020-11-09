@@ -1,0 +1,4853 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 for Linux version 5.6.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content=
+  "width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content=
+  "Ontologies developed by the International Union of Speleology as part of the Karstlink project" />
+  <meta name="author" content="Frédéric Urien" />
+  <title>Karstlink Ontology</title><!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href=
+  "assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+
+  <script src=
+  "https://use.fontawesome.com/releases/v5.13.0/js/all.js"
+  crossorigin="anonymous"></script><!-- Google fonts-->
+  <link href=
+  "https://fonts.googleapis.com/css?family=Montserrat:400,700" rel=
+  "stylesheet" type="text/css" />
+  <link href=
+  "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+  rel="stylesheet" type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class=
+  "navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+  id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href=
+      "../index.html">Karstlink</a><button class=
+      "navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+      type="button" data-toggle="collapse" data-target=
+      "#navbarResponsive" aria-controls="navbarResponsive"
+      aria-expanded="false" aria-label=
+      "Toggle navigation">Menu</button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class=
+            "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger"
+            href=
+            "https://github.com/GrottoCenter/Karstlink-ontology">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header class="masthead bg-primary text-white text-center">
+  </header><!-- Ontology Section-->
+  <section class="page-section bg-primary text-white mb-0" id=
+  "ontology">
+    <div class="container">
+      <!-- Ontology Section Heading-->
+      <h2 class=
+      "page-section-heading text-center text-uppercase text-white">
+      Karstlink ontology</h2><!-- Icon Divider-->
+      <div class="divider-custom divider-light">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+        <div class="divider-custom-line"></div>
+      </div><!-- specifications Section Content-->
+      <p>This document is an easy-to-read reference to terms
+      currently recommended under the Karstlink standard. This page
+      itself is not part of the standard. It aims to help you use
+      the terms consistently by indicating for each Class the
+      classes and relationships that can be used and the controlled
+      vocabulary that should be used for certain relationships.</p>
+      <p>Entities</p><a href="#Area" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Area</a> <a href="#Occurrence" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Bio-Speleological observation</a> <a href=
+      "#BibliographicResource" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Document</a> <a href="#Organization" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Organization</a> <a href="#Person" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Person</a> <a href="#Point" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Point</a> <a href="#UndergroundCavity" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Underground cavity</a>
+      <p>Controled vocabularies</p><a href="#AreaType" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">area type</a> <a href="#DocumentSubject" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">Document subject</a> <a href="#DocumentType" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">document type</a> <a href="#licenceType" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">licence type</a> <a href="#PointType" class=
+      "btn btn-primary btn-sm active" role="button" aria-pressed=
+      "true">point type</a>
+      <div id="UndergroundCavity"></div><br />
+      <br />
+      <br />
+      <p class="invisible"></p>
+      <!-- Underground cavity description-->
+      <h3 class="text-uppercase text-white">Underground cavity</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Underground cavity</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#Access" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Access</span></a> <a href="#Agent" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Agent</span></a> <a href="#Area" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Area</span></a> <a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic Resource</span></a> <a href="#Description"
+          class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Description</span></a> <a href="#LicenseDocument" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          License Document</span></a> <a href="#Observation" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Observation</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground Cavity</span></a></p>
+          <p><a href="#alternateName" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          alternate Name</span></a> <a href="#alt" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          altitude</span></a> <a href="#countryCode" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          country code</span></a> <a href="#coordinatePrecision"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          coordinate precision</span></a> <a href="#discovered"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          discovered</span></a> <a href="#extentAboveEntrance"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          extent above entrance</span></a> <a href=
+          "#extentBelowEntrance" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          extent below entrance</span></a> <a href="#hasPart"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has part</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#isReferencedBy" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is referenced by</span></a> <a href="#lat" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          latitude</span></a> <a href="#length" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          length</span></a> <a href="#long" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          longitude</span></a> <a href="#name" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          name</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#verticalExtent" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          vertical extent</span></a> <a href="#visited" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          visited</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Underground cavity <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#UndergroundCavity">
+              https://ontology.uis-speleo.org/ontology/#UndergroundCavity</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An underground cavity can be natural or artificial
+            (mine, quarry, sewer, tunnel, etc.), penetrable or not,
+            karstic or not (volcanic, etc.), or certain types of
+            superficial karst phenomena (source, drain, polje,
+            mega-doline, etc.).</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une cavité souterraine peut être naturelle ou
+            artificielle (mine, carrière, égout, tunnel, etc.),
+            pénétrable ou non, karstique ou non (volcanique, etc.),
+            ou être certains types de phénomènes karstiques
+            superficiels (source, drain, polje, méga -doline,
+            etc.).</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="name"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">name <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology/#name">http://www.geonames.org/ontology/#name</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Name that identifies the ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Nom qui prmet d'identifier la ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>You can add the language. For example
+            xml:lang="en"</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="alternateName"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">alternate name <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology/#alternateName">http://www.geonames.org/ontology/#alternateName</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Another name or code that identifies the
+            ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un autre nom ou un code qui permet de désigner la
+            ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>You can add the language. For example
+            xml:lang="en"</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="hasPart"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">has part <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/hasPart">http://purl.org/dc/terms/hasPart</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A related resource that is included either
+            physically or logically in the described resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource associée qui est incluse physiquement
+            ou logiquement dans la ressource décrite.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="lat"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">latitude <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://www.w3.org/2003/01/geo/wgs84_pos#lat">https://www.w3.org/2003/01/geo/wgs84_pos#lat</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The WGS84 latitude of a SpatialThing (decimal
+            degrees).</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La lattitude exprimée en WGS84 (degrés décimaux)
+            d'une ressource géoréférencée</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="long"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">longitude <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://www.w3.org/2003/01/geo/wgs84_pos#long">https://www.w3.org/2003/01/geo/wgs84_pos#long</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The WGS84 longitude of a SpatialThing (decimal
+            degrees).</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La longitude exprimée en WGS84 (degrés décimaux)
+            d'une ressource géoréférencée</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="alt"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">altitude <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://www.w3.org/2003/01/geo/wgs84_pos#alt">https://www.w3.org/2003/01/geo/wgs84_pos#alt</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The WGS84 altitude of a SpatialThing (decimal
+            meters above the local reference ellipsoid).</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>L'altitude exprimée en WGS84 (mètres décimaux à
+            partir de la réfèrence locale de l'ellipsoïde) d'une
+            ressource géoréférencée</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="coordinatePrecision"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">coordinate precision <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://dwc.tdwg.org/list/#dwc_coordinatePrecision">https://dwc.tdwg.org/list/#dwc_coordinatePrecision</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A decimal representation (in meters) of the
+            precision of the coordinates given in the Latitude and
+            Longitude.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une représentation décimale en mètres de la
+            précision des coordonnées données dans Latitude et
+            Longitude.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Use -1 for falses coordinate</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="length"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">length <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#length">https://ontology.uis-speleo.org/ontology/#length</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The real development of all the galleries of the
+            underground cavity in meters</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le développement réel de l'ensemble des galeries de
+            la cavité en mètres</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Integer</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="extentAboveEntrance"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">extent above entrance <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#extentAboveEntrance">
+              https://ontology.uis-speleo.org/ontology/#extentAboveEntrance</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The vertical distance between the entrance to the
+            underground cavity and the highest point in meters</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>La distance verticale entre l'entrée de la cavité
+            et le point le plus haut exprimé en mètres</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Integer. To be preferred if the underground cavity
+            has only one entrance</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="extentBelowEntrance"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">extent below entrance <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#extentBelowEntrance">
+              https://ontology.uis-speleo.org/ontology/#extentBelowEntrance</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The vertical distance between the entrance of the
+            cavity and the lowest point in meters</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La distance verticale entre l'entrée de la cavité
+            et le point le plus bas exprimé en mètres</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Integer. To be preferred if the underground cavity
+            has only one entrance</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="verticalExtent"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">vertical extent <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#verticalExtent">
+              https://ontology.uis-speleo.org/ontology/#verticaleEtent</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The vertical distance between the highest point and
+            the lowest point of the underground cavity in
+            meters</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La distance verticale entre le point le plus haut
+            et le point le plus bas de la cavité exprimé en
+            mètres</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Unsigned integer. To be preferred if the
+            underground cavity has many entrances</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="countryCode"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">country code <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#countryCode">
+              http://www.geonames.org/ontology#countryCode</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>iso country code, 2 characters</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Code ISO des pays 2 caractères</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="discovered"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">discovered <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#discovered">
+              https://ontology.uis-speleo.org/ontology/#discovered</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Agent (person or organization) who discovered the
+            underground cavity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Agent (personne ou organisation) ayant découvert la
+            cavité</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="visited"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">visited <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#visited">https://ontology.uis-speleo.org/ontology/#visited</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Agent (person or organization) who visited the
+            underground cavity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Agent (personne ou organisation) ayant visité la
+            cavité</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="isReferencedBy"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">is referenced by <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/isReferencedBy">http://purl.org/dc/terms/isReferencedBy</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A related resource that references, cites, or
+            otherwise points to the described resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource associée qui fait référence, cite ou
+            pointe d'une autre manière vers la ressource
+            décrite.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="isPartOf"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">is part of <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Is part of</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/isPartOf">http://purl.org/dc/terms/isPartOf</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A related resource in which the described resource
+            is physically or logically included.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource associée dans laquelle la ressource
+            décrite est physiquement ou logiquement incluse.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="rights"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">rights<span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Is part of</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/rights">http://purl.org/dc/terms/rights</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Information about rights held in and over the
+            resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Informations sur les droits détenus sur la
+            ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Point description-->
+      <div id="Point"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Point</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Point</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#Access" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Access</span></a> <a href="#Agent" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Agent</span></a> <a href="#Area" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Area</span></a> <a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic Resource</span></a> <a href="#Description"
+          class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Description</span></a> <a href="#LicenseDocument" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          License Document</span></a> <a href="#Observation" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Observation</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground Cavity</span></a></p>
+          <p><a href="#alt" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          altitude</span></a> <a href="#coordinatePrecision" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          coordinate precision</span></a> <a href="#hasPart" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has part</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#isReferencedBy" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is referenced by</span></a> <a href="#lat" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          latitude</span></a> <a href="#long" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          longitude</span></a> <a href="#name" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          name</span></a> <a href="#pointType" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          point type</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#visited" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          visited</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Point <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://www.w3.org/2003/01/geo/wgs84_pos#Point">https://www.w3.org/2003/01/geo/wgs84_pos#Point</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A point, typically described using a coordinate
+            system relative to Earth, WGS84 for us</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un point, peut être décrit à l'aide d'un système de
+            coordonnées par rapport à la Terre, WGS84 pour
+            nous</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="pointType"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">point type <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#pointType">
+              https://ontology.uis-speleo.org/ontology/#pointType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Link to a point type defined in a collection of
+            expressions</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Lien vers un type de point défini dans une
+            collection d'expressions</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Area description-->
+      <div id="Area"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Area</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Area</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#Access" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Access</span></a> <a href="#Agent" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Agent</span></a> <a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic Resource</span></a> <a href="#Description"
+          class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Description</span></a> <a href="#LicenseDocument" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          License Document</span></a> <a href="#Observation" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Observation</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground Cavity</span></a></p>
+          <p><a href="#areaType" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          area type</span></a> <a href="#hasPart" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has part</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#isReferencedBy" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is referenced by</span></a> <a href="#name" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          name</span></a> <a href="#polygone" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          polygone</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#visited" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          visited</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Area <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#Area">https://ontology.uis-speleo.org/ontology/#Area</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An area is a polygon corresponding to a geographic
+            unit that we want to identify.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une zone est un polygone correspondant à une unité
+            géographique que l'on souhaite identifier.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="areaType"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">area type<span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#areaType">https://ontology.uis-speleo.org/ontology/#areaType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Link to a area type defined in a collection of
+            expressions</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Lien vers un type de zone défini dans une
+            collection d'expressions</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="polygon"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">polygon <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://schema.org/polygon">https://schema.org/polygon</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A polygon is the area enclosed by a point-to-point
+            path for which the starting and ending points are the
+            same. A polygon is expressed as a series of four or
+            more space delimited points where the first and final
+            points are identical.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un polygone est une zone délimitée par un chemin de
+            point à point dont les points de départ et d'arrivée
+            sont les mêmes. Un polygone est exprimé sous la forme
+            d'une série de quatre points ou plus délimités par des
+            espaces où les premier et dernier points sont
+            identiques.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Document description-->
+      <div id="BibliographicResource"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Document</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Bibliographic resource</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#Agent" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Agent</span></a> <a href="#Area" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Area</span></a> <a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic resource</span></a> <a href="#Description"
+          class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Description</span></a> <a href="#LicenseDocument" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          License document</span></a> <a href="#Observation" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Observation</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground cavity</span></a></p>
+          <p><a href="#countryCode" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          country Code</span></a> <a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#date" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          date</span></a> <a href="#format" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          format</span></a> <a href="#hasPart" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has part</span></a> <a href="#identifier" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          identifier</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#isReferencedBy" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is referenced by</span></a> <a href="#language" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          language</span></a> <a href="#publisher" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          publisher</span></a> <a href="#relation" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Relation</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#source" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          source</span></a> <a href="#subject" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          subject</span></a> <a href="#title" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          title</span></a> <a href="#type" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          type</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Bibliographic Resource <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/BibliographicResource">http://purl.org/dc/terms/BibliographicResource</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A book, article, or other documentary
+            resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un livre, un article ou toute ressource
+            bibliographiqyue</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="type"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">type<span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/type">http://purl.org/dc/elements/1.1/type</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The nature or genre of the resource issued from the
+            controlled vocabulary</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La nature ou le genre de rerssource issu du
+            vocabulaire contrôlé</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="title"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">title <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/title">http://purl.org/dc/elements/1.1/title</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A name given to the resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un nom donné à la ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="subject"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">subject <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/subject">http://purl.org/dc/elements/1.1/subject</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The topic of the resource issued from the BBS
+            controlled vocabulary</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le sujet de la ressource issu du vocabulaire
+            contrôlé du BBS</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="language"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">language <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/language">http://purl.org/dc/elements/1.1/language</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A language of the resource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une langue utilisée dans la ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Code issued from ISO 639-2</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="publisher"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">publisher <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/publisher">http://purl.org/dc/elements/1.1/publisher</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An entity responsible for making the resource
+            available.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>L'entité qui est responsable du fait que la
+            resource est disponible</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Publisher include a person, an organization, or a
+            service. Typically, the name of a Publisher should be
+            used to indicate the entity.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="creator"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">creator <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/creator">http://purl.org/dc/elements/1.1/creator</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An entity primarily responsible for making the
+            resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>L'entité qui est responsable du fait que la
+            resource existe</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Creator include a person, an organization, or a
+            service. Typically, the name of a Creator should be
+            used to indicate the entity.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="date"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">date <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/date">http://purl.org/dc/elements/1.1/date</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A point or period of time associated with an event
+            in the lifecycle of the resource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une date ou une période associé à un évenement dans
+            le cycle de vie de la ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Date may be used to express temporal information at
+            any level of granularity. Recommended practice is to
+            express the date, date/time, or period of time
+            according to ISO 8601-1 [ISO 8601-1] or a published
+            profile of the ISO standard, such as the W3C Note on
+            Date and Time Formats [W3CDTF] or the Extended
+            Date/Time Format Specification [EDTF]. If the full date
+            is unknown, month and year (YYYY-MM) or just year
+            (YYYY) may be used. Date ranges may be specified using
+            ISO 8601 period of time specification in which start
+            and end dates are separated by a '/' (slash) character.
+            Either the start or end date may be missing.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="format"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">format <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://purl.org/dc/elements/1.1/format">https://purl.org/dc/elements/1.1/format</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The file format, physical medium, or dimensions of
+            the resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le format du fichier, du support physique ou les
+            dimensions de la ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>For file formats one could use the list of Internet
+            Media Types [MIME].</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="identifier"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">identifier <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/identifier">http://purl.org/dc/elements/1.1/identifier</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An unambiguous reference to the resource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une référence sans ambiguité à la ressource la
+            ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="source"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">source <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/source">http://purl.org/dc/elements/1.1/source</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A related resource from which the described
+            resource is derived.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource liée qui expose la ressource
+            décrite</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="relation"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">relation <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/relation">http://purl.org/dc/elements/1.1/relation</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A related resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource liée</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Recommended practice is to identify the related
+            resource by means of a URI.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div>
+      <div id="Person"></div><br />
+      <br />
+      <br />
+      <!-- Person description-->
+      <h3 class="text-uppercase text-white">Person</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Person</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic Resource</span></a> <a href="#Observation"
+          class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Observation</span></a> <a href="#UndergroundCavity"
+          class="btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground Cavity</span></a></p>
+          <p><a href="#countryCode" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          country code</span></a> <a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#discovered" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          discovered</span></a> <a href="#firstName" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          first name</span></a> <a href="#hasPart" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has part</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#lastName" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          last name</span></a> <a href="#member" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          member</span></a> <a href="#nick" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          nickname</span></a> <a href="#visited" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          visited</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Person <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/Person">http://xmlns.com/foaf/0.1/Person</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The Person class represents people. Something is a
+            Person if it is a person. We don't nitpic about whether
+            they're alive, dead, real, or imaginary</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La personne peut être vivante, décédée, réelle ou
+            imaginaire</td>
+          </tr>
+          <tr>
+            <td class="theme-label">superClass</td>
+            <td>Agent</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="firstName"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">first name <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/firstName">http://xmlns.com/foaf/0.1/firstName</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The first name of a person.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le prénom d'une personne.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="lastName"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">last name <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/lastName">http://xmlns.com/foaf/0.1/lastName</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The last name of a person.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le nom de famille d'une personne.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="nick"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">nickname <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/nick">http://xmlns.com/foaf/0.1/nick</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A short informal nickname characterising a
+            Person</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un court surnom informel caractérisant une
+            Personne.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Organization description-->
+      <div id="Organization"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Organization</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Organization</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#Agent" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Agent</span></a> <a href="#Area" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Area</span></a> <a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic Resource</span></a> <a href="#Description"
+          class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Description</span></a> <a href="#LicenseDocument" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          License Document</span></a> <a href="#Observation" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Observation</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground Cavity</span></a></p>
+          <p><a href="#addressCountry" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          address country</span></a> <a href="#addressLocality"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          address locality</span></a> <a href="#alternateName"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          alternate name</span></a> <a href="#coordinatePrecision"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          coordinate precision</span></a> <a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#discovered" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          discovered</span></a> <a href="#hasPart" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has part</span></a> <a href="#homepage" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          home page</span></a> <a href="#lat" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          latitude</span></a> <a href="#long" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          longitude</span></a> <a href="#mbox" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          mailbox</span></a> <a href="#name" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          name</span></a> <a href="#postalCode" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          postal code</span></a> <a href="#publisher" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          publisher</span></a> <a href="#relation" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          relation</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#streetAddress" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          street address</span></a> <a href="#visited" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          visited</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Organization <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/Organization">http://xmlns.com/foaf/0.1/Organization</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An organization.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une organisation.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">superClass</td>
+            <td>Agent</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="mbox"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">mailbox <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/mbox">http://xmlns.com/foaf/0.1/mbox</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An Internet mailbox.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une adresse mel</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="homepage"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">home page <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/homepage">http://xmlns.com/foaf/0.1/homepage</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A Homepage is a public Web document with an
+            URI.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une page personnelle est un document web accessible
+            grace à une URI</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="streetAddress"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">street address <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://schema.org/streetAddress">https://schema.org/streetAddress</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The street address</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La ligne de l'adresse postale comportant la
+            rue</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>For example, 1600 Amphitheatre Pkwy.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="postalCode"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">postal code <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://schema.org/postalCode">https://schema.org/postalCode</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The postal code</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>le code postal</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>For example, 94043.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="addressLocality"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">address locality <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://schema.org/addressLocality">https://schema.org/addressLocality</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The locality in which the street address is</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La localité correspondant à la rue indiquée dans le
+            champ streetAdress</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>For example, Sydney.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="addressCountry"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">address country<span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://schema.org/addressCountry">https://schema.org/addressCountry</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The country code</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le code du pays</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>For example, USA. You must provide the two-letter
+            ISO 3166-1 alpha-2 country code.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="member"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">member <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/member">http://xmlns.com/foaf/0.1/member</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Indicates a member of a Group</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Indique le membre d'un groupe</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Observation description-->
+      <div id="Observation"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Observation</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Observation</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <p><a href="#Agent" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Agent</span></a> <a href="#Area" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Area</span></a> <a href="#BibliographicResource" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Bibliographic Resource</span></a> <a href=
+          "#LicenseDocument" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          License Document</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Underground Cavity</span></a></p>
+          <p><a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#discovered" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          discovered</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#relation" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          relation</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a></p>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Observation <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#Observation">
+              https://ontology.uis-speleo.org/ontology/#Observation</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An Observation.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une Observation.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">subClass</td>
+            <td>Occurence</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Bio-Speleological observation description-->
+      <div id="Occurrence"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Bio-Speleological
+      observation</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Occurence</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#discovered" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          discovered</span></a> <a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#relation" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          relation</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#isPartOf" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          is part of</span></a> <a href="#recordedBy" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          recorded by</span></a> <a href="#eventDate" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          event date</span></a> <a href="#identifiedBy" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          identified by</span></a> <a href="#dateIdentified" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          date identified</span></a> <a href="#individualCount"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          individual count</span></a> <a href="#associatedTaxa"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          associated taxa</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Occurence <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://dwc.tdwg.org/list/#dwc_Occurrence">https://dwc.tdwg.org/list/#dwc_Occurrence</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An existence of an Organism at a particular place
+            at a particular time.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>L'existence d'un organisme à un endroit particulier
+            à une période particulière</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Superclass</td>
+            <td>Observation</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="recordedBy"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">recorded by <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://rs.tdwg.org/dwc/terms/recordedBy">http://rs.tdwg.org/dwc/terms/recordedBy</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A list (concatenated and separated) of names of
+            people, groups, or organizations responsible for
+            recording the original Occurrence. The primary
+            collector or observer, should be listed first.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une liste (concaténée et séparée) de noms de
+            personnes, de groupes ou d'organisations responsables
+            de l'enregistrement de l'occurrence d'origine. Le
+            collecteur ou observateur principal, doit être
+            répertorié en premier.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>For example, Sydney.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="identifiedBy"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">identified by <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://rs.tdwg.org/dwc/terms/identifiedBy">http://rs.tdwg.org/dwc/terms/identifiedBy</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A list (concatenated and separated) of names of
+            people, groups, or organizations who assigned the Taxon
+            to the subject.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une liste (concaténée et séparée) de noms de
+            personnes, de groupes ou d'organisations qui ont
+            attribué le taxon au sujet.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="dateIdentified"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">date identified <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://rs.tdwg.org/dwc/terms/dateIdentified">http://rs.tdwg.org/dwc/terms/dateIdentified</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The date on which the subject was determined as
+            representing the Taxon.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La date à laquelle le sujet a été déterminé comme
+            représentant le taxon.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="eventDate"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">event date <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://rs.tdwg.org/dwc/terms/eventDate">http://rs.tdwg.org/dwc/terms/eventDate</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The date-time or interval during which an Event
+            occurred. For occurrences, this is the date-time when
+            the event was recorded. Not suitable for a time in a
+            geological context.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La date-heure ou l'intervalle pendant lequel un
+            événement s'est produit. Pour les occurrences, il
+            s'agit de la date-heure à laquelle l'événement a été
+            enregistré. Ne convient pas pour un temps dans un
+            contexte géologique.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="individualCount"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">individual count <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://rs.tdwg.org/dwc/terms/individualCount">http://rs.tdwg.org/dwc/terms/individualCount</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The number of individuals represented present at
+            the time of the Occurrence.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le nombre d'individus présents au moment de
+            l'événement.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="associatedTaxa"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">associated taxa <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://rs.tdwg.org/dwc/terms/associatedTaxa">http://rs.tdwg.org/dwc/terms/associatedTaxa</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A list (concatenated and separated) of identifiers
+            or names of taxa and their associations with the
+            Occurrence.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une liste (concaténée et séparée) d'identificateurs
+            ou de noms de taxons et de leurs associations avec
+            l'occurrence.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table><!-- Agent description-->
+      <div id="Agent"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Agent</h3>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Agent <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://xmlns.com/foaf/0.1/Agent">http://xmlns.com/foaf/0.1/Agent</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Things that do stuff</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Les choses qui font des trucs</td>
+          </tr>
+          <tr>
+            <td class="theme-label">SubClass</td>
+            <td>
+              <a href="#Person">Person</a>, <a href=
+              "#Organization">Organization</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Licence dpcument description-->
+      <div id="LicenseDocument"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">License Document</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">License Document</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#attributionName" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Attribution name</span></a> <a href="#licenceType" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Licence type</span></a> <a href="#created" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Created</span></a> <a href="#modified" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          modified</span></a> <a href="#attributionURL" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Attribution URL</span></a>
+        </li>
+      </ul>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">License Document <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/LicenseDocument">http://purl.org/dc/terms/LicenseDocument</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A legal document giving official permission to do
+            something with a resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un document juridique donnant l'autorisation
+            officielle de faire quelque chose avec une
+            ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="attributionName"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">attribution name <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://creativecommons.org/ns#attributionName">https://creativecommons.org/ns#attributionName</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The name the creator of a Work would like used when
+            attributing re-use.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Le nom que le créateur d'une Œuvre souhaiterait
+            utiliser lors de l'attribution d'une
+            réutilisation.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="licenceType"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">licence type <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#licenceType">
+              https://ontology.uis-speleo.org/ontology/#licenceType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A controlled list of licenses that can be used</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une liste contrôlée de licences pouvant être
+            utilisées</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="created"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">created <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/created">http://purl.org/dc/terms/created</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Date of creation of the resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Date de création de la ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="modified"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">modified <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/terms/modified">http://purl.org/dc/terms/modified</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Date on which the resource was changed.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Date à laquelle la ressource a été modifiée.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="attributionURL"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">attribution URL <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://creativecommons.org/ns#attributionURL">https://creativecommons.org/ns#attributionURL</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The URL the creator of a Work would like used when
+            attributing re-use.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>L'URL que le créateur d'une œuvre souhaite utiliser
+            lors de l'attribution de la réutilisation.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Description description-->
+      <div id="Description"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Description</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Description</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#description" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          description</span></a> <a href="#language" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          language</span></a> <a href="#title" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          title</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Description <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#Description">
+              https://ontology.uis-speleo.org/ontology/#Description</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Document used to describe an entity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Document qui permet de décrire une entité</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="description"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">description <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/elements/1.1/description">http://purl.org/dc/elements/1.1/description</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An account of the resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une présentation de la ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Access description-->
+      <div id="Access"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Access</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Access</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          Properties</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#creator" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          creator</span></a> <a href="#description" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          description</span></a> <a href="#language" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          language</span></a> <a href="#title" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          title</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Access <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#Access">https://ontology.uis-speleo.org/ontology/#Access</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Document that describes access to the resource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Document qui décrit l'accès à la ressource</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Document type description-->
+      <div id="DocumentType"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">document type</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Document type</span></a> <span class=
+          "badge badge-secondary float-right">Related Classes and
+          SKOS Concept</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#abs" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          abstract or summary</span></a> <a href="#art" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          article</span></a> <a href="#AutorizationToPublish"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          autorization to publish</span></a> <a href="#boo" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          book</span></a> <a href="#cal" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          calendar</span></a> <a href="#cat" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          catalog</span></a> <a href="#Collection" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Collection</span></a> <a href="#cpb" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          conference publication</span></a> <a href="#Dataset"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Dataset</span></a> <a href="#dic" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          dictionary</span></a> <a href="#Event" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Event</span></a> <a href="#Image" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Image</span></a> <a href="#ins" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          instruction</span></a> <a href="#InteractiveResource"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Interactive resource</span></a> <a href="#jou" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          journal</span></a> <a href="#let" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          letter</span></a> <a href="#man" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          manuscript</span></a> <a href="#StillImage" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          StillImage</span></a> <a href="#MovingImage" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Moving image</span></a> <a href="#PhysicalObject" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Physical object</span></a> <a href="#reefnet" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          reefnet</span></a> <a href="#Service" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Service</span></a> <a href="#Software" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Software</span></a> <a href="#Sound" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Sound</span></a> <a href="#Text" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          Texte</span></a> <a href="#topographicData" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          topographic data</span></a> <a href="#topography" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          topography</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">document type <span class=
+            "badge badge-secondary float-right">Collection</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#DocumentType">
+              https://ontology.uis-speleo.org/ontology/#DocumentType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Type-controlled list for documents</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Liste contrôlée de type pour les documents</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="abs"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">abstract or summary <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/abs">http://id.loc.gov/vocabulary/marcgt/abs</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Brief summary that provides the essential points of
+            written works, such as the content of a publication or
+            of a journal.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Bref résumé qui fournit les points essentiels des
+            travaux écrits, comme le contenu d'une publication ou
+            d'une revue.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="art"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">article <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/art">http://id.loc.gov/vocabulary/marcgt/art</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Composition prepared for publication as an
+            independent portion of a magazine, newspaper,
+            encyclopedia, or other work.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Composition préparée pour publication en tant que
+            partie indépendante d'un magazine, journal,
+            encyclopédie ou autre ouvrage.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="boo"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">book <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/abs">http://id.loc.gov/vocabulary/marcgt/abs</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Item comprising a collection of leaves of paper,
+            parchment, wood, stiffened textile, ivory, metal
+            tablets, or other flat material, that are blank,
+            written on, or printed, and are strung or bound
+            together in a volume. Includes e-book or electronic
+            resource structured like a book.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Article comprenant une collection de feuilles de
+            papier, de parchemin, de bois, de textile renforcé,
+            d'ivoire, de tablettes de métal ou d'un autre matériau
+            plat, vierges, écrites ou imprimées et enfilées ou
+            reliées ensemble en un volume. Comprend un livre
+            électronique ou une ressource électronique structurée
+            comme un livre.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="cal"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">calendar <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/cal">http://id.loc.gov/vocabulary/marcgt/cal</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Published system of organizing days. These may be
+            academic calendars or almanacs, calendars published by
+            bodies, such as labor organizations, library
+            associations, etc.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Système d'organisation des journées ayant fait
+            l'objet d'une publication. Il peut s'agir de
+            calendriers académiques ou d'almanachs, de calendriers
+            publiés par des organismes, tels que des organisations
+            syndicales, des associations de bibliothèques,
+            etc.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="cat"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">catalog <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/cat">http://id.loc.gov/vocabulary/marcgt/cat</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>List of items in a collection, such as a collection
+            of books, a collection of art objects, etc.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Liste des éléments d'une collection, tels qu'une
+            collection de livres, une collection d'objets d'art,
+            etc.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Collection"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Collection <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Collection">http://purl.org/dc/dcmitype/Collection</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An aggregation of resources.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un ensemble de ressources.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>A collection is described as a group; its parts may
+            also be separately described.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="cpb"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">conference publication <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/cpb">http://id.loc.gov/vocabulary/marcgt/cpb</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Proceedings, reports, or summaries of a
+            conference.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Actes, rapports ou résumés d'une conférence.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Dataset"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Dataset <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Dataset">http://purl.org/dc/dcmitype/Dataset</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Data encoded in a defined structure.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Données encodées dans une structure définie.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="dic"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">dictionary <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/abs">http://id.loc.gov/vocabulary/marcgt/abs</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Dictionary, glossary, or gazeteer</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une occurrence non persistante basée sur le
+            temps.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Event"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Event <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Event">http://purl.org/dc/dcmitype/Event</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A non-persistent, time-based occurrence.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Bref résumé qui fournit les points essentiels des
+            travaux écrits, comme le contenu d'une publication ou
+            d'une revue.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Image"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Image <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Image">http://purl.org/dc/dcmitype/Image</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A visual representation other than text.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une représentation visuelle autre que du
+            texte.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Examples include images and photographs of physical
+            objects, paintings, prints, drawings, other images and
+            graphics, animations and moving pictures, film,
+            diagrams, maps, musical notation. Note that Image may
+            include both electronic and physical
+            representations.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="ins"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">instruction <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/InteractiveResource">http://purl.org/dc/dcmitype/InteractiveResource</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Instruction on how to accomplish a task, learn an
+            art, etc..</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Instruction pour accomplir une tâche, apprendre un
+            art, etc.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="InteractiveResource"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Interactive Resource <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/abs">http://id.loc.gov/vocabulary/marcgt/abs</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A resource requiring interaction from the user to
+            be understood, executed, or experienced.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource nécessitant une interaction de
+            l'utilisateur pour être comprise, exécutée ou
+            expérimentée.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="jou"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">journal <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/jou">http://id.loc.gov/vocabulary/marcgt/jou</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Periodical publication, particularly those
+            containing scholarly articles or otherwise
+            disseminating information on developments in a
+            particular subject field.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Publication périodique, en particulier celles
+            contenant des articles scientifiques ou diffusant d'une
+            autre manière des informations sur les développements
+            dans un domaine particulier.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="let"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">letter <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/let">http://id.loc.gov/vocabulary/marcgt/let</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Single letter or collection of correspondence.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Lettre unique ou collection de
+            correspondances.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="man"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">manuscript <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://id.loc.gov/vocabulary/marcgt/man">http://id.loc.gov/vocabulary/marcgt/man</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Handwritten documents, particularly books and other
+            documents created before the invention of the printing
+            press. Includes originals of compiled maps, drawn but
+            not printed; loosely, any map drawn by hand.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Documents manuscrits, en particulier livres et
+            autres documents créés avant l'invention de
+            l'imprimerie. Comprend les originaux des cartes
+            compilées, dessinées mais non imprimées; globalement,
+            toute carte dessinée à la main..</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>Examples include paintings, drawings, graphic
+            designs, plans and maps. Recommended best practice is
+            to assign the type Text to images of textual materials.
+            Instances of the type Still Image must also be
+            describable as instances of the broader type
+            Image.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="StillImage"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Still image <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/StillImage">http://purl.org/dc/dcmitype/StillImage</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A static visual representation.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une représentation visuelle statique.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="MovingImage"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Moving image <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/MovingImage">http://purl.org/dc/dcmitype/MovingImage</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A series of visual representations imparting an
+            impression of motion when shown in succession.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une série de représentations visuelles donnant une
+            impression de mouvement lorsqu'elles sont montrées
+            successivement.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="PhysicalObject"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Physical object <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/PhysicalObject">http://purl.org/dc/dcmitype/PhysicalObject</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>An inanimate, three-dimensional object or
+            substance.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un objet ou une substance inanimée en trois
+            dimensions.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Service"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Service <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Service">http://purl.org/dc/dcmitype/Service</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A system that provides one or more functions.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un système qui fournit une ou plusieurs
+            fonctions.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Software"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Software <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Software">http://purl.org/dc/dcmitype/Software</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A computer program in source or compiled form.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un programme informatique sous forme de code source
+            ou sous forme compilée.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Sound"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Sound <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Sound">http://purl.org/dc/dcmitype/Sound</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A resource primarily intended to be heard.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource principalement destinée à être
+            entendue.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="Text"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Text <span class=
+            "badge badge-secondary float-right">Class</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://purl.org/dc/dcmitype/Text">http://purl.org/dc/dcmitype/Text</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A resource consisting primarily of words for
+            reading.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une ressource composée principalement de mots à
+            lire.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="topographicData"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Topographic data <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#topographicData">
+              https://ontology.uis-speleo.org/ontology/#topographicData</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Data set corresponding to the topography of an
+            underground cavity.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Ensemble de données correspondant à la topographie
+            d'une cavité souterraine.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="topography"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">topography <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#topography">
+              https://ontology.uis-speleo.org/ontology/#topography</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A graphic representation of an underground
+            cavity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Une représentation graphique d'une cavité
+            souterraine</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="AutorizationToPublish"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Autorization to publish <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#AutorizationToPublish">
+              https://ontology.uis-speleo.org/ontology/#AutorizationToPublish</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Document attesting to the authorization to publish
+            other documents under a defined licence</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Document attestant l'autorisation de publier
+            d'autres documents sous une licence définie</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="reefnet"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">reefnet <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#reefnet">https://ontology.uis-speleo.org/ontology/#reefnet</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>A document produced by a Reefnet brand device</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Un document produit par un appareil de marque
+            Reefnet</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Document description description-->
+      <div id="DocumentSubject"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">Document subject</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Document subject</span></a> <span class=
+          "badge badge-secondary float-right">Related SKOS
+          Concept</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#anthropospeleology" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          anthropospeleology</span></a> <a href=
+          "#appliedSpeleology" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          applied speleology</span></a> <a href="#biospeleology"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          biospeleology</span></a> <a href="#documentarySpeleology"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          documentary speleology</span></a> <a href=
+          "#geospeleologyAndKarstology" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          geospeleology and karstology</span></a> <a href="#other"
+          class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          other</span></a> <a href="#palaeonthospeleology" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          palaeonthospeleology</span></a> <a href=
+          "#regionalSpeleologyAndKarstology" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          regional speleology and karstology</span></a> <a href=
+          "#technicalSpeleology" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          technical speleology</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Document subject <span class=
+            "badge badge-secondary float-right">Collection</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#DocumentSubject">
+              https://ontology.uis-speleo.org/ontology/#DocumentSubject</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Controlled list for documents subject issued from
+            BBS</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Liste contrôlée de sujets pour les documents, issus
+            du BBS</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="geospeleologyAndKarstology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">geospeleology and karstology
+            <span class="badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology">
+              https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Karst morphology and morphogenesis, hydrology,
+            geology and pedology, climatology and biology of karst
+            regions, fossil karst, hydrothermal karst, morphology
+            and speleogenesis in carbonatic rocks, para-,pseudo-
+            et/and hypokarst, subterranean deposits and fillings,
+            subterranean climatology, geophysics, chronology of
+            subterranean fillings, special karsts, parakarst in
+            evaporites, parakarst in siliceous rocks, pseudokarst,
+            ice hypokarst; thermokarst, hypo- and pseudokarst in
+            volcanic rocks .</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Morphologie et morphogenèse karstiques, hydrologie,
+            géologie et pédologie, climatologie et biologie des
+            régions karstiques, karst fossile, karst hydrothermal,
+            morphologie et spéléogenèse dans les roches
+            carbonatiques, para-, pseudo- et / et hypokarst, dépôts
+            et remblais souterrains, climatologie souterraine,
+            géophysique , chronologie des remblais souterrains,
+            karsts spéciaux, parakarst dans les évaporites,
+            parakarst dans les roches siliceuses, pseudokarst,
+            hypokarst de glace; thermokarst, hypo- et pseudokarst
+            dans les roches volcaniques.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="regionalSpeleologyAndKarstology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">regional speleology and karstology
+            <span class="badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology">
+              https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Example: descriptions, expeditions reports, acces
+            restrictions, exploration history, exploration status
+            of specific sites. Regional history of speleology.
+            Regional lists, catalogues, databases, inventories.
+            Regional accidents and rescues. Regional karstology.
+            Regional applied speleology. Regional technical
+            speleology. Regional documentary speleology. .</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Exemple : descriptions, rapports d'expéditions,
+            restrictions d'accès, historique d'exploration, statut
+            d'exploration de sites spécifiques. Histoire régionale
+            de la spéléologie. Listes régionales, catalogues, bases
+            de données, inventaires. Accidents régionaux et
+            sauvetages. Karstologie régionale. Spéléologie
+            appliquée régionale. Spéléologie technique régionale.
+            Spéléologie documentaire régionale.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="biospeleology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">biospeleology <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#biospeleology">
+              https://ontology.uis-speleo.org/ontology/#biospeleology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Sytematics, crustacea, hexapoda, arachnida,
+            mollusca, onychophora, vermes, other invertebrata,
+            vertebrata, microbiology soil- air- water, hypogean
+            flora, fungi, algae, regional biospeleology</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Sytématique, crustacés, hexapodes, arachnides,
+            mollusques, onychophores, vermes, autres invertébrés,
+            vertébrés, microbiologie sol-air-eau, flore hypogée,
+            champignons, algues, biospéléologie régionale</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="anthropospeleology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">anthropospeleology <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#anthropospeleology">
+              https://ontology.uis-speleo.org/ontology/#anthropospeleology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Archaeology, prehistorical and historical
+            cultures.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Archéologie; cultures préhistoriques et
+            historiques.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="palaeonthospeleology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">palaeonthospeleology <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#palaeonthospeleology">
+              https://ontology.uis-speleo.org/ontology/#palaeonthospeleology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Palaeonthospeleology, fossil and subfossil faunas
+            and floras (quaternary)</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Paléonthospéléologie, faunes et flores fossiles et
+            subfossiles (quaternaire)</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="appliedSpeleology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">applied speleology <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#appliedSpeleology">
+              https://ontology.uis-speleo.org/ontology/#appliedSpeleology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Environment and hygiene, mines, engineering, law,
+            protection, recreation, tourism, geosystem,
+            subterranean therapy, research management</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Environnement et hygiène, mines, ingénierie, droit,
+            protection, loisirs, tourisme, géosystème, thérapie
+            souterraine, gestion de la recherche.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="technicalSpeleology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">technical speleology <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#technicalSpeleology">
+              https://ontology.uis-speleo.org/ontology/#technicalSpeleology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Exploration techniques and materials, diving,
+            prospection, accidents and rescue, medicine, education,
+            activities.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Techniques et matériaux d'exploration, plongée,
+            prospection, accidents et sauvetage, médecine,
+            éducation, activités.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="documentarySpeleology"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">documentary speleology <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#documentarySpeleology">
+              https://ontology.uis-speleo.org/ontology/#documentarySpeleology</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Topography, terminology, toponymy, bibliography,
+            photo and film, photographic methods and materials,
+            films and audio-visual devices, cadastres, cartes,
+            archives, inventories, surveys, maps, archives</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Topographie, terminologie, toponymie,
+            bibliographie, photo et film, méthodes et matériels
+            photographiques, films et dispositifs audiovisuels,
+            cadastres, cartes, archives, inventaires, levés,
+            cartes, archives</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="other"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">other <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#other">https://ontology.uis-speleo.org/ontology/#other</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Others subjects</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Autres sujets</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- Point type description-->
+      <div id="PointType"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">point type</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class="text">point
+          type</span></a> <span class=
+          "badge badge-secondary float-right">Related SKOS
+          Concept</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#entry" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          entry</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">point type <span class=
+            "badge badge-secondary float-right">Collection</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#PointType">
+              https://ontology.uis-speleo.org/ontology/#PointType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Collection of terms that can be used to describ
+            type of point related to Karst</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Collection de termes pouvant être utilisés pour
+            décrire le type de point lié au Karst</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="entry"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">entry <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#entry">https://ontology.uis-speleo.org/ontology/#entry</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Point corresponding to the entry of an Underground
+            Cavity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Point correspondant à l'entrée d'une cavité
+            souterraine</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- area type description-->
+      <div id="AreaType"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">area type</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class="text">area
+          type</span></a> <span class=
+          "badge badge-secondary float-right">Related SKOS
+          Concept</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#L.AREA" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          area</span></a> <a href="#L.BSND" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          drainage basin</span></a> <a href="#T.KRST" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          karst area</span></a> <a href="#L.MNA" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          mining area</span></a> <a href="#L.RESN" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          nature reserve</span></a> <a href="#L.RGN" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          region</span></a> <a href="#L.RESW" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          wildlife reserve</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">Area Type <span class=
+            "badge badge-secondary float-right">Collection</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#AreaType">https://ontology.uis-speleo.org/ontology/#AreaType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Collection of terms that can be used to describ
+            type of area related to Karst</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Collection de termes pouvant être utilisés pour
+            décrire le type de zone liée au Karst</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>An area is not an administrative unit. Controlled
+            vocabulary does not include country, state, region,
+            county, city</td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="L.AREA"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">area <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#L.AREA">http://www.geonames.org/ontology#L.AREA</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="L.RESN"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">nature reserve <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#L.RESN">http://www.geonames.org/ontology#L.RESN</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="L.RESW"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">wildlife reserve <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#L.RESW">http://www.geonames.org/ontology#L.RESW</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="L.BSND"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">drainage basin<span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#L.BSND">http://www.geonames.org/ontology#L.BSND</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Point corresponding to the entry of an Underground
+            Cavity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Point correspondant à l'entrée d'une cavité
+            souterraine</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="L.MNA"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">mining area <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#L.MNA">http://www.geonames.org/ontology#L.MNA</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="L.RGN"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">region <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#L.RGN">http://www.geonames.org/ontology#L.RGN</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="T.KRST"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">karst area <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "http://www.geonames.org/ontology#T.KRST">http://www.geonames.org/ontology#T.KRST</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="badge badge-alert float-right">
+        <a href="#page-top">Top</a>
+      </div><!-- licence type description-->
+      <div id="licenceType"></div><br />
+      <br />
+      <br />
+      <h3 class="text-uppercase text-white">licence type</h3>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#" class=
+          "btn btn-danger btn-icon-split"><span class=
+          "text">Licence Type</span></a> <span class=
+          "badge badge-secondary float-right">Related SKOS
+          Concept</span>
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          <a href="#CC-BY" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          CC-BY</span></a> <a href="#CC-BY-SA" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          CC-BY-SA</span></a> <a href="#ODBL" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          ODBL</span></a> <a href="#ODC-By" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          ODC-By</span></a>
+        </li>
+      </ul>
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">licence type <span class=
+            "badge badge-secondary float-right">Collection</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#licenceType">
+              https://ontology.uis-speleo.org/ontology/#licenceType</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Collection of terms that can be used to describe
+            type of Licence</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Collection de termes pouvant être utilisés pour
+            décrire le type de licence</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="CC-BY"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">CC-BY <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#CC-BY">https://ontology.uis-speleo.org/ontology/#CC-BY</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. No additional
+            restrictions — You may not apply legal terms or
+            technological measures that legally restrict others
+            from doing anything the license permits.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. Aucune restriction supplémentaire - Vous
+            ne pouvez pas appliquer les conditions légales ou les
+            mesures technologiques qui empêchent légalement les
+            autres de faire tout ce que la licence permet.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>
+              <a href=
+              "https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="CC-BY-SA"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">CC-BY-SA <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#CC-BY-SA">https://ontology.uis-speleo.org/ontology/#CC-BY-SA</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>You are free to: Share — copy and redistribute the
+            material in any medium or format Adapt — remix,
+            transform, and build upon the material for any purpose,
+            even commercially. The licensor cannot revoke these
+            freedoms as long as you follow the license terms. Under
+            the following terms: Attribution — You must give
+            appropriate credit, provide a link to the license, and
+            indicate if changes were made. You may do so in any
+            reasonable manner, but not in any way that suggests the
+            licensor endorses you or your use. ShareAlike — If you
+            remix, transform, or build upon the material, you must
+            distribute your contributions under the same license as
+            the original. No additional restrictions — You may not
+            apply legal terms or technological measures that
+            legally restrict others from doing anything the license
+            permits.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Vous êtes libre de: Partager - copier et
+            redistribuer le matériel dans n'importe quel support ou
+            format Adapter - remixer, transformer et construire sur
+            le matériel pour n'importe quel but, même commercial.
+            Le concédant de licence ne peut pas révoquer ces
+            libertés tant que vous respectez les termes de la
+            licence. Selon les conditions suivantes: Attribution -
+            Vous devez donner le crédit approprié, fournir un lien
+            vers la licence et indiquer si des modifications ont
+            été apportées. Vous pouvez le faire de toute manière
+            raisonnable, mais en aucune manière suggérant que le
+            concédant de licence vous approuve ou approuve votre
+            utilisation. ShareAlike - Si vous remixez, transformez
+            ou construisez sur le matériel, vous devez distribuer
+            vos contributions sous la même licence que l'original.
+            Aucune restriction supplémentaire - Vous ne pouvez pas
+            appliquer les conditions légales ou les mesures
+            technologiques qui empêchent légalement les autres de
+            faire tout ce que la licence permet.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>
+              <a href=
+              "https://creativecommons.org/licenses/by-sa/3.0/">https://creativecommons.org/licenses/by-sa/3.0/</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="ODBL"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">ODBL <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#ODBL">https://ontology.uis-speleo.org/ontology/#ODBL</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>The Open Database License (ODbL) is a copyleft
+            ("share alike") license agreement intended to allow
+            users to freely share, modify, and use a database while
+            maintaining this same freedom for others</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>La licence Open Database (ODbL) est un accord de
+            licence copyleft («partager à l'identique») destiné à
+            permettre aux utilisateurs de partager, modifier et
+            utiliser librement une base de données tout en
+            conservant cette même liberté pour les autres</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td>
+              <a href=
+              "https://opendatacommons.org/licenses/odbl/">https://opendatacommons.org/licenses/odbl/</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="ODC-By"></div><br />
+      <br />
+      <p class="invisible"></p><a href=
+      "https://opendatacommons.org/licenses/by/">https://opendatacommons.org/licenses/by/</a>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">ODC-By <span class=
+            "badge badge-secondary float-right">SKOS
+            Concept</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#ODC-By">https://ontology.uis-speleo.org/ontology/#ODC-By</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Attribution for Data/Databases</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Attribution des données / bases de données</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section><!-- Copyright Section-->
+  <div class="copyright py-4 text-center text-white">
+    <div class="container">
+      <small>Karstlink documents are licensed under GNU GENERAL
+      PUBLIC LICENSE V3</small>
+    </div>
+  </div>
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+  <div class="scroll-to-top d-lg-none position-fixed">
+    <a class=
+    "js-scroll-trigger d-block text-center text-white rounded"
+    href="#page-top"></a>
+  </div><!-- Bootstrap core JS-->
+  <script src="../js/jquery-3.5.1.min.js"></script> 
+  <script src="../js/bootstrap.bundle.min.js"></script> 
+  <!-- Third party plugin JS-->
+   
+  <script src=
+  "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+   
+  <script src="../assets/mail/jqBootstrapValidation.js"></script> 
+  <script src="assets/mail/contact_me.js"></script> 
+  <!-- Core theme JS-->
+   
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
