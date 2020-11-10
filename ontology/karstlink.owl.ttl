@@ -2,6 +2,8 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 
@@ -47,31 +49,41 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  """La distance verticale entre l'entrée de la cavité et le point le plus bas exprimé en mètres"""@fr .
 
 # From XHTML
- <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+ <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+  rdfs:domain karstlink:UndergroundCavity ;
+  rdfs:range xsd:integer .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:label """length """@en .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:label """longueur """@fr .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """The real development of all the galleries of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """Le développement réel de l'ensemble des galeries de la cavité en mètres"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#verticalExtent> a <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+  rdfs:domain karstlink:UndergroundCavity ;
+  rdfs:range xsd:integer .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:label """vertical extent """@en .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:label """extension verticale"""@fr .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """The vertical distance between the highest point and the lowest point of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+   rdfs:domain karstlink:UndergroundCavity ;
+   rdfs:range foaf:Person .
  <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """discovered """@en .
- <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """discovert par"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """découvert par"""@fr .
  <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (person or organization) who discovered the underground cavity"""@en .
  <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (personne ou organisation) ayant découvert la cavité"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+   rdfs:domain karstlink:UndergroundCavity ;
+   rdfs:range foaf:Person .
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """visited """@en .
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """visited """@en .
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (person or organization) who visited the underground cavity"""@en .
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (personne ou organisation) ayant visité la cavité"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+   rdfs:domain karstlink:Cavity ;
+   rdfs:range karstlink:PointType .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """point type """@en .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """type de point"""@fr .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Link to a point type defined in a collection of expressions"""@en .
@@ -83,7 +95,9 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """An area is a polygon corresponding to a geographic unit that we want to identify."""@en .
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """Une zone est un polygone correspondant à une unité géographique que l'on souhaite identifier."""@fr .
  
- <https://ontology.uis-speleo.org/ontology/#areaType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#areaType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+   rdfs:domain karstlink:UndergroundCavity ;
+   rdfs:range karstlink:AreaType .
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:label """area type"""@en .
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:label """type de zone"""@fr .
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Link to a area type defined in a collection of expressions"""@en .
@@ -95,17 +109,25 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """Une Observation."""@fr .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """jmv: pourquoi pas dwc:HumanObservation ?"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Property> .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+   rdfs:domain karstlink:UndergroundCavity ;
+   rdfs:range karstlink:LicenceType .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être
-            utilisées"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être utilisées"""@fr .
 
   <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:label """Description """ .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document used to describe an entity"""@en .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document qui permet de décrire une entité"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """jmv: modelization issue: it's just a Document, foaf:Document for example;
+   it can be traced by SPARQL pattern:
+   ?CAVITY dc:description ?DOCUMENT .
+   ?CAVITY a karstlink:UndergroundCavity .
+   or:
+   ?CAVITY foaf:isPrimaryTopicOf ?DOCUMENT .
+   """@fr .
 
  <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Access """@en .
@@ -113,11 +135,21 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document that describes access to the resource"""@en .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document qui décrit l'accès à la ressource"""@fr .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """jmv: on parle de droits d'accès à la ressource?"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """jmv: même remarque que pour Description;
+ quand on voit les exemples, il n'y a pas une grande différence entre Access et Description;
+ j'utiliserais plutôt ceci, à la fois + précis et + général:
+ <doc> a foaf:Document ; dcterms:subject dbpedia:Fauna .
+ Pour le concept d'Accès il faudrait un URI de concept wiktionary.org ou WordNet, à explorer ...
+ Je pense que 9 fois sur 10 le même document décrit l'accès à la grotte et la grotte elle-même ?
+ """@fr .
+
  <https://ontology.uis-speleo.org/ontology/#DocumentType> a <http://www.w3.org/2002/07/owl#Collection> .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """document type """@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """type de document"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Type-controlled list for documents"""@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """jmv: owl:Collection n'existe pas; il faut utiliser owl:oneOf ,
+ cf https://www.w3.org/TR/owl-ref/#EnumeratedClass """@fr .
 
  <https://ontology.uis-speleo.org/ontology/#topographicData> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """Topographic data """@en .
