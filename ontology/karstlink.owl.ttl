@@ -4,6 +4,8 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix marcgt: <https://id.loc.gov/vocabulary/marcgt/>.
+@prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 
@@ -17,12 +19,17 @@ karstlink: a owl:Ontology ;
 	      <https://schema.org/> ,
 	      <http://purl.org/dc/elements/1.1/> ,
 	      <http://rs.tdwg.org/dwc/terms/> ,
-	      <https://creativecommons.org/ns#> , # marche pas! ; aussi https://creativecommons.org/schema.rdf ?
-              <http://id.loc.gov/vocabulary/marcgt/> ,
-              <http://purl.org/dc/dcmitype/>
+	    # <https://creativecommons.org/ns#>
+	      <https://creativecommons.org/schema.rdf> ,
+              <http://id.loc.gov/vocabulary/marcgt.nt> ,
+	    # <http://id.loc.gov/vocabulary/marcgt/> ,
+              <http://purl.org/dc/dcmitype/> ,
+              marcgt:
   # ; foaf:maker <urien>
   .
 
+  # For marcgt = "MARC Genre/Terms Scheme"
+ <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> rdfs:subPropertyOf rdfs:label .
 
 karstlink:UndergroundCavity a owl:Class ;
   rdfs:label "Underground Cavity"@en ;
@@ -88,6 +95,7 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """type de point"""@fr .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Link to a point type defined in a collection of expressions"""@en .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Lien vers un type de point défini dans une collection d'expressions"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """jmv: geométrie : pourquoi ne pas réuiliser un existant ?  """@fr .
 
  <https://ontology.uis-speleo.org/ontology/#Area> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:label """Area """@en .
@@ -103,6 +111,7 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Link to a area type defined in a collection of expressions"""@en .
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Lien vers un type de zone défini dans une collection d'expressions"""@fr .
 
+
  <https://ontology.uis-speleo.org/ontology/#Observation> a <http://www.w3.org/2002/07/owl#Class> .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:label """Observation """ .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """An Observation."""@en .
@@ -116,8 +125,10 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être utilisées"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """jmv:  licences: pourquoi ne pas réuiliser un existant ?  """@fr .
 
-  <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> .
+  <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> ;
+   rdfs:subClassOf foaf:Document .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:label """Description """ .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document used to describe an entity"""@en .
  <https://ontology.uis-speleo.org/ontology/#Description> rdfs:comment """Document qui permet de décrire une entité"""@fr .
@@ -129,12 +140,13 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
    ?CAVITY foaf:isPrimaryTopicOf ?DOCUMENT .
    """@fr .
 
- <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> .
+ <https://ontology.uis-speleo.org/ontology/#Access> a <http://www.w3.org/2002/07/owl#Class> ;
+   rdfs:subClassOf foaf:Document .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Access """@en .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:label """Accès """@fr .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document that describes access to the resource"""@en .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """Document qui décrit l'accès à la ressource"""@fr .
- <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """jmv: on parle de droits d'accès à la ressource?"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """jmv: on parle de droits d'accès à la ressource? Non mais libellé ambigu"""@fr .
  <https://ontology.uis-speleo.org/ontology/#Access> rdfs:comment """jmv: même remarque que pour Description;
  quand on voit les exemples, il n'y a pas une grande différence entre Access et Description;
  j'utiliserais plutôt ceci, à la fois + précis et + général:
@@ -143,13 +155,40 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  Je pense que 9 fois sur 10 le même document décrit l'accès à la grotte et la grotte elle-même ?
  """@fr .
 
- <https://ontology.uis-speleo.org/ontology/#DocumentType> a <http://www.w3.org/2002/07/owl#Collection> .
+
+ # Enumeration, cf https://www.w3.org/TR/owl-ref/#EnumeratedClass
+ <https://ontology.uis-speleo.org/ontology/#DocumentType> a owl:Class ; owl:oneOf (
+   marcgt:abs
+   marcgt:art
+   marcgt:book
+   marcgt:cal
+   marcgt:cat
+   marcgt:cpb
+   marcgt:jou
+   marcgt:let
+   marcgt:man
+   marcgt:dictionary
+   dcmitype:Collection
+   dcmitype:Dataset
+   dcmitype:Event
+   dcmitype:Image
+   dcmitype:InteractiveResource
+   dcmitype:StillImage
+   dcmitype:PhysicalObject
+   dcmitype:Service
+   dcmitype:Software
+   dcmitype:Sound
+   dcmitype:Text
+   karstlink:topographicData
+   karstlink:topography
+   karstlink:AutorizationToPublish
+   karstlink:reefnet
+ ) .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """document type """@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:label """type de document"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Type-controlled list for documents"""@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
- <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """jmv: owl:Collection n'existe pas; il faut utiliser owl:oneOf ,
- cf https://www.w3.org/TR/owl-ref/#EnumeratedClass """@fr .
+
 
  <https://ontology.uis-speleo.org/ontology/#topographicData> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """Topographic data """@en .
@@ -161,20 +200,36 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#topography> rdfs:label """topographie"""@fr .
  <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """A graphic representation of an underground cavity"""@en .
  <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """Une représentation graphique d'une cavité souterraine"""@fr .
+
+
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorization to publish """@en .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorisation de publier"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attesting to the authorization to publish other documents under a defined licence"""@en .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attestant l'autorisation de publier d'autres documents sous une licence définie"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#reefnet> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:label """reefnet """ .
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """A document produced by a Reefnet brand device"""@en .
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """Un document produit par un appareil de marque Reefnet"""@fr .
- <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a <http://www.w3.org/2002/07/owl#Collection> .
+
+ 
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a owl:Class ; owl:oneOf (
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology>
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology>
+ <https://ontology.uis-speleo.org/ontology/#biospeleology>
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology>
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology>
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology>
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology>
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology>
+ <https://ontology.uis-speleo.org/ontology/#other>
+ ) .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """Document subject """@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """sujets du Document"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Controlled list for documents subject issued from BBS"""@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Liste contrôlée de sujets pour les documents, issus du BBS"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:label """geospeleology and karstology """@en .
  <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:comment """Karst morphology and morphogenesis, hydrology,
@@ -264,30 +319,71 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#other> rdfs:comment """Others subjects"""@en .
  <https://ontology.uis-speleo.org/ontology/#other> rdfs:comment """Autres sujets"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#PointType> a <http://www.w3.org/2002/07/owl#Collection> .
+
+ <https://ontology.uis-speleo.org/ontology/#PointType> a owl:Class ; owl:oneOf (
+ karstlink:entry
+ ) .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:label """point type """@en .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:label """type de point"""@fr .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection of terms that can be used to describe type of point related to Karst"""@en .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection de termes pouvant être utilisés pour décrire le type de point lié au Karst"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """jmv: une enumération avec un seul élément ressemble à un travailpas fini... """@fr .
 
  <https://ontology.uis-speleo.org/ontology/#entry> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entry """@en .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entrée"""@fr .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point corresponding to the entry of an Underground Cavity"""@en .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point correspondant à l'entrée d'une cavité souterraine"""@fr .
- <https://ontology.uis-speleo.org/ontology/#AreaType> a <http://www.w3.org/2002/07/owl#Collection> .
+
+
+ <https://ontology.uis-speleo.org/ontology/#AreaType> a owl:Class ; owl:oneOf (
+ karstlink:L.AREA
+ karstlink:L.RESN
+ karstlink:L.RESW
+ karstlink:L.BSND
+ karstlink:L.MNA
+ karstlink:L.RGN
+ karstlink:T.KRST
+ ) .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """Area Type """@en .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """type de zone"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection of terms that can be used to describ type of area related to Karst"""@en .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection de termes pouvant être utilisés pour décrire le type de zone liée au Karst"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """jmv: remarque déjà faite sur utilisation d'URI dbpedia ou wikidata ou wordnet """@fr .
 
- <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#Collection> .
+ <http://www.geonames.org/ontology#L.AREA> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.AREA> rdfs:label """area """ .
+ <http://www.geonames.org/ontology#L.AREA> rdfs:label """zone"""@fr .
+ <http://www.geonames.org/ontology#L.RESN> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.RESN> rdfs:label """nature reserve """ .
+ <http://www.geonames.org/ontology#L.RESN> rdfs:label """réserve naturelle"""@fr .
+ <http://www.geonames.org/ontology#L.RESW> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.RESW> rdfs:label """wildlife reserve """ .
+ <http://www.geonames.org/ontology#L.BSND> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.BSND> rdfs:label """drainage basin""" .
+ <http://www.geonames.org/ontology#L.BSND> rdfs:comment """Point corresponding to the entry of an Underground Cavity"""@en .
+ <http://www.geonames.org/ontology#L.BSND> rdfs:comment """Point correspondant à l'entrée d'une cavité souterraine"""@fr .
+ <http://www.geonames.org/ontology#L.MNA> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.MNA> rdfs:label """mining area """ .
+ <http://www.geonames.org/ontology#L.RGN> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#L.RGN> rdfs:label """region """ .
+ <http://www.geonames.org/ontology#T.KRST> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
+
+
+ <https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ; owl:oneOf (
+ karstlink:CC-BY
+ karstlink:CC-BY-SA
+ karstlink:ODBL
+ karstlink:ODC-By
+ ) .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """type de licence"""@fr .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection of terms that can be used to describe
             type of Licence"""@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection de termes pouvant être utilisés pour
             décrire le type de licence"""@fr .
+
  <https://ontology.uis-speleo.org/ontology/#CC-BY> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:label """CC-BY """ .
  <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """You are free to: Share — copy and redistribute the
