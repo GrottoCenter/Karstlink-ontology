@@ -6,14 +6,18 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix marcgt: <https://id.loc.gov/vocabulary/marcgt/>.
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix geonames: <http://www.geonames.org/ontology#>.
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 
 karstlink: a owl:Ontology ;
+  foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> ;
+  # foaf:maker <urien> ;
+  dct:subject dbpedia:Biospeleology ;
   rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
   rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> ;
   owl:imports foaf: ,
-              <http://www.geonames.org/ontology/#> ,
 	      <https://www.w3.org/2003/01/geo/wgs84_pos#> ,
 	      <http://purl.org/dc/terms/> ,
 	      <https://schema.org/> ,
@@ -24,8 +28,8 @@ karstlink: a owl:Ontology ;
               <http://id.loc.gov/vocabulary/marcgt.nt> ,
 	    # <http://id.loc.gov/vocabulary/marcgt/> ,
               <http://purl.org/dc/dcmitype/> ,
-              marcgt:
-  # ; foaf:maker <urien>
+              marcgt: ,
+	      geonames:
   .
 
   # For marcgt = "MARC Genre/Terms Scheme"
@@ -327,7 +331,7 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:label """type de point"""@fr .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection of terms that can be used to describe type of point related to Karst"""@en .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection de termes pouvant être utilisés pour décrire le type de point lié au Karst"""@fr .
- <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """jmv: une enumération avec un seul élément ressemble à un travailpas fini... """@fr .
+ <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """jmv: une enumération avec un seul élément ressemble à un travail pas fini... """@fr .
 
  <https://ontology.uis-speleo.org/ontology/#entry> a <http://www.w3.org/2004/02/skos/core#Concept> .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entry """@en .
@@ -337,13 +341,13 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
 
 
  <https://ontology.uis-speleo.org/ontology/#AreaType> a owl:Class ; owl:oneOf (
- karstlink:L.AREA
- karstlink:L.RESN
- karstlink:L.RESW
- karstlink:L.BSND
- karstlink:L.MNA
- karstlink:L.RGN
- karstlink:T.KRST
+ geonames:L.AREA
+ geonames:L.RESN
+ geonames:L.RESW
+ geonames:L.BSND
+ geonames:L.MNA
+ geonames:L.RGN
+ geonames:T.KRST
  ) .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """Area Type """@en .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """type de zone"""@fr .
