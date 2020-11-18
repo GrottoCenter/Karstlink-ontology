@@ -16,7 +16,8 @@
 karstlink: a owl:Ontology ;
   foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> ;
   foaf:maker <http://semantic-forms.cc:1952/ldp/1605547206825-8408338104416701> ;
-  dct:subject dbpedia:Biospeleology ;
+  dc:description """L'ontologie a pour objectif de décrire tous les objets liés au karst : cavités, personnes, groupes, zones, observations de différentes nature, documents.""" ;
+  dct:subject dbpedia:Biospeleology , dbpedia:Karst ;
   rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
   rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> ;
   owl:imports foaf: ,
@@ -78,7 +79,7 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """The vertical distance between the highest point and the lowest point of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"""@fr .
 
-karstlink:discoveredBy a owl:ObjectProperty ;
+karstlink:discoveredBy a owl:ObjectProperty , owl:FunctionalProperty ;
    rdfs:domain karstlink:UndergroundCavity ;
    rdfs:range foaf:Person ;
    rdfs:label """discovered by"""@en ;
