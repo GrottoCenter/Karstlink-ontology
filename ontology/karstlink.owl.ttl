@@ -224,17 +224,17 @@ karstlink:discoveredBy a owl:ObjectProperty , owl:FunctionalProperty ;
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """Un document produit par un appareil de marque Reefnet"""@fr .
 
  
- <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a owl:Class ; owl:oneOf (
- <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology>
- <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology>
- <https://ontology.uis-speleo.org/ontology/#biospeleology>
- <https://ontology.uis-speleo.org/ontology/#anthropospeleology>
- <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology>
- <https://ontology.uis-speleo.org/ontology/#appliedSpeleology>
- <https://ontology.uis-speleo.org/ontology/#technicalSpeleology>
- <https://ontology.uis-speleo.org/ontology/#documentarySpeleology>
- <https://ontology.uis-speleo.org/ontology/#other>
- ) .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a owl:Class .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#other> a karstlink:DocumentSubject .
+ 
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """Document subject """@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """sujets du Document"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Controlled list for documents subject issued from BBS"""@en .
@@ -346,15 +346,15 @@ karstlink:discoveredBy a owl:ObjectProperty , owl:FunctionalProperty ;
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point correspondant à l'entrée d'une cavité souterraine"""@fr .
 
 
- <https://ontology.uis-speleo.org/ontology/#AreaType> a owl:Class ; owl:oneOf (
- geonames:L.AREA
- geonames:L.RESN
- geonames:L.RESW
- geonames:L.BSND
- geonames:L.MNA
- geonames:L.RGN
- geonames:T.KRST
- ) .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> a owl:Class .
+ geonames:L.AREA a karstlink:AreaType .
+ geonames:L.RESN a karstlink:AreaType .
+ geonames:L.RESW a karstlink:AreaType .
+ geonames:L.BSND a karstlink:AreaType .
+ geonames:L.MNA a karstlink:AreaType .
+ geonames:L.RGN a karstlink:AreaType .
+ geonames:T.KRST a karstlink:AreaType .
+
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """Area Type """@en .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """type de zone"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection of terms that can be used to describ type of area related to Karst"""@en .
