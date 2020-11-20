@@ -28,7 +28,7 @@ dwc:coordinatePrecision
 karstlink:length
 karstlink:extentAboveEntrance
 karstlink:extentBelowEntrance
-karstlink:verticaleExtent
+karstlink:verticalExtent
 karstlink:discoveredBy
 dc:isReferencedBy
 dc:isPartOf
@@ -103,8 +103,8 @@ dc:rights
 karstlink:forms-Person
 a form:specification ;
   form:classDomain foaf:Person ;
-  rdfs:label "Formulaire "@fr ;
-  rdfs:label " form"@en ;
+  rdfs:label "Formulaire Person"@fr ;
+  rdfs:label "Person form"@en ;
   form:showProperties (
 foaf:firstName
 foaf:lastName
@@ -119,8 +119,8 @@ karstlink:visited
 karstlink:forms-Organization
 a form:specification ;
   form:classDomain foaf:Organization ;
-  rdfs:label "Formulaire "@fr ;
-  rdfs:label " form"@en ;
+  rdfs:label "Formulaire Organization"@fr ;
+  rdfs:label "Organization form"@en ;
   form:showProperties (
 rdfs:label
 gn:alternateName
@@ -145,14 +145,21 @@ karstlink:visited
 karstlink:forms-Observation
 a form:specification ;
   form:classDomain karstlink:Observation ;
-  rdfs:label "Formulaire "@fr ;
-  rdfs:label " form"@en ;
+  rdfs:label "Formulaire Observation"@fr ;
+  rdfs:label "Observation form"@en ;
   form:showProperties (
 dc:creator
 dc:relation
 dc:rights
 dc:isPartOf
-dwc:Occurrence
+) .
+
+karstlink:forms-Occurrence
+a form:specification ;
+  form:classDomain dwc:Occurrence ;
+  rdfs:label "Formulaire Occurrence"@fr ;
+  rdfs:label "Occurrence form"@en ;
+  form:showProperties (
 rdfs:label
 dc:creator
 dc:relation
@@ -169,8 +176,8 @@ dwc:associatedTaxa
 karstlink:forms-LicenseDocument
 a form:specification ;
   form:classDomain dc:LicenseDocument ;
-  rdfs:label "Formulaire "@fr ;
-  rdfs:label " form"@en ;
+  rdfs:label "Formulaire License Document"@fr ;
+  rdfs:label "License Document form"@en ;
   form:showProperties (
 cc:attributionName
 karstlink:licenceType
@@ -183,8 +190,8 @@ cc:attributionURL
 karstlink:forms-Access
 a form:specification ;
   form:classDomain karstlink:Access ;
-  rdfs:label "Formulaire "@fr ;
-  rdfs:label " form"@en ;
+  rdfs:label "Formulaire Accès"@fr ;
+  rdfs:label "Access form"@en ;
   form:showProperties (
 dc:title
 dc:creator
@@ -195,8 +202,8 @@ karstlink:description
 karstlink:forms-Description
 a form:specification ;
   form:classDomain karstlink:Description ;
-  rdfs:label "Formulaire "@fr ;
-  rdfs:label " form"@en ;
+  rdfs:label "Formulaire Description"@fr ;
+  rdfs:label "Description form"@en ;
   form:showProperties (
 dc:title
 dc:creator
@@ -209,5 +216,4 @@ karstlink:description
 # karstlink:DocumentType
 # karstlink:DocumentSubject
 # karstlink:LicenceType
-
 
