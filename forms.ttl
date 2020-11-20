@@ -8,6 +8,7 @@
 @prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
 @prefix cc: <http://creativecommons.org/ns#>.
 @prefix schema: <http://schema.org/> .
+@prefix dwciri: <http://rs.tdwg.org/dwc/iri/> .
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 @prefix  form: <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#> .
@@ -88,7 +89,7 @@ dc:subject
 gn:countryCode
 dc:language
 dc:publisher
-dc:creator
+dct:creator
 dc:date
 dc:format
 dc:identifier
@@ -111,7 +112,7 @@ foaf:lastName
 foaf:nick
 foaf:member
 gn:countryCode
-dc:creator
+dct:creator
 dc:relation
 karstlink:visited
 ) .
@@ -136,7 +137,7 @@ dwc:coordinatePrecision
 dc:isPartOf
 dc:hasPart
 foaf:member
-dc:creator
+dct:creator
 dc:publisher
 dc:relation
 karstlink:visited
@@ -148,7 +149,7 @@ a form:specification ;
   rdfs:label "Formulaire Observation"@fr ;
   rdfs:label "Observation form"@en ;
   form:showProperties (
-dc:creator
+dct:creator
 dc:relation
 dc:rights
 dc:isPartOf
@@ -161,10 +162,12 @@ a form:specification ;
   rdfs:label "Occurrence form"@en ;
   form:showProperties (
 rdfs:label
-dc:creator
+dct:creator
 dc:relation
 dc:rights
 dc:isPartOf
+dwciri:recordedBy
+dwciri:identifiedBy
 dwc:recordedBy
 dwc:identifiedBy
 dwc:dateIdentified
@@ -194,7 +197,7 @@ a form:specification ;
   rdfs:label "Access form"@en ;
   form:showProperties (
 dc:title
-dc:creator
+dct:creator
 dc:language
 karstlink:description
 ) .
@@ -206,7 +209,7 @@ a form:specification ;
   rdfs:label "Description form"@en ;
   form:showProperties (
 dc:title
-dc:creator
+dct:creator
 dc:language
 karstlink:description
 ) .
