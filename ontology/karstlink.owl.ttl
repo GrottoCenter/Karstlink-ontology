@@ -79,7 +79,7 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """The vertical distance between the highest point and the lowest point of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"""@fr .
 
-karstlink:discoveredBy a owl:ObjectProperty , owl:FunctionalProperty ;
+karstlink:discoveredBy a owl:ObjectProperty ;
    rdfs:domain karstlink:UndergroundCavity ;
    rdfs:range foaf:Person ;
    rdfs:label """discovered by"""@en ;
@@ -381,11 +381,11 @@ karstlink:discoveredBy a owl:ObjectProperty , owl:FunctionalProperty ;
  <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
 
 
- <https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ; owl:oneOf (
- karstlink:CC-BY
- karstlink:CC-BY-SA
- karstlink:ODBL
- karstlink:ODC-By
+<https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ; owl:oneOf (
+ http://dbpedia.org/resource/CC_BY
+ http://dbpedia.org/resource/CC_BY_SA
+ http://dbpedia.org/resource/ODbL
+ https://opendatacommons.org/licenses/by/
  ) .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """type de licence"""@fr .
