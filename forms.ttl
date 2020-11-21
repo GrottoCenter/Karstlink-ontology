@@ -1,0 +1,219 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix org:        <http://www.w3.org/ns/org#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gn: <http://www.geonames.org/ontology#>.
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix cc: <http://creativecommons.org/ns#>.
+@prefix schema: <http://schema.org/> .
+
+@prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
+@prefix  form: <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#> .
+
+karstlink:forms-UndergroundCavity
+a form:specification ;
+  form:classDomain karstlink:UndergroundCavity ;
+  rdfs:label "Formulaire cavité"@fr ;
+  rdfs:label "cavity form"@en ;
+  form:showProperties (
+rdfs:label
+gn:alternateName
+gn:countryCode
+geo:lat
+geo:long
+geo:alt
+dwc:coordinatePrecision
+karstlink:length
+karstlink:extentAboveEntrance
+karstlink:extentBelowEntrance
+karstlink:verticalExtent
+karstlink:discoveredBy
+dc:isReferencedBy
+dc:isPartOf
+dc:hasPart
+dc:rights
+) .
+
+karstlink:forms-Point
+a form:specification ;
+  form:classDomain geo:Point ;
+  rdfs:label "Formulaire Point"@fr ;
+  rdfs:label "Point form"@en ;
+  form:showProperties (
+rdfs:label
+geo:lat
+geo:long
+geo:alt
+dwc:coordinatePrecision
+dc:isReferencedBy
+dc:isPartOf
+dc:hasPart
+dc:rights
+karstlink:pointType
+) .
+
+karstlink:forms-Area
+a form:specification ;
+  form:classDomain karstlink:Area ;
+  rdfs:label "Formulaire zone"@fr ;
+  rdfs:label "Area form"@en ;
+  form:showProperties (
+rdfs:label
+# données de API https://beta.grottocenter.org/
+#  "descriptions": [],
+#  "country": "FR",
+#  "county": "Pyrénées-Atlantiques",
+#  "region": "Pyrénées-Atlantiques (64), Nouvelle-Aquitaine (NAQ)",
+#  "city": "Accous",
+#  "latitude": 42.942035715037,
+#  "longitude": -0.51369667053223,
+schema:polygon
+dc:isPartOf
+dc:hasPart
+dc:rights
+karstlink:areaType
+) .
+
+karstlink:forms-BibliographicResource
+a form:specification ;
+  form:classDomain dc:BibliographicResource ;
+  rdfs:label "Formulaire Bibliographie"@fr ;
+  rdfs:label "Bibliographic Resource form"@en ;
+  form:showProperties (
+dc:title
+dc:type
+dc:subject
+gn:countryCode
+dc:language
+dc:publisher
+dc:creator
+dc:date
+dc:format
+dc:identifier
+dc:source
+dc:relation
+dc:isReferencedBy
+dc:isPartOf
+dc:hasPart
+dc:rights
+) .
+
+karstlink:forms-Person
+a form:specification ;
+  form:classDomain foaf:Person ;
+  rdfs:label "Formulaire Person"@fr ;
+  rdfs:label "Person form"@en ;
+  form:showProperties (
+foaf:firstName
+foaf:lastName
+foaf:nick
+foaf:member
+gn:countryCode
+dc:creator
+dc:relation
+karstlink:visited
+) .
+
+karstlink:forms-Organization
+a form:specification ;
+  form:classDomain foaf:Organization ;
+  rdfs:label "Formulaire Organization"@fr ;
+  rdfs:label "Organization form"@en ;
+  form:showProperties (
+rdfs:label
+gn:alternateName
+foaf:mbox
+foaf:homepage
+schema:streetAddress
+schema:postalCode
+schema:addressLocality
+schema:addressCountry
+geo:lat
+geo:long
+dwc:coordinatePrecision
+dc:isPartOf
+dc:hasPart
+foaf:member
+dc:creator
+dc:publisher
+dc:relation
+karstlink:visited
+) .
+
+karstlink:forms-Observation
+a form:specification ;
+  form:classDomain karstlink:Observation ;
+  rdfs:label "Formulaire Observation"@fr ;
+  rdfs:label "Observation form"@en ;
+  form:showProperties (
+dc:creator
+dc:relation
+dc:rights
+dc:isPartOf
+) .
+
+karstlink:forms-Occurrence
+a form:specification ;
+  form:classDomain dwc:Occurrence ;
+  rdfs:label "Formulaire Occurrence"@fr ;
+  rdfs:label "Occurrence form"@en ;
+  form:showProperties (
+rdfs:label
+dc:creator
+dc:relation
+dc:rights
+dc:isPartOf
+dwc:recordedBy
+dwc:identifiedBy
+dwc:dateIdentified
+dwc:eventDate
+dwc:individualCount
+dwc:associatedTaxa
+) .
+
+karstlink:forms-LicenseDocument
+a form:specification ;
+  form:classDomain dc:LicenseDocument ;
+  rdfs:label "Formulaire License Document"@fr ;
+  rdfs:label "License Document form"@en ;
+  form:showProperties (
+cc:attributionName
+karstlink:licenceType
+dc:created
+dc:modified
+cc:attributionURL
+) .
+
+
+karstlink:forms-Access
+a form:specification ;
+  form:classDomain karstlink:Access ;
+  rdfs:label "Formulaire Accès"@fr ;
+  rdfs:label "Access form"@en ;
+  form:showProperties (
+dc:title
+dc:creator
+dc:language
+karstlink:description
+) .
+
+karstlink:forms-Description
+a form:specification ;
+  form:classDomain karstlink:Description ;
+  rdfs:label "Formulaire Description"@fr ;
+  rdfs:label "Description form"@en ;
+  form:showProperties (
+dc:title
+dc:creator
+dc:language
+karstlink:description
+) .
+
+# karstlink:PointType
+# karstlink:AreaType
+# karstlink:DocumentType
+# karstlink:DocumentSubject
+# karstlink:LicenceType
+

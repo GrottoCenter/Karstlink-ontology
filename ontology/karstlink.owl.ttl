@@ -8,13 +8,16 @@
 @prefix dcmitype: <http://purl.org/dc/dcmitype/>.
 @prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix geonames: <http://www.geonames.org/ontology#>.
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix schema: <http://schema.org/> .
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 
 karstlink: a owl:Ontology ;
   foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> ;
-  # foaf:maker <urien> ;
-  dct:subject dbpedia:Biospeleology ;
+  foaf:maker <http://semantic-forms.cc:1952/ldp/1605547206825-8408338104416701> ;
+  dc:description """L'ontologie a pour objectif de décrire tous les objets liés au karst : cavités, personnes, groupes, zones, observations de différentes nature, documents.""" ;
+  dct:subject dbpedia:Biospeleology , dbpedia:Karst ;
   rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
   rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> ;
   owl:imports foaf: ,
@@ -28,7 +31,6 @@ karstlink: a owl:Ontology ;
               <http://id.loc.gov/vocabulary/marcgt.nt> ,
 	    # <http://id.loc.gov/vocabulary/marcgt/> ,
               <http://purl.org/dc/dcmitype/> ,
-              marcgt: ,
 	      geonames:
   .
 
@@ -36,6 +38,7 @@ karstlink: a owl:Ontology ;
  <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> rdfs:subPropertyOf rdfs:label .
 
 karstlink:UndergroundCavity a owl:Class ;
+  rdfs:subClassOf geo:SpatialThing , schema:Place , dct:Location ;
   rdfs:label "Underground Cavity"@en ;
   rdfs:label "Cavité"@fr ;
   rdfs:comment """An underground cavity can be natural or artificial (mine, quarry, sewer, tunnel, etc.), penetrable or not, karstic or not (volcanic, etc.), or certain types of superficial karst phenomena (source, drain, polje, mega-doline, etc.)."""@en ;
@@ -76,24 +79,27 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """The vertical distance between the highest point and the lowest point of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:comment """La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#discovered> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+karstlink:discoveredBy a owl:ObjectProperty ;
    rdfs:domain karstlink:UndergroundCavity ;
-   rdfs:range foaf:Person .
- <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """discovered """@en .
- <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:label """découvert par"""@fr .
- <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (person or organization) who discovered the underground cavity"""@en .
- <https://ontology.uis-speleo.org/ontology/#discovered> rdfs:comment """Agent (personne ou organisation) ayant découvert la cavité"""@fr .
+   rdfs:range foaf:Person ;
+   rdfs:label """discovered by"""@en ;
+   rdfs:label """découvert par"""@fr ;
+   rdfs:comment """Agent (person or organization) who discovered the underground cavity"""@en ;
+   rdfs:comment """Agent (personne ou organisation) ayant découvert la cavité"""@fr .
 
  <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-   rdfs:domain karstlink:UndergroundCavity ;
-   rdfs:range foaf:Person .
+   rdfs:domain foaf:Person ;
+   rdfs:range  karstlink:UndergroundCavity .
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """visited """@en .
- <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """visited """@en .
- <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (person or organization) who visited the underground cavity"""@en .
- <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """Agent (personne ou organisation) ayant visité la cavité"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:label """a visité """@fr .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """
+   the underground cavity
+   visited by this Agent (person or organization) """@en .
+ <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """
+   cavité visitée par l'Agent (personne ou organisation)"""@fr .
 
  <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
-   rdfs:domain karstlink:Cavity ;
+   rdfs:domain geo:Point ;
    rdfs:range karstlink:PointType .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """point type """@en .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:label """type de point"""@fr .
@@ -218,17 +224,17 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """Un document produit par un appareil de marque Reefnet"""@fr .
 
  
- <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a owl:Class ; owl:oneOf (
- <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology>
- <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology>
- <https://ontology.uis-speleo.org/ontology/#biospeleology>
- <https://ontology.uis-speleo.org/ontology/#anthropospeleology>
- <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology>
- <https://ontology.uis-speleo.org/ontology/#appliedSpeleology>
- <https://ontology.uis-speleo.org/ontology/#technicalSpeleology>
- <https://ontology.uis-speleo.org/ontology/#documentarySpeleology>
- <https://ontology.uis-speleo.org/ontology/#other>
- ) .
+ <https://ontology.uis-speleo.org/ontology/#DocumentSubject> a owl:Class .
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> a karstlink:DocumentSubject .
+ <https://ontology.uis-speleo.org/ontology/#other> a karstlink:DocumentSubject .
+ 
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """Document subject """@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:label """sujets du Document"""@fr .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Controlled list for documents subject issued from BBS"""@en .
@@ -340,15 +346,15 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:comment """Point correspondant à l'entrée d'une cavité souterraine"""@fr .
 
 
- <https://ontology.uis-speleo.org/ontology/#AreaType> a owl:Class ; owl:oneOf (
- geonames:L.AREA
- geonames:L.RESN
- geonames:L.RESW
- geonames:L.BSND
- geonames:L.MNA
- geonames:L.RGN
- geonames:T.KRST
- ) .
+ <https://ontology.uis-speleo.org/ontology/#AreaType> a owl:Class .
+ geonames:L.AREA a karstlink:AreaType .
+ geonames:L.RESN a karstlink:AreaType .
+ geonames:L.RESW a karstlink:AreaType .
+ geonames:L.BSND a karstlink:AreaType .
+ geonames:L.MNA a karstlink:AreaType .
+ geonames:L.RGN a karstlink:AreaType .
+ geonames:T.KRST a karstlink:AreaType .
+
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """Area Type """@en .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:label """type de zone"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection of terms that can be used to describ type of area related to Karst"""@en .
@@ -375,11 +381,11 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
  <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
 
 
- <https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ; owl:oneOf (
- karstlink:CC-BY
- karstlink:CC-BY-SA
- karstlink:ODBL
- karstlink:ODC-By
+<https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ; owl:oneOf (
+ http://dbpedia.org/resource/CC_BY
+ http://dbpedia.org/resource/CC_BY_SA
+ http://dbpedia.org/resource/ODbL
+ https://opendatacommons.org/licenses/by/
  ) .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """type de licence"""@fr .
