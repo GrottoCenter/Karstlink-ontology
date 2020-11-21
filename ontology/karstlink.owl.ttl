@@ -382,10 +382,10 @@ karstlink:discoveredBy a owl:ObjectProperty ;
 
 
 <https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ; owl:oneOf (
- http://dbpedia.org/resource/CC_BY
- http://dbpedia.org/resource/CC_BY_SA
- http://dbpedia.org/resource/ODbL
- https://opendatacommons.org/licenses/by/
+ <http://dbpedia.org/resource/CC_BY>
+ <http://dbpedia.org/resource/CC_BY_SA>
+ <http://dbpedia.org/resource/ODbL>
+ <https://opendatacommons.org/licenses/by/>
  ) .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """type de licence"""@fr .
