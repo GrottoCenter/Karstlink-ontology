@@ -31,10 +31,10 @@ karstlink:extentAboveEntrance
 karstlink:extentBelowEntrance
 karstlink:verticalExtent
 karstlink:discoveredBy
-dc:isReferencedBy
-dc:isPartOf
-dc:hasPart
-dc:rights
+dct:isReferencedBy
+dct:isPartOf
+dct:hasPart
+dct:rights
 ) .
 
 karstlink:forms-Point
@@ -48,10 +48,10 @@ geo:lat
 geo:long
 geo:alt
 dwc:coordinatePrecision
-dc:isReferencedBy
-dc:isPartOf
-dc:hasPart
-dc:rights
+dct:isReferencedBy
+dct:isPartOf
+dct:hasPart
+dct:rights
 karstlink:pointType
 ) .
 
@@ -71,34 +71,34 @@ rdfs:label
 #  "latitude": 42.942035715037,
 #  "longitude": -0.51369667053223,
 schema:polygon
-dc:isPartOf
-dc:hasPart
-dc:rights
+dct:isPartOf
+dct:hasPart
+dct:rights
 karstlink:areaType
 ) .
 
 karstlink:forms-BibliographicResource
 a form:specification ;
-  form:classDomain dc:BibliographicResource ;
+  form:classDomain dct:BibliographicResource ;
   rdfs:label "Formulaire Bibliographie"@fr ;
   rdfs:label "Bibliographic Resource form"@en ;
   form:showProperties (
-dc:title
-dc:type
-dc:subject
+dct:title
+dct:type
+dct:subject
 gn:countryCode
 dc:language
-dc:publisher
+dct:publisher
 dct:creator
-dc:date
-dc:format
-dc:identifier
-dc:source
-dc:relation
-dc:isReferencedBy
-dc:isPartOf
-dc:hasPart
-dc:rights
+dct:date
+dct:format
+dct:identifier
+dct:source
+dct:relation
+dct:isReferencedBy
+dct:isPartOf
+dct:hasPart
+dct:rights
 ) .
 
 karstlink:forms-Person
@@ -113,7 +113,7 @@ foaf:nick
 foaf:member
 gn:countryCode
 dct:creator
-dc:relation
+dct:relation
 karstlink:visited
 ) .
 
@@ -134,12 +134,12 @@ schema:addressCountry
 geo:lat
 geo:long
 dwc:coordinatePrecision
-dc:isPartOf
-dc:hasPart
+dct:isPartOf
+dct:hasPart
 foaf:member
 dct:creator
-dc:publisher
-dc:relation
+dct:publisher
+dct:relation
 karstlink:visited
 ) .
 
@@ -150,9 +150,9 @@ a form:specification ;
   rdfs:label "Observation form"@en ;
   form:showProperties (
 dct:creator
-dc:relation
-dc:rights
-dc:isPartOf
+dct:relation
+dct:rights
+dct:isPartOf
 ) .
 
 karstlink:forms-Occurrence
@@ -163,9 +163,9 @@ a form:specification ;
   form:showProperties (
 rdfs:label
 dct:creator
-dc:relation
-dc:rights
-dc:isPartOf
+dct:relation
+dct:rights
+dct:isPartOf
 dwciri:recordedBy
 dwciri:identifiedBy
 dwc:recordedBy
@@ -178,14 +178,14 @@ dwc:associatedTaxa
 
 karstlink:forms-LicenseDocument
 a form:specification ;
-  form:classDomain dc:LicenseDocument ;
+  form:classDomain dct:LicenseDocument ;
   rdfs:label "Formulaire License Document"@fr ;
   rdfs:label "License Document form"@en ;
   form:showProperties (
 cc:attributionName
 karstlink:licenceType
-dc:created
-dc:modified
+dct:created
+dct:modified
 cc:attributionURL
 ) .
 
@@ -196,7 +196,7 @@ a form:specification ;
   rdfs:label "Formulaire Accès"@fr ;
   rdfs:label "Access form"@en ;
   form:showProperties (
-dc:title
+dct:title
 dct:creator
 dc:language
 karstlink:description
@@ -208,7 +208,7 @@ a form:specification ;
   rdfs:label "Formulaire Description"@fr ;
   rdfs:label "Description form"@en ;
   form:showProperties (
-dc:title
+dct:title
 dct:creator
 dc:language
 karstlink:description
