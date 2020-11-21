@@ -40,8 +40,8 @@ dct:rights
 karstlink:forms-Point
 a form:specification ;
   form:classDomain geo:Point ;
-  rdfs:label "Formulaire Point"@fr ;
-  rdfs:label "Point form"@en ;
+  rdfs:label "Formulaire Point KL"@fr ;
+  rdfs:label "Point form KL"@en ;
   form:showProperties (
 rdfs:label
 geo:lat
@@ -80,8 +80,8 @@ karstlink:areaType
 karstlink:forms-BibliographicResource
 a form:specification ;
   form:classDomain dct:BibliographicResource ;
-  rdfs:label "Formulaire Bibliographie"@fr ;
-  rdfs:label "Bibliographic Resource form"@en ;
+  rdfs:label "Formulaire Bibliographie KL"@fr ;
+  rdfs:label "Bibliographic Resource form KL"@en ;
   form:showProperties (
 dct:title
 dct:type
@@ -104,8 +104,8 @@ dct:rights
 karstlink:forms-Person
 a form:specification ;
   form:classDomain foaf:Person ;
-  rdfs:label "Formulaire Person"@fr ;
-  rdfs:label "Person form"@en ;
+  rdfs:label "Formulaire Personne KL"@fr ;
+  rdfs:label "Person form KL"@en ;
   form:showProperties (
 foaf:firstName
 foaf:lastName
@@ -115,13 +115,14 @@ gn:countryCode
 dct:creator
 dct:relation
 karstlink:visited
+foaf:topic_interest
 ) .
 
 karstlink:forms-Organization
 a form:specification ;
   form:classDomain foaf:Organization ;
-  rdfs:label "Formulaire Organization"@fr ;
-  rdfs:label "Organization form"@en ;
+  rdfs:label "Formulaire Organisation KL"@fr ;
+  rdfs:label "Organization form KL"@en ;
   form:showProperties (
 rdfs:label
 gn:alternateName
@@ -141,6 +142,7 @@ dct:creator
 dct:publisher
 dct:relation
 karstlink:visited
+foaf:topic_interest
 ) .
 
 karstlink:forms-Observation
@@ -158,8 +160,8 @@ dct:isPartOf
 karstlink:forms-Occurrence
 a form:specification ;
   form:classDomain dwc:Occurrence ;
-  rdfs:label "Formulaire Occurrence"@fr ;
-  rdfs:label "Occurrence form"@en ;
+  rdfs:label "Formulaire Occurrence KL"@fr ;
+  rdfs:label "Occurrence form KL"@en ;
   form:showProperties (
 rdfs:label
 dct:creator
@@ -174,13 +176,14 @@ dwc:dateIdentified
 dwc:eventDate
 dwc:individualCount
 dwc:associatedTaxa
+dwciri:toTaxon
 ) .
 
 karstlink:forms-LicenseDocument
 a form:specification ;
   form:classDomain dct:LicenseDocument ;
-  rdfs:label "Formulaire License Document"@fr ;
-  rdfs:label "License Document form"@en ;
+  rdfs:label "Formulaire License Document KL"@fr ;
+  rdfs:label "License Document form KL"@en ;
   form:showProperties (
 cc:attributionName
 karstlink:licenceType
@@ -193,7 +196,7 @@ cc:attributionURL
 karstlink:forms-Access
 a form:specification ;
   form:classDomain karstlink:Access ;
-  rdfs:label "Formulaire Accès"@fr ;
+  rdfs:label "Formulaire Accès cavité"@fr ;
   rdfs:label "Access form"@en ;
   form:showProperties (
 dct:title
@@ -219,4 +222,18 @@ karstlink:description
 # karstlink:DocumentType
 # karstlink:DocumentSubject
 # karstlink:LicenceType
+
+karstlink:forms-toTaxon--Occurrence
+  rdfs:label "Observation - taxon détail"@fr ;
+        form:fieldAppliesToForm karstlink:forms-Occurrence ;
+        form:fieldAppliesToProperty dwciri:toTaxon ;
+        form:widgetClass form:SPARQLvirtuosoLookup .
+
+karstlink:forms-subject--Person
+  rdfs:label "topic_interest dans formulaire Person"@fr ;
+  rdfs:label "topic_interest in form Person"@en ;
+	form:fieldAppliesToForm karstlink:forms-Person ;
+	form:fieldAppliesToForm karstlink:forms-Organization ;
+	form:fieldAppliesToProperty foaf:topic_interest ;
+	form:widgetClass form:DBPediaLookup .
 
