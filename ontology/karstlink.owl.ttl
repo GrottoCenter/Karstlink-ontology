@@ -10,6 +10,7 @@
 @prefix geonames: <http://www.geonames.org/ontology#>.
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix schema: <http://schema.org/> .
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 
@@ -19,7 +20,7 @@ karstlink: a owl:Ontology ;
   dc:description """L'ontologie a pour objectif de décrire tous les objets liés au karst : cavités, personnes, groupes, zones, observations de différentes nature, documents.""" ;
   dct:subject dbpedia:Biospeleology , dbpedia:Karst ;
   rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
-  rdfs:seeAlso <https://ontology.uis-speleo.org/ontology/> ;
+  rdfs:seeAlso <https://github.com/GrottoCenter/Karstlink-ontology> ;
   owl:imports foaf: ,
 	      <https://www.w3.org/2003/01/geo/wgs84_pos#> ,
 	      <http://purl.org/dc/terms/> ,
@@ -64,6 +65,13 @@ karstlink:extentBelowEntrance a owl:DatatypeProperty ;
   rdfs:label "hauteur en-dessous Entrée"@fr ;
  rdfs:comment """The vertical distance between the entrance of the cavity and the lowest point in meters"""@en ,
  """La distance verticale entre l'entrée de la cavité et le point le plus bas exprimé en mètres"""@fr .
+
+ karstlink:relatedToUndergroundCavity a owl:ObjectProperty ;
+   rdfs:isDefinedBy karstlink: ;
+   rdfs:range karstlink:UndergroundCavity ;
+   rdfs:label """à propos de la cavité"""@fr ;
+   rdfs:label """related to Underground Cavity"""@en .
+
 
 # From XHTML
  <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
@@ -136,7 +144,10 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:label """Observation """ .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """An Observation."""@en .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """Une Observation."""@fr .
- <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """jmv: pourquoi pas dwc:HumanObservation ?"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """jmv: pourquoi pas dwc:HumanObservation ?
+  jmv: use of this super Class of Occurrence is not clear
+ """@fr .
+dwc:Occurrence rdfs:subClassOf karstlink:Observation .
 
  <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
    rdfs:isDefinedBy karstlink: ;
@@ -146,7 +157,7 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être utilisées"""@fr .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """jmv:  licences: pourquoi ne pas réuiliser un existant ?  """@fr .
+ <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """jmv:  licences: pourquoi ne pas réutiliser un existant ?  """@fr .
 
   <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> ;
    rdfs:isDefinedBy karstlink: ;

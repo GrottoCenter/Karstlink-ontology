@@ -15,6 +15,7 @@
 
 karstlink:forms-UndergroundCavity
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:UndergroundCavity ;
   rdfs:label "Formulaire cavité"@fr ;
   rdfs:label "cavity form"@en ;
@@ -25,6 +26,7 @@ gn:countryCode
 geo:lat
 geo:long
 geo:alt
+dwciri:inDescribedPlace
 dwc:coordinatePrecision
 karstlink:length
 karstlink:extentAboveEntrance
@@ -39,6 +41,7 @@ dct:rights
 
 karstlink:forms-Point
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain geo:Point ;
   rdfs:label "Formulaire Point KL"@fr ;
   rdfs:label "Point form KL"@en ;
@@ -48,15 +51,17 @@ geo:lat
 geo:long
 geo:alt
 dwc:coordinatePrecision
+karstlink:relatedToUndergroundCavity
 dct:isReferencedBy
 dct:isPartOf
-dct:hasPart
+# dct:hasPart : jmv quel serait le sens?
 dct:rights
 karstlink:pointType
 ) .
 
 karstlink:forms-Area
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:Area ;
   rdfs:label "Formulaire zone"@fr ;
   rdfs:label "Area form"@en ;
@@ -74,11 +79,14 @@ schema:polygon
 dct:isPartOf
 dct:hasPart
 dct:rights
+karstlink:relatedToUndergroundCavity
 karstlink:areaType
+dwciri:inDescribedPlace
 ) .
 
 karstlink:forms-BibliographicResource
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain dct:BibliographicResource ;
   rdfs:label "Formulaire Bibliographie KL"@fr ;
   rdfs:label "Bibliographic Resource form KL"@en ;
@@ -91,6 +99,7 @@ dc:language
 dct:publisher
 dct:creator
 dct:date
+karstlink:relatedToUndergroundCavity
 dct:format
 dct:identifier
 dct:source
@@ -103,6 +112,7 @@ dct:rights
 
 karstlink:forms-Person
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain foaf:Person ;
   rdfs:label "Formulaire Personne KL"@fr ;
   rdfs:label "Person form KL"@en ;
@@ -120,6 +130,7 @@ foaf:topic_interest
 
 karstlink:forms-Organization
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain foaf:Organization ;
   rdfs:label "Formulaire Organisation KL"@fr ;
   rdfs:label "Organization form KL"@en ;
@@ -145,26 +156,32 @@ karstlink:visited
 foaf:topic_interest
 ) .
 
-karstlink:forms-Observation
-a form:specification ;
-  form:classDomain karstlink:Observation ;
-  rdfs:label "Formulaire Observation"@fr ;
-  rdfs:label "Observation form"@en ;
-  form:showProperties (
-dct:creator
-dct:relation
-dct:rights
-dct:isPartOf
-) .
+# jmv : use of this super Class	of Occurence is not clear
+# karstlink:forms-Observation
+# a form:specification ;
+#   form:classDomain karstlink:Observation ;
+#   rdfs:label "Formulaire Observation"@fr ;
+#   rdfs:label "Observation form"@en ;
+#   form:showProperties (
+# dct:creator
+# dct:relation
+# dct:rights
+# dct:isPartOf
+## dct:spatial
+## dwciri:inDescribedPlace
+# ) .
 
 karstlink:forms-Occurrence
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/> ;
   form:classDomain dwc:Occurrence ;
   rdfs:label "Formulaire Occurrence KL"@fr ;
   rdfs:label "Occurrence form KL"@en ;
   form:showProperties (
 rdfs:label
 dct:creator
+karstlink:relatedToUndergroundCavity
 dct:relation
 dct:rights
 dct:isPartOf
@@ -181,6 +198,7 @@ dwciri:toTaxon
 
 karstlink:forms-LicenseDocument
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain dct:LicenseDocument ;
   rdfs:label "Formulaire License Document KL"@fr ;
   rdfs:label "License Document form KL"@en ;
@@ -195,6 +213,7 @@ cc:attributionURL
 
 karstlink:forms-Access
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:Access ;
   rdfs:label "Formulaire Accès cavité"@fr ;
   rdfs:label "Access form"@en ;
@@ -207,6 +226,7 @@ karstlink:description
 
 karstlink:forms-Description
 a form:specification ;
+  dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:Description ;
   rdfs:label "Formulaire Description"@fr ;
   rdfs:label "Description form"@en ;
@@ -225,6 +245,7 @@ karstlink:description
 
 karstlink:forms-toTaxon--Occurrence
   rdfs:label "Observation - taxon détail"@fr ;
+  rdfs:label "Observation - taxon detail"@en ;
         form:fieldAppliesToForm karstlink:forms-Occurrence ;
         form:fieldAppliesToProperty dwciri:toTaxon ;
         form:widgetClass form:SPARQLvirtuosoLookup .
@@ -237,3 +258,11 @@ karstlink:forms-subject--Person
 	form:fieldAppliesToProperty foaf:topic_interest ;
 	form:widgetClass form:DBPediaLookup .
 
+karstlink:forms-inDescribedPlace--Observation
+  rdfs:label "Observation - lieu"@fr ;
+  rdfs:label "Observation - location"@en ;
+	form:fieldAppliesToForm karstlink:forms-Observation ;
+	form:fieldAppliesToForm karstlink:forms-UndergroundCavity ;
+	form:fieldAppliesToForm karstlink:forms-Area ;
+	form:fieldAppliesToProperty dwciri:inDescribedPlace ;
+	form:widgetClass form:DBPediaLookup .
