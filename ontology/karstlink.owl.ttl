@@ -434,107 +434,23 @@ dwc:Occurrence rdfs:subClassOf karstlink:Observation .
  <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
 
 
-<https://ontology.uis-speleo.org/ontology/#licenceType> a owl:Class ;
+<https://ontology.uis-speleo.org/ontology/#LicenceType> a owl:Class ;
    rdfs:isDefinedBy karstlink: ;
    owl:oneOf (
- <http://dbpedia.org/resource/CC_BY>
- <http://dbpedia.org/resource/CC_BY_SA>
- <http://dbpedia.org/resource/ODbL>
- <https://opendatacommons.org/licenses/by/>
+     <http://dbpedia.org/resource/CC_BY>
+     <http://dbpedia.org/resource/CC_BY_SA>
+     <http://dbpedia.org/resource/ODbL>
+     <https://opendatacommons.org/licenses/by/>
  ) .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """type de licence"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#LicenceType> rdfs:label """licence type """@en .
+ <https://ontology.uis-speleo.org/ontology/#LicenceType> rdfs:label """type de licence"""@fr .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection of terms that can be used to describe
             type of Licence"""@en .
  <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection de termes pouvant être utilisés pour
             décrire le type de licence"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#CC-BY> a <http://www.w3.org/2004/02/skos/core#Concept>
-   ; rdfs:isDefinedBy karstlink: .
- <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:label """CC-BY """ .
- <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """You are free to: Share — copy and redistribute the
-            material in any medium or format Adapt — remix,
-            transform, and build upon the material for any purpose,
-            even commercially. The licensor cannot revoke these
-            freedoms as long as you follow the license terms. Under
-            the following terms: Attribution — You must give
-            appropriate credit, provide a link to the license, and
-            indicate if changes were made. You may do so in any
-            reasonable manner, but not in any way that suggests the
-            licensor endorses you or your use. No additional
-            restrictions — You may not apply legal terms or
-            technological measures that legally restrict others
-            from doing anything the license permits."""@en .
- <https://ontology.uis-speleo.org/ontology/#CC-BY> rdfs:comment """Vous êtes libre de: Partager - copier et
-            redistribuer le matériel dans n'importe quel support ou
-            format Adapter - remixer, transformer et construire sur
-            le matériel pour n'importe quel but, même commercial.
-            Le concédant de licence ne peut pas révoquer ces
-            libertés tant que vous respectez les termes de la
-            licence. Selon les conditions suivantes: Attribution -
-            Vous devez donner le crédit approprié, fournir un lien
-            vers la licence et indiquer si des modifications ont
-            été apportées. Vous pouvez le faire de toute manière
-            raisonnable, mais en aucune manière suggérant que le
-            concédant de licence vous approuve ou approuve votre
-            utilisation. Aucune restriction supplémentaire - Vous
-            ne pouvez pas appliquer les conditions légales ou les
-            mesures technologiques qui empêchent légalement les
-            autres de faire tout ce que la licence permet."""@fr .
-
- <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> a <http://www.w3.org/2004/02/skos/core#Concept>
-   ; rdfs:isDefinedBy karstlink: .
- <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:label """CC-BY-SA """ .
- <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """You are free to: Share — copy and redistribute the
-            material in any medium or format Adapt — remix,
-            transform, and build upon the material for any purpose,
-            even commercially. The licensor cannot revoke these
-            freedoms as long as you follow the license terms. Under
-            the following terms: Attribution — You must give
-            appropriate credit, provide a link to the license, and
-            indicate if changes were made. You may do so in any
-            reasonable manner, but not in any way that suggests the
-            licensor endorses you or your use. ShareAlike — If you
-            remix, transform, or build upon the material, you must
-            distribute your contributions under the same license as
-            the original. No additional restrictions — You may not
-            apply legal terms or technological measures that
-            legally restrict others from doing anything the license
-            permits."""@en .
- <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> rdfs:comment """Vous êtes libre de: Partager - copier et
-            redistribuer le matériel dans n'importe quel support ou
-            format Adapter - remixer, transformer et construire sur
-            le matériel pour n'importe quel but, même commercial.
-            Le concédant de licence ne peut pas révoquer ces
-            libertés tant que vous respectez les termes de la
-            licence. Selon les conditions suivantes: Attribution -
-            Vous devez donner le crédit approprié, fournir un lien
-            vers la licence et indiquer si des modifications ont
-            été apportées. Vous pouvez le faire de toute manière
-            raisonnable, mais en aucune manière suggérant que le
-            concédant de licence vous approuve ou approuve votre
-            utilisation. ShareAlike - Si vous remixez, transformez
-            ou construisez sur le matériel, vous devez distribuer
-            vos contributions sous la même licence que l'original.
-            Aucune restriction supplémentaire - Vous ne pouvez pas
-            appliquer les conditions légales ou les mesures
-            technologiques qui empêchent légalement les autres de
-            faire tout ce que la licence permet."""@fr .
-
- <https://ontology.uis-speleo.org/ontology/#ODBL> a <http://www.w3.org/2004/02/skos/core#Concept>
-   ; rdfs:isDefinedBy karstlink: .
- <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:label """ODBL """ .
- <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """The Open Database License (ODbL) is a copyleft
-            ("share alike") license agreement intended to allow
-            users to freely share, modify, and use a database while
-            maintaining this same freedom for others"""@en .
- <https://ontology.uis-speleo.org/ontology/#ODBL> rdfs:comment """La licence Open Database (ODbL) est un accord de
-            licence copyleft («partager à l'identique») destiné à
-            permettre aux utilisateurs de partager, modifier et
-            utiliser librement une base de données tout en
-            conservant cette même liberté pour les autres"""@fr .
-
- <https://ontology.uis-speleo.org/ontology/#ODC-By> a <http://www.w3.org/2004/02/skos/core#Concept>
+ # <https://ontology.uis-speleo.org/ontology/#ODC-By>
+<https://opendatacommons.org/licenses/by/> a <http://www.w3.org/2004/02/skos/core#Concept>
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:label """ODC-By """ .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution for Data/Databases"""@en .
