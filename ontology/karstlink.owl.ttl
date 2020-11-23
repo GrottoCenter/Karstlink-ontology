@@ -149,15 +149,15 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  """@fr .
 dwc:Occurrence rdfs:subClassOf karstlink:Observation .
 
- <https://ontology.uis-speleo.org/ontology/#licenceType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+ <https://ontology.uis-speleo.org/ontology/#licenseType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
    rdfs:isDefinedBy karstlink: ;
    rdfs:domain karstlink:UndergroundCavity ;
-   rdfs:range karstlink:LicenceType .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:label """licence type """@en .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """A controlled list of licenses that can be used"""@en .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Une liste contrôlée de licences pouvant être utilisées"""@fr .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """jmv:  licences: pourquoi ne pas réutiliser un existant ?  """@fr .
+   rdfs:range karstlink:LicenseType .
+ <https://ontology.uis-speleo.org/ontology/#licenseType> rdfs:label """license type """@en .
+ <https://ontology.uis-speleo.org/ontology/#licenseType> rdfs:label """ type de licence"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#licenseType> rdfs:comment """A controlled list of licenses that can be used"""@en .
+ <https://ontology.uis-speleo.org/ontology/#licenseType> rdfs:comment """Une liste contrôlée de licences pouvant être utilisées"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#licenseType> rdfs:comment """jmv:  licenses: pourquoi ne pas réutiliser un existant ?  """@fr .
 
   <https://ontology.uis-speleo.org/ontology/#Description> a <http://www.w3.org/2002/07/owl#Class> ;
    rdfs:isDefinedBy karstlink: ;
@@ -245,7 +245,7 @@ dwc:Occurrence rdfs:subClassOf karstlink:Observation .
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorization to publish """@en .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorisation de publier"""@fr .
- <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attesting to the authorization to publish other documents under a defined licence"""@en .
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attesting to the authorization to publish other documents under a defined license"""@en .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attestant l'autorisation de publier d'autres documents sous une licence définie"""@fr .
 
  <https://ontology.uis-speleo.org/ontology/#reefnet> a <http://www.w3.org/2004/02/skos/core#Concept>
@@ -434,7 +434,7 @@ dwc:Occurrence rdfs:subClassOf karstlink:Observation .
  <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
 
 
-<https://ontology.uis-speleo.org/ontology/#LicenceType> a owl:Class ;
+<https://ontology.uis-speleo.org/ontology/#LicenseType> a owl:Class ;
    rdfs:isDefinedBy karstlink: ;
    owl:oneOf (
      <http://dbpedia.org/resource/CC_BY>
@@ -442,11 +442,11 @@ dwc:Occurrence rdfs:subClassOf karstlink:Observation .
      <http://dbpedia.org/resource/ODbL>
      <https://opendatacommons.org/licenses/by/>
  ) .
- <https://ontology.uis-speleo.org/ontology/#LicenceType> rdfs:label """licence type """@en .
- <https://ontology.uis-speleo.org/ontology/#LicenceType> rdfs:label """type de licence"""@fr .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection of terms that can be used to describe
-            type of Licence"""@en .
- <https://ontology.uis-speleo.org/ontology/#licenceType> rdfs:comment """Collection de termes pouvant être utilisés pour
+ <https://ontology.uis-speleo.org/ontology/#LicenseType> rdfs:label """license type """@en .
+ <https://ontology.uis-speleo.org/ontology/#LicenseType> rdfs:label """type de licence"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#LicenseType> rdfs:comment """Collection of terms that can be used to describe
+            type of License"""@en .
+ <https://ontology.uis-speleo.org/ontology/#LicenseType> rdfs:comment """Collection de termes pouvant être utilisés pour
             décrire le type de licence"""@fr .
 
  # <https://ontology.uis-speleo.org/ontology/#ODC-By>

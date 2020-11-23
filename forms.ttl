@@ -204,7 +204,7 @@ a form:specification ;
   rdfs:label "License Document form KL"@en ;
   form:showProperties (
 cc:attributionName
-karstlink:licenceType
+karstlink:licenseType
 dct:created
 dct:modified
 cc:attributionURL
@@ -241,7 +241,7 @@ karstlink:description
 # karstlink:AreaType
 # karstlink:DocumentType
 # karstlink:DocumentSubject
-# karstlink:LicenceType
+# karstlink:LicenseType
 
 karstlink:forms-toTaxon--Occurrence
   rdfs:label "Observation - taxon détail"@fr ;
