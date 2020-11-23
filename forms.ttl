@@ -12,8 +12,27 @@
 
 @prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
 @prefix  form: <http://raw.githubusercontent.com/jmvanel/semantic_forms/master/vocabulary/forms.owl.ttl#> .
+# @prefix klforms: <https://ontology.uis-speleo.org/ontology/forms.ttl#> .
+@prefix klforms: <#> .
 
-karstlink:forms-UndergroundCavity
+klforms: dct:hasPart
+klforms:UndergroundCavity , 
+klforms:Point ,
+klforms:Area ,
+klforms:BibliographicResource ,
+klforms:Person ,
+klforms:Organization ,
+# klforms:Observation ,
+klforms:Occurrence ,
+klforms:LicenseDocument ,
+klforms:Access ,
+klforms:Description ,
+klforms:toTaxon--Occurrence ,
+klforms:subject--Person ,
+klforms:inDescribedPlace--Observation
+.
+
+klforms:UndergroundCavity
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:UndergroundCavity ;
@@ -39,7 +58,7 @@ dct:hasPart
 dct:rights
 ) .
 
-karstlink:forms-Point
+klforms:Point
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain geo:Point ;
@@ -59,7 +78,7 @@ dct:rights
 karstlink:pointType
 ) .
 
-karstlink:forms-Area
+klforms:Area
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:Area ;
@@ -84,7 +103,7 @@ karstlink:areaType
 dwciri:inDescribedPlace
 ) .
 
-karstlink:forms-BibliographicResource
+klforms:BibliographicResource
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain dct:BibliographicResource ;
@@ -110,7 +129,7 @@ dct:hasPart
 dct:rights
 ) .
 
-karstlink:forms-Person
+klforms:Person
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain foaf:Person ;
@@ -128,7 +147,7 @@ karstlink:visited
 foaf:topic_interest
 ) .
 
-karstlink:forms-Organization
+klforms:Organization
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain foaf:Organization ;
@@ -157,7 +176,7 @@ foaf:topic_interest
 ) .
 
 # jmv : use of this super Class	of Occurence is not clear
-# karstlink:forms-Observation
+# klforms:Observation
 # a form:specification ;
 #   form:classDomain karstlink:Observation ;
 #   rdfs:label "Formulaire Observation"@fr ;
@@ -171,7 +190,7 @@ foaf:topic_interest
 ## dwciri:inDescribedPlace
 # ) .
 
-karstlink:forms-Occurrence
+klforms:Occurrence
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   dct:subject <https://ontology.uis-speleo.org/ontology/> ;
@@ -196,7 +215,7 @@ dwc:associatedTaxa
 dwciri:toTaxon
 ) .
 
-karstlink:forms-LicenseDocument
+klforms:LicenseDocument
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain dct:LicenseDocument ;
@@ -211,7 +230,7 @@ cc:attributionURL
 ) .
 
 
-karstlink:forms-Access
+klforms:Access
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:Access ;
@@ -224,7 +243,7 @@ dc:language
 karstlink:description
 ) .
 
-karstlink:forms-Description
+klforms:Description
 a form:specification ;
   dct:subject <https://ontology.uis-speleo.org/ontology/#> ;
   form:classDomain karstlink:Description ;
@@ -243,26 +262,26 @@ karstlink:description
 # karstlink:DocumentSubject
 # karstlink:LicenseType
 
-karstlink:forms-toTaxon--Occurrence
+klforms:toTaxon--Occurrence
   rdfs:label "Observation - taxon détail"@fr ;
   rdfs:label "Observation - taxon detail"@en ;
-        form:fieldAppliesToForm karstlink:forms-Occurrence ;
+        form:fieldAppliesToForm klforms:Occurrence ;
         form:fieldAppliesToProperty dwciri:toTaxon ;
         form:widgetClass form:SPARQLvirtuosoLookup .
 
-karstlink:forms-subject--Person
+klforms:subject--Person
   rdfs:label "topic_interest dans formulaire Person"@fr ;
   rdfs:label "topic_interest in form Person"@en ;
-	form:fieldAppliesToForm karstlink:forms-Person ;
-	form:fieldAppliesToForm karstlink:forms-Organization ;
+	form:fieldAppliesToForm klforms:Person ;
+	form:fieldAppliesToForm klforms:Organization ;
 	form:fieldAppliesToProperty foaf:topic_interest ;
 	form:widgetClass form:DBPediaLookup .
 
-karstlink:forms-inDescribedPlace--Observation
+klforms:inDescribedPlace--Observation
   rdfs:label "Observation - lieu"@fr ;
   rdfs:label "Observation - location"@en ;
-	form:fieldAppliesToForm karstlink:forms-Observation ;
-	form:fieldAppliesToForm karstlink:forms-UndergroundCavity ;
-	form:fieldAppliesToForm karstlink:forms-Area ;
+	form:fieldAppliesToForm klforms:Observation ;
+	form:fieldAppliesToForm klforms:UndergroundCavity ;
+	form:fieldAppliesToForm klforms:Area ;
 	form:fieldAppliesToProperty dwciri:inDescribedPlace ;
 	form:widgetClass form:DBPediaLookup .
