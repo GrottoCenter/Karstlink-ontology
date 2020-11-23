@@ -1,0 +1,42 @@
+{
+  "@id" : "https://ontology.uis-speleo.org/example/#Josiane_Lips",
+  "@type" : "http://xmlns.com/foaf/0.1/Person", 
+  "countryCode" : "FR",
+  "firstName" : {
+    "@language" : "fr",
+    "@value" : "Josiane"
+  },
+  "lastName" : {
+    "@language" : "fr",
+    "@value" : "Lips"
+  },
+  "member" : [ "https://ontology.uis-speleo.org/example/#Vulcains", "https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie" ],
+  "nick" : {
+    "@language" : "fr",
+    "@value" : "Jo"
+  },
+  "visited" : [ "https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard", "https://ontology.uis-speleo.org/example/#V4" ],
+  "@context" : {
+    "lastName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/lastName"
+    },
+    "firstName" : {
+      "@id" : "http://xmlns.com/foaf/0.1/firstName"
+    },
+    "member" : {
+      "@id" : "http://xmlns.com/foaf/0.1/member",
+      "@type" : "@id"
+    },
+    "nick" : {
+      "@id" : "http://xmlns.com/foaf/0.1/nick"
+    },
+    "visited" : {
+      "@id" : "https://ontology.uis-speleo.org/ontology/#visited",
+      "@type" : "@id"
+    },
+    "countryCode" : {
+      "@id" : "http://www.geonames.org/ontology#countryCode",
+      "@type" : "@id"
+    },
+  }
+}
