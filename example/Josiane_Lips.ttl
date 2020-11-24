@@ -1,0 +1,15 @@
+<https://ontology.uis-speleo.org/example/#Josiane_Lips>
+        a                   <http://xmlns.com/foaf/0.1/Person> , <https://ontology.uis-speleo.org/ontology/#forms-Person> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://xmlns.com/foaf/0.1/firstName>
+                "Josiane"@fr ;
+        <http://xmlns.com/foaf/0.1/lastName>
+                "Lips"@fr ;
+        <http://xmlns.com/foaf/0.1/member>
+                <https://ontology.uis-speleo.org/example/#Vulcains> , <https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie> ;
+        <http://xmlns.com/foaf/0.1/nick>
+                "Jo"@fr ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> ;
+        <urn:displayLabel>  "Josiane Lips" .

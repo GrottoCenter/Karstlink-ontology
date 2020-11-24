@@ -93,7 +93,7 @@
       "btn btn-primary btn-sm active" role="button" aria-pressed=
       "true">Document subject</a> <a href="#DocumentType" class=
       "btn btn-primary btn-sm active" role="button" aria-pressed=
-      "true">document type</a> <a href="#licenceType" class=
+      "true">document type</a> <a href="#licenseType" class=
       "btn btn-primary btn-sm active" role="button" aria-pressed=
       "true">licence type</a> <a href="#PointType" class=
       "btn btn-primary btn-sm active" role="button" aria-pressed=
@@ -225,7 +225,7 @@
             <td class="theme-label">Identifier</td>
             <td>
               <a href=
-              "http://www.geonames.org/ontology/#name">http://www.geonames.org/ontology/#name</a>
+              "https://www.w3.org/TR/rdf-schema/#ch_label">https://www.w3.org/TR/rdf-schema/#ch_label</a>
             </td>
           </tr>
           <tr>
@@ -786,22 +786,12 @@
         <li class="list-group-item list-group-item-secondary">
           <p><a href="#Access" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Access</span></a> <a href="#Agent" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Agent</span></a> <a href="#Area" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Area</span></a> <a href="#BibliographicResource" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Bibliographic Resource</span></a> <a href="#Description"
+          Access</span></a>  <a href="#Description"
           class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Description</span></a> <a href="#LicenseDocument" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          License Document</span></a> <a href="#Observation" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Observation</span></a> <a href="#Point" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Point</span></a> <a href="#UndergroundCavity" class=
+          License Document</span></a> <a href="#UndergroundCavity" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Underground Cavity</span></a></p>
           <p><a href="#alt" class=
@@ -810,11 +800,7 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           coordinate precision</span></a> <a href="#hasPart" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#isPartOf" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          is part of</span></a> <a href="#isReferencedBy" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          is referenced by</span></a> <a href="#lat" class=
+          has part</span></a> <a href="#lat" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           latitude</span></a> <a href="#long" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -822,11 +808,11 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           name</span></a> <a href="#pointType" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          point type</span></a> <a href="#rights" class=
+          point type</span></a>  <a href="#relatedToUndergroundCavity" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          rights</span></a> <a href="#visited" class=
+          related to underground cavity</span></a> <a href="#rights" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          visited</span></a></p>
+          rights</span></a></p>
         </li>
       </ul>
       <p class="invisible"></p>
@@ -893,6 +879,36 @@
           </tr>
         </tbody>
       </table>
+             <div id="relatedToUndergroundCavity"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">related to underground cavity <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity">https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Indicates that the resource is linked to a underground cavity</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Indique que la ressource est liée à une cavité</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
       <div class="badge badge-alert float-right">
         <a href="#page-top">Top</a>
       </div><!-- Area description-->
@@ -911,39 +927,27 @@
         <li class="list-group-item list-group-item-secondary">
           <p><a href="#Access" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Access</span></a> <a href="#Agent" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Agent</span></a> <a href="#BibliographicResource" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Bibliographic Resource</span></a> <a href="#Description"
+          Access</span></a> <a href="#Description"
           class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Description</span></a> <a href="#LicenseDocument" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          License Document</span></a> <a href="#Observation" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Observation</span></a> <a href="#Point" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Point</span></a> <a href="#UndergroundCavity" class=
+          License Document</span></a>  <a href="#UndergroundCavity" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Underground Cavity</span></a></p>
           <p><a href="#areaType" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           area type</span></a> <a href="#hasPart" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#isPartOf" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          is part of</span></a> <a href="#isReferencedBy" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          is referenced by</span></a> <a href="#name" class=
+          has part</span></a> <a href="#name" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           name</span></a> <a href="#polygone" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          polygone</span></a> <a href="#rights" class=
+          polygone</span></a> <a href="#relatedToUndergroundCavity" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          rights</span></a> <a href="#visited" class=
+          related to underground cavity</span></a> <a href="#rights" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          visited</span></a></p>
+          rights</span></a> </p>
         </li>
       </ul>
       <p class="invisible"></p>
@@ -1047,6 +1051,7 @@
           </tr>
         </tbody>
       </table>
+
       <div class="badge badge-alert float-right">
         <a href="#page-top">Top</a>
       </div><!-- Document description-->
@@ -1525,21 +1530,20 @@
           Properties</span>
         </li>
         <li class="list-group-item list-group-item-secondary">
-          <p><a href="#BibliographicResource" class=
+          <p><a href="#Area" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Bibliographic Resource</span></a> <a href="#Observation"
-          class=
+          Area</span></a> <a href="#LicenseDocument" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Observation</span></a> <a href="#UndergroundCavity"
+          License Document</span></a> <a href="#Organization"
+          class="btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Organization</span></a> <a href="#Point" class=
+          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
+          Point</span></a> <a href="#UndergroundCavity"
           class="btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Underground Cavity</span></a></p>
           <p><a href="#countryCode" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          country code</span></a> <a href="#creator" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          creator</span></a> <a href="#discovered" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          discovered</span></a> <a href="#firstName" class=
+          country code</span></a> <a href="#firstName" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           first name</span></a> <a href="#lastName" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -1547,7 +1551,9 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           member</span></a> <a href="#nick" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          nickname</span></a> <a href="#visited" class=
+          nickname</span></a> <a href="#rights" class=
+          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          rights</span></a> <a href="#visited" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           visited</span></a></p>
         </li>
@@ -1695,20 +1701,16 @@
           Properties</span>
         </li>
         <li class="list-group-item list-group-item-secondary">
-          <p><a href="#Agent" class=
+          <p><a href="#Area" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Agent</span></a> <a href="#Area" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Area</span></a> <a href="#BibliographicResource" class=
-          "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Bibliographic Resource</span></a> <a href="#Description"
+          Area</span></a> <a href="#Description"
           class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Description</span></a> <a href="#LicenseDocument" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          License Document</span></a> <a href="#Observation" class=
+          License Document</span></a> <a href="#Organization" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
-          Observation</span></a> <a href="#Point" class=
+          Organization</span></a> <a href="#Point" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
           Point</span></a> <a href="#UndergroundCavity" class=
           "btn btn-outline-danger btn-sm btn-icon-split"><span class="text">
@@ -1724,13 +1726,7 @@
           alternate name</span></a> <a href="#coordinatePrecision"
           class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          coordinate precision</span></a> <a href="#creator" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          creator</span></a> <a href="#discovered" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          discovered</span></a> <a href="#hasPart" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#homepage" class=
+          coordinate precision</span></a> <a href="#homepage" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           home page</span></a> <a href="#lat" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -1740,13 +1736,11 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           mailbox</span></a> <a href="#name" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          name</span></a> <a href="#postalCode" class=
+          name</span></a> <a href="#member" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          postal code</span></a> <a href="#publisher" class=
+          member</span></a> <a href="#postalCode" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          publisher</span></a> <a href="#relation" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          relation</span></a> <a href="#rights" class=
+          postal code</span></a> <a href="#rights" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           rights</span></a> <a href="#streetAddress" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -4562,15 +4556,15 @@
       <div class="badge badge-alert float-right">
         <a href="#page-top">Top</a>
       </div><!-- licence type description-->
-      <div id="licenceType"></div><br />
+      <div id="licenseType"></div><br />
       <br />
       <br />
-      <h3 class="text-uppercase text-white">licence type</h3>
+      <h3 class="text-uppercase text-white">license type</h3>
       <ul class="list-group">
         <li class="list-group-item list-group-item-secondary">
           <a href="#" class=
           "btn btn-danger btn-icon-split"><span class=
-          "text">Licence Type</span></a> <span class=
+          "text">License Type</span></a> <span class=
           "badge badge-secondary float-right">Related SKOS
           Concept</span>
         </li>
@@ -4597,8 +4591,8 @@
             <td class="theme-label">Identifier</td>
             <td>
               <a href=
-              "https://ontology.uis-speleo.org/ontology/#licenceType">
-              https://ontology.uis-speleo.org/ontology/#licenceType</a>
+              "https://ontology.uis-speleo.org/ontology/#licenseType">
+              https://ontology.uis-speleo.org/ontology/#licenseType</a>
             </td>
           </tr>
           <tr>
@@ -4631,7 +4625,7 @@
             <td class="theme-label">Identifier</td>
             <td>
               <a href=
-              "https://ontology.uis-speleo.org/ontology/#CC-BY">https://ontology.uis-speleo.org/ontology/#CC-BY</a>
+              "http://dbpedia.org/resource/CC_BY">http://dbpedia.org/resource/CC_BY</a>
             </td>
           </tr>
           <tr>
@@ -4692,7 +4686,7 @@
             <td class="theme-label">Identifier</td>
             <td>
               <a href=
-              "https://ontology.uis-speleo.org/ontology/#CC-BY-SA">https://ontology.uis-speleo.org/ontology/#CC-BY-SA</a>
+              "http://dbpedia.org/resource/CC_BY_SA">http://dbpedia.org/resource/CC_BY_SA</a>
             </td>
           </tr>
           <tr>
@@ -4759,7 +4753,7 @@
             <td class="theme-label">Identifier</td>
             <td>
               <a href=
-              "https://ontology.uis-speleo.org/ontology/#ODBL">https://ontology.uis-speleo.org/ontology/#ODBL</a>
+              "http://dbpedia.org/resource/ODbL">http://dbpedia.org/resource/ODbL</a>
             </td>
           </tr>
           <tr>
