@@ -1,5 +1,10 @@
 { "@context": {
+
   "karstlink": "https://ontology.uis-speleo.org/ontology/#" ,
+  "@vocab" : "https://ontology.uis-speleo.org/ontology/#" ,
+  "vocab1.1_TODO" : "karstlink" ,
+  "@base" : "https://beta.grottocenter.org/api/v1/entrances/",
+
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#" ,
   "rdf":  "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ,
   "foaf": "http://xmlns.com/foaf/0.1/" ,
@@ -45,11 +50,28 @@
   "urn:==============" ,
   "author": {"@id": "dct:creator" , "@type": "@id" } ,
   "cave": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
-  "entrance": {"@id": "geo:Point" , "@type": "@id" } ,
+  "entrance": {"@id": "dct:spatial" , "@type": "@id" } ,
 
   "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" } ,
   "cavers": {"@id": "karstlink:visited" , "@type": "@id" , "@type": "@id" } ,
   "exploredCaves": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
-  "partneredCaves": {"@id": "karstlink:relatedToUndergroundCavity", "@type": "@id" }
+  "partneredCaves": {"@id": "karstlink:relatedToUndergroundCavity", "@type": "@id" } ,
+
+  "comments": {
+    "@context": {
+      "@base": "/comments/"
+    }
+  } ,
+    "descriptions": {
+    "@context": {
+      "@base": "/descriptions/"
+    }
+  } ,
+    "names": {
+    "@context": {
+      "@base": "/names/"
+    }
+  }
+
 }}
 
