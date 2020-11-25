@@ -201,6 +201,7 @@ a form:specification ;
 rdfs:label
 dct:creator
 karstlink:relatedToUndergroundCavity
+dct:spatial
 dct:relation
 dct:rights
 dct:isPartOf
