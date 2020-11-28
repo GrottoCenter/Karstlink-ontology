@@ -2,7 +2,6 @@
 
   "karstlink": "https://ontology.uis-speleo.org/ontology/#" ,
   "@vocab" : "https://ontology.uis-speleo.org/ontology/#" ,
-  "vocab1.1_TODO" : "karstlink" ,
   "@base" : "https://beta.grottocenter.org/api/v1/entrances/",
 
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#" ,
@@ -34,16 +33,16 @@
   "city": "schema:addressLocality" ,
   "country": "schema:addressCountry" ,
   "postalCode": "schema:postalCode" ,
-  "county": "urn:???" ,
-  "region": "urn:???" ,
-  "village":"urn:???" ,
+  "county": "urn:TODO" ,
+  "region": "urn:TODO" ,
+  "village":"urn:TODO" ,
 
-  "yearBirth" : "urn:?" ,
-  "dateInscription" : "urn:?" ,
-  "dateReviewed" : "urn:?" ,
-  "customMessage" : "urn:?" ,
-  "isOfficialPartner" : "urn:?" ,
-  "pictureFileName" : "urn:?" ,
+  "yearBirth" : "urn:TODO" ,
+  "dateInscription" : "urn:TODO" ,
+  "dateReviewed" : "urn:TODO" ,
+  "customMessage" : "urn:TODO" ,
+  "isOfficialPartner" : "urn:TODO" ,
+  "pictureFileName" : "urn:TODO" ,
   "associatedTaxa": "karstlink:associatedTaxa" ,
 
   "ObjectProperty":
@@ -53,7 +52,11 @@
   "entrance": {"@id": "dct:spatial" , "@type": "@id" } ,
 
   "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" } ,
-  "cavers": {"@id": "karstlink:visited" , "@type": "@id" , "@type": "@id" } ,
+  "cavers": {"@id": "karstlink:visited" , "@type": "@id" ,
+      "@context": {
+      "@base": "/cavers/"
+    }
+  } ,
   "exploredCaves": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
   "partneredCaves": {"@id": "karstlink:relatedToUndergroundCavity", "@type": "@id" } ,
 
