@@ -119,6 +119,7 @@ dct:publisher
 dct:creator
 dct:date
 karstlink:relatedToUndergroundCavity
+karstlink:documentType
 dct:format
 dct:identifier
 dct:source
