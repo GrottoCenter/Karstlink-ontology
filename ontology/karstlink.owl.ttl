@@ -30,7 +30,8 @@ karstlink: a owl:Ontology ;
 	      <https://creativecommons.org/schema.rdf> ,
               <http://id.loc.gov/vocabulary/marcgt.nt> ,
               <http://purl.org/dc/dcmitype/> ,
-	      geonames:
+	      geonames: ,
+	      <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_type.ttl>
   .
 
   # For marcgt = "MARC Genre/Terms Scheme"
@@ -188,6 +189,7 @@ dwc:Occurrence rdfs:subClassOf karstlink:Observation .
  """@fr .
 
 karstlink:documentType a owl:ObjectProperty ;
+  rdfs:subPropertyOf dct:type ;
   rdfs:isDefinedBy karstlink: ;
   rdfs:domain dct:BibliographicResource ;
   rdfs:range karstlink:DocumentType ;
@@ -195,8 +197,9 @@ karstlink:documentType a owl:ObjectProperty ;
   rdfs:label """ Type de document """@fr .
 
 # Enumeration, cf https://www.w3.org/TR/owl-ref/#EnumeratedClass
-<https://ontology.uis-speleo.org/ontology/#DocumentType> a owl:Class ;
+karstlink:DocumentType a owl:Class ;
   rdfs:isDefinedBy karstlink: ;
+  rdfs:seeAlso dct:DCMIType ;
   owl:oneOf (
    marcgt:abs
    marcgt:art
