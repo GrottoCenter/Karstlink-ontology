@@ -143,9 +143,11 @@
           extent above entrance</span></a> <a href=
           "#extentBelowEntrance" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          extent below entrance</span></a> <a href="#hasPart"
+          extent below entrance</span></a> <a href="#hasAccessDocument"
           class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#isPartOf" class=
+          has access document</span></a> <a href="#hasDescriptionDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has description document</span></a> <a href="#isPartOf" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           is part of</span></a> <a href="#lat" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -264,31 +266,60 @@
           </tr>
         </tbody>
       </table>
-      <div id="hasPart"></div><br />
+      <div id="hasAccessDocument"></div><br />
       <br />
       <p class="invisible"></p>
       <table class="table table-sm table-bordered">
         <tbody>
           <tr class="table-secondary">
-            <th colspan="2">has part <span class=
+            <th colspan="2">has access document<span class=
             "badge badge-secondary float-right">Property</span></th>
           </tr>
           <tr>
             <td class="theme-label">Identifier</td>
             <td>
               <a href=
-              "http://purl.org/dc/terms/hasPart">http://purl.org/dc/terms/hasPart</a>
+              "https://ontology.uis-speleo.org/ontology/#hasAccessDocument">https://ontology.uis-speleo.org/ontology/#hasAccessDocument</a>
             </td>
           </tr>
           <tr>
             <td class="theme-label">Definition@en</td>
-            <td>A related resource that is included either
-            physically or logically in the described resource.</td>
+            <td>Links a resource to the document that describes how to access that resource.</td>
           </tr>
           <tr>
             <td class="theme-label">Definition@fr</td>
-            <td>Une ressource associée qui est incluse physiquement
-            ou logiquement dans la ressource décrite.</td>
+            <td>Relie une ressource au document qui décrit comment acceder à cette ressource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Comments</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+     <div id="hasDescriptionDocument"></div><br />
+      <br />
+      <p class="invisible"></p>
+      <table class="table table-sm table-bordered">
+        <tbody>
+          <tr class="table-secondary">
+            <th colspan="2">has description document <span class=
+            "badge badge-secondary float-right">Property</span></th>
+          </tr>
+          <tr>
+            <td class="theme-label">Identifier</td>
+            <td>
+              <a href=
+              "https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument">https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument</a>
+            </td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@en</td>
+            <td>Links a resource to a document that describes that resource.</td>
+          </tr>
+          <tr>
+            <td class="theme-label">Definition@fr</td>
+            <td>Relie une ressource à un document qui décrit cette ressource.</td>
           </tr>
           <tr>
             <td class="theme-label">Comments</td>
@@ -659,36 +690,6 @@
           </tr>
         </tbody>
       </table>
-      <div id="references"></div><br />
-      <br />
-      <p class="invisible"></p>
-      <table class="table table-sm table-bordered">
-        <tbody>
-          <tr class="table-secondary">
-            <th colspan="2">references <span class=
-            "badge badge-secondary float-right">Property</span></th>
-          </tr>
-          <tr>
-            <td class="theme-label">Identifier</td>
-            <td>
-              <a href=
-              "http://purl.org/dc/terms/references">http://purl.org/dc/terms/references</a>
-            </td>
-          </tr>
-          <tr>
-            <td class="theme-label">Definition@en</td>
-            <td>A related resource that is referenced, cited, or otherwise pointed to by the described resource.</td>
-          </tr>
-          <tr>
-            <td class="theme-label">Definition@fr</td>
-            <td>Une ressource associée qui est référencée, citée ou pointée par la ressource décrite.</td>
-          </tr>
-          <tr>
-            <td class="theme-label">Comments</td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
       <div id="isPartOf"></div><br />
       <br />
       <p class="invisible"></p>
@@ -783,9 +784,11 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           altitude</span></a> <a href="#coordinatePrecision" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          coordinate precision</span></a> <a href="#hasPart" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#lat" class=
+          coordinate precision</span></a> <a href="#hasAccessDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has access document</span></a> <a href="#hasDescriptionDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has description document</span></a> <a href="#lat" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           latitude</span></a> <a href="#long" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -922,9 +925,11 @@
           Underground Cavity</span></a></p>
           <p><a href="#areaType" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          area type</span></a> <a href="#hasPart" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#name" class=
+          area type</span></a> <a href="#hasAccessDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has access document</span></a> <a href="#hasDescriptionDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has description document</span></a> <a href="#name" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           name</span></a> <a href="#polygone" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -1079,9 +1084,9 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           date</span></a> <a href="#format" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          format</span></a> <a href="#hasPart" class=
-          "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          has part</span></a> <a href="#identifier" class=
+          format</span></a> <a href="#hasDescriptionDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has description document</span></a> <a href="#identifier" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           identifier</span></a> <a href="#isPartOf" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
@@ -1713,7 +1718,9 @@
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           coordinate precision</span></a> <a href="#homepage" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
-          home page</span></a> <a href="#lat" class=
+          home page</span></a> <a href="#hasDescriptionDocument"
+          class="btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
+          has description document</span></a><a href="#lat" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
           latitude</span></a> <a href="#long" class=
           "btn btn-outline-primary btn-sm btn-icon-split"><span class="text">
