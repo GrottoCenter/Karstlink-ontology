@@ -52,6 +52,8 @@ karstlink:extentAboveEntrance
 karstlink:extentBelowEntrance
 karstlink:verticalExtent
 karstlink:discoveredBy
+karstlink:hasDescriptionDocument
+karstlink:hasAccessDocument
 dct:isReferencedBy
 dct:isPartOf
 dct:hasPart
