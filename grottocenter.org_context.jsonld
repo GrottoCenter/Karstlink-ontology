@@ -1,0 +1,80 @@
+{ "@context": {
+
+  "karstlink": "https://ontology.uis-speleo.org/ontology/#" ,
+  "@vocab" : "https://ontology.uis-speleo.org/ontology/#" ,
+  "@base" : "https://beta.grottocenter.org/api/v1/entrances/",
+
+  "rdfs": "http://www.w3.org/2000/01/rdf-schema#" ,
+  "rdf":  "http://www.w3.org/1999/02/22-rdf-syntax-ns#" ,
+  "foaf": "http://xmlns.com/foaf/0.1/" ,
+  "xsd": "http://www.w3.org/2001/XMLSchema#" ,
+  "dwc" : "http://rs.tdwg.org/dwc/terms/" ,
+  "dwciri": "http://rs.tdwg.org/dwc/iri/" ,
+  "dwciri:inDescribedPlace": { "@type": "@id" } ,
+  "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+  "sioc": "http://rdfs.org/sioc/ns#c",
+
+  "UndergroundCavity": "karstlink:UndergroundCavity" ,
+
+  "DatatypeProperty":
+  "urn:================" ,
+  "name": "rdfs:label",
+  "title": "rdfs:label" ,
+  "latitude": "geo:lat" ,
+  "longitude": "geo:long" ,
+  "altitude": "geo:alt" ,
+  "nickname": "foaf:nickname" ,
+  "mail": "foaf:mbox",
+  "depth": {"@id": "karstlink:extentBelowEntrance", "@type": "xsd:integer" } ,
+  "length": {"@id": "karstlink:length" ,"@type": "xsd:integer" } ,
+  "body": "sioc:content" ,
+
+  "address": "schema:streetAddress" ,
+  "city": "schema:addressLocality" ,
+  "country": "schema:addressCountry" ,
+  "postalCode": "schema:postalCode" ,
+  "county": "urn:TODO" ,
+  "region": "urn:TODO" ,
+  "village":"urn:TODO" ,
+
+  "yearBirth" : "urn:TODO" ,
+  "dateInscription" : "urn:TODO" ,
+  "dateReviewed" : "urn:TODO" ,
+  "customMessage" : "urn:TODO" ,
+  "isOfficialPartner" : "urn:TODO" ,
+  "pictureFileName" : "urn:TODO" ,
+  "associatedTaxa": "karstlink:associatedTaxa" ,
+
+  "ObjectProperty":
+  "urn:==============" ,
+  "author": {"@id": "dct:creator" , "@type": "@id" } ,
+  "cave": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
+  "entrance": {"@id": "dct:spatial" , "@type": "@id" } ,
+
+  "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" } ,
+  "cavers": {"@id": "karstlink:visited" , "@type": "@id" ,
+      "@context": {
+      "@base": "/cavers/"
+    }
+  } ,
+  "exploredCaves": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
+  "partneredCaves": {"@id": "karstlink:relatedToUndergroundCavity", "@type": "@id" } ,
+
+  "comments": {
+    "@context": {
+      "@base": "/comments/"
+    }
+  } ,
+    "descriptions": {
+    "@context": {
+      "@base": "/descriptions/"
+    }
+  } ,
+    "names": {
+    "@context": {
+      "@base": "/names/"
+    }
+  }
+
+}}
+
