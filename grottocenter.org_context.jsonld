@@ -74,6 +74,11 @@
     "@id": "karstlink:relatedToUndergroundCavity" ,
     "@type": "karstlink:UndergroundCavity" ,
     "@context": { "@base": "../caves/" }
-  }
+  } ,
+  "documents": {"@id": "foaf:page" , "@type": "@id"  ,
+    "@context": { "@base": "../documents/" }
+   } ,
+   "reviewer": {"@id": "http://purl.org/stuff/rev#reviewer" , "@type": "@id" }
+   }
 }}
 
