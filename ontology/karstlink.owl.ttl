@@ -11,8 +11,9 @@
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix schema: <http://schema.org/> .
 @prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-@prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> .
+@prefix karstlink: <https://ontology.uis-speleo.org/ontology/#> . 
 
 karstlink: a owl:Ontology ;
   foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> ;
@@ -34,8 +35,8 @@ karstlink: a owl:Ontology ;
 	      <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_type.ttl>
   .
 
-  # For marcgt = "MARC Genre/Terms Scheme"
- <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> rdfs:subPropertyOf rdfs:label .
+# For marcgt = "MARC Genre/Terms Scheme"
+<http://www.loc.gov/mads/rdf/v1#authoritativeLabel> rdfs:subPropertyOf rdfs:label .
 
 karstlink:UndergroundCavity a owl:Class ;
   rdfs:isDefinedBy karstlink: ;
@@ -85,8 +86,9 @@ karstlink:hasAccessDocument a owl:ObjectProperty ;
    rdfs:label """ has access document """@en ;
    rdfs:label """document d'accès à la cavité"""@fr .
 
+
 # From XHTML
- <https://ontology.uis-speleo.org/ontology/#length> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+ <https://ontology.uis-speleo.org/ontology/#length> a owl:DatatypeProperty ;
   rdfs:isDefinedBy karstlink: ;
   rdfs:domain karstlink:UndergroundCavity ;
   rdfs:range xsd:integer .
@@ -95,7 +97,7 @@ karstlink:hasAccessDocument a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """The real development of all the galleries of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """Le développement réel de l'ensemble des galeries de la cavité en mètres"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#verticalExtent> a <http://www.w3.org/2002/07/owl#DatatypeProperty> ;
+ <https://ontology.uis-speleo.org/ontology/#verticalExtent> a owl:DatatypeProperty ;
   rdfs:domain karstlink:UndergroundCavity ;
   rdfs:range xsd:integer .
  <https://ontology.uis-speleo.org/ontology/#verticalExtent> rdfs:label """vertical extent """@en .
@@ -112,7 +114,7 @@ karstlink:discoveredBy a owl:ObjectProperty ;
    rdfs:comment """Agent (person or organization) who discovered the underground cavity"""@en ;
    rdfs:comment """Agent (personne ou organisation) ayant découvert la cavité"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#visited> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+ <https://ontology.uis-speleo.org/ontology/#visited> a owl:ObjectProperty ;
    rdfs:isDefinedBy karstlink: ;
    rdfs:domain foaf:Person ;
    rdfs:range  karstlink:UndergroundCavity .
@@ -124,7 +126,8 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#visited> rdfs:comment """
    cavité visitée par l'Agent (personne ou organisation)"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#pointType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+
+ <https://ontology.uis-speleo.org/ontology/#pointType> a owl:ObjectProperty ;
    rdfs:isDefinedBy karstlink: ;
    rdfs:domain geo:Point ;
    rdfs:range karstlink:PointType .
@@ -134,14 +137,14 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """Lien vers un type de point défini dans une collection d'expressions"""@fr .
  <https://ontology.uis-speleo.org/ontology/#pointType> rdfs:comment """jmv: geométrie : pourquoi ne pas réuiliser un existant ?  """@fr .
 
- <https://ontology.uis-speleo.org/ontology/#Area> a <http://www.w3.org/2002/07/owl#Class>
+ <https://ontology.uis-speleo.org/ontology/#Area> a owl:Class
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:label """Area """@en .
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:label """zone (polygone)"""@fr .
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """An area is a polygon corresponding to a geographic unit that we want to identify."""@en .
  <https://ontology.uis-speleo.org/ontology/#Area> rdfs:comment """Une zone est un polygone correspondant à une unité géographique que l'on souhaite identifier."""@fr .
  
- <https://ontology.uis-speleo.org/ontology/#areaType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+ <https://ontology.uis-speleo.org/ontology/#areaType> a owl:ObjectProperty ;
    rdfs:isDefinedBy karstlink: ;
    rdfs:domain karstlink:UndergroundCavity ;
    rdfs:range karstlink:AreaType .
@@ -151,7 +154,7 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#areaType> rdfs:comment """Lien vers un type de zone défini dans une collection d'expressions"""@fr .
 
 
- <https://ontology.uis-speleo.org/ontology/#Observation> a <http://www.w3.org/2002/07/owl#Class>
+ <https://ontology.uis-speleo.org/ontology/#Observation> a owl:Class
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:label """Observation """ .
  <https://ontology.uis-speleo.org/ontology/#Observation> rdfs:comment """An Observation."""@en .
@@ -161,7 +164,7 @@ karstlink:discoveredBy a owl:ObjectProperty ;
  """@fr .
 dwc:Occurrence rdfs:subClassOf karstlink:Observation .
 
- <https://ontology.uis-speleo.org/ontology/#licenseType> a <http://www.w3.org/2002/07/owl#ObjectProperty> ;
+ <https://ontology.uis-speleo.org/ontology/#licenseType> a owl:ObjectProperty ;
    rdfs:isDefinedBy karstlink: ;
    rdfs:domain karstlink:UndergroundCavity ;
    rdfs:range karstlink:LicenseType .
@@ -217,13 +220,13 @@ karstlink:DocumentType a owl:Class ;
  <https://ontology.uis-speleo.org/ontology/#DocumentType> rdfs:comment """Liste contrôlée de type pour les documents"""@fr .
 
 
- <https://ontology.uis-speleo.org/ontology/#topographicData> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#topographicData> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """Topographic data """@en .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:label """données topographiques"""@fr .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Data set corresponding to the topography of an underground cavity."""@en .
  <https://ontology.uis-speleo.org/ontology/#topographicData> rdfs:comment """Ensemble de données correspondant à la topographie d'une cavité souterraine."""@fr .
- <https://ontology.uis-speleo.org/ontology/#topography> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#topography> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#topography> rdfs:label """topography """@en .
  <https://ontology.uis-speleo.org/ontology/#topography> rdfs:label """topographie"""@fr .
@@ -231,14 +234,14 @@ karstlink:DocumentType a owl:Class ;
  <https://ontology.uis-speleo.org/ontology/#topography> rdfs:comment """Une représentation graphique d'une cavité souterraine"""@fr .
 
 
- <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorization to publish """@en .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:label """Autorisation de publier"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attesting to the authorization to publish other documents under a defined license"""@en .
  <https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> rdfs:comment """Document attestant l'autorisation de publier d'autres documents sous une licence définie"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#reefnet> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#reefnet> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:label """reefnet """ .
  <https://ontology.uis-speleo.org/ontology/#reefnet> rdfs:comment """A document produced by a Reefnet brand device"""@en .
@@ -263,7 +266,7 @@ karstlink:DocumentType a owl:Class ;
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Controlled list for documents subject issued from BBS"""@en .
  <https://ontology.uis-speleo.org/ontology/#DocumentSubject> rdfs:comment """Liste contrôlée de sujets pour les documents, issus du BBS"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:label """geospeleology and karstology """@en .
  <https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> rdfs:comment """Karst morphology and morphogenesis, hydrology,
@@ -287,7 +290,7 @@ karstlink:DocumentType a owl:Class ;
             parakarst dans les roches siliceuses, pseudokarst,
             hypokarst de glace; thermokarst, hypo- et pseudokarst
             dans les roches volcaniques."""@fr .
- <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:label """regional speleology and karstology """@en .
  <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> rdfs:comment """Example: descriptions, expeditions reports, acces
@@ -305,7 +308,7 @@ karstlink:DocumentType a owl:Class ;
             sauvetages. Karstologie régionale. Spéléologie
             appliquée régionale. Spéléologie technique régionale.
             Spéléologie documentaire régionale."""@fr .
- <https://ontology.uis-speleo.org/ontology/#biospeleology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#biospeleology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:label """biospeleology """@en .
  <https://ontology.uis-speleo.org/ontology/#biospeleology> rdfs:comment """Sytematics, crustacea, hexapoda, arachnida,
@@ -316,16 +319,16 @@ karstlink:DocumentType a owl:Class ;
             mollusques, onychophores, vermes, autres invertébrés,
             vertébrés, microbiologie sol-air-eau, flore hypogée,
             champignons, algues, biospéléologie régionale"""@fr .
- <https://ontology.uis-speleo.org/ontology/#anthropospeleology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#anthropospeleology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:label """anthropospeleology """@en .
  <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:comment """Archaeology, prehistorical and historical cultures."""@en .
  <https://ontology.uis-speleo.org/ontology/#anthropospeleology> rdfs:comment """Archéologie; cultures préhistoriques et historiques."""@fr .
- <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> a <http://www.w3.org/2004/02/skos/core#Concept> .
+ <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> a skos:Concept .
  <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:label """palaeonthospeleology """@en .
  <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:comment """Palaeonthospeleology, fossil and subfossil faunas and floras (quaternary)"""@en .
  <https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> rdfs:comment """Paléonthospéléologie, faunes et flores fossiles et subfossiles (quaternaire)"""@fr .
- <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:label """applied speleology """@en .
  <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:comment """Environment and hygiene, mines, engineering, law,
@@ -334,14 +337,14 @@ karstlink:DocumentType a owl:Class ;
  <https://ontology.uis-speleo.org/ontology/#appliedSpeleology> rdfs:comment """Environnement et hygiène, mines, ingénierie, droit,
             protection, loisirs, tourisme, géosystème, thérapie
             souterraine, gestion de la recherche."""@fr .
- <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:label """technical speleology """@en .
  <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:comment """Exploration techniques and materials, diving,
             prospection, accidents and rescue, medicine, education, activities."""@en .
  <https://ontology.uis-speleo.org/ontology/#technicalSpeleology> rdfs:comment """Techniques et matériaux d'exploration, plongée,
             prospection, accidents et sauvetage, médecine, éducation, activités."""@fr .
- <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:label """documentary speleology """@en .
  <https://ontology.uis-speleo.org/ontology/#documentarySpeleology> rdfs:comment """Topography, terminology, toponymy, bibliography,
@@ -353,7 +356,7 @@ karstlink:DocumentType a owl:Class ;
             photographiques, films et dispositifs audiovisuels,
             cadastres, cartes, archives, inventaires, levés,
             cartes, archives"""@fr .
- <https://ontology.uis-speleo.org/ontology/#other> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#other> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#other> rdfs:label """other """@en .
  <https://ontology.uis-speleo.org/ontology/#other> rdfs:label """Autres"""@fr .
@@ -372,7 +375,7 @@ karstlink:DocumentType a owl:Class ;
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """Collection de termes pouvant être utilisés pour décrire le type de point lié au Karst"""@fr .
  <https://ontology.uis-speleo.org/ontology/#PointType> rdfs:comment """jmv: une enumération avec un seul élément ressemble à un travail pas fini... """@fr .
 
- <https://ontology.uis-speleo.org/ontology/#entry> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <https://ontology.uis-speleo.org/ontology/#entry> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entry """@en .
  <https://ontology.uis-speleo.org/ontology/#entry> rdfs:label """entrée"""@fr .
@@ -397,29 +400,29 @@ karstlink:DocumentType a owl:Class ;
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """Collection de termes pouvant être utilisés pour décrire le type de zone liée au Karst"""@fr .
  <https://ontology.uis-speleo.org/ontology/#AreaType> rdfs:comment """jmv: remarque déjà faite sur utilisation d'URI dbpedia ou wikidata ou wordnet """@fr .
 
- <http://www.geonames.org/ontology#L.AREA> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#L.AREA> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#L.AREA> rdfs:label """area """ .
  <http://www.geonames.org/ontology#L.AREA> rdfs:label """zone"""@fr .
- <http://www.geonames.org/ontology#L.RESN> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#L.RESN> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#L.RESN> rdfs:label """nature reserve """ .
  <http://www.geonames.org/ontology#L.RESN> rdfs:label """réserve naturelle"""@fr .
- <http://www.geonames.org/ontology#L.RESW> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#L.RESW> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#L.RESW> rdfs:label """wildlife reserve """ .
- <http://www.geonames.org/ontology#L.BSND> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#L.BSND> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#L.BSND> rdfs:label """drainage basin""" .
  <http://www.geonames.org/ontology#L.BSND> rdfs:comment """Point corresponding to the entry of an Underground Cavity"""@en .
  <http://www.geonames.org/ontology#L.BSND> rdfs:comment """Point correspondant à l'entrée d'une cavité souterraine"""@fr .
- <http://www.geonames.org/ontology#L.MNA> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#L.MNA> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#L.MNA> rdfs:label """mining area """ .
- <http://www.geonames.org/ontology#L.RGN> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#L.RGN> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#L.RGN> rdfs:label """region """ .
- <http://www.geonames.org/ontology#T.KRST> a <http://www.w3.org/2004/02/skos/core#Concept>
+ <http://www.geonames.org/ontology#T.KRST> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <http://www.geonames.org/ontology#T.KRST> rdfs:label """karst area """ .
 
@@ -440,7 +443,7 @@ karstlink:DocumentType a owl:Class ;
             décrire le type de licence"""@fr .
 
  # <https://ontology.uis-speleo.org/ontology/#ODC-By>
-<https://opendatacommons.org/licenses/by/> a <http://www.w3.org/2004/02/skos/core#Concept>
+<https://opendatacommons.org/licenses/by/> a skos:Concept
    ; rdfs:isDefinedBy karstlink: .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:label """ODC-By """ .
  <https://ontology.uis-speleo.org/ontology/#ODC-By> rdfs:comment """Attribution for Data/Databases"""@en .
