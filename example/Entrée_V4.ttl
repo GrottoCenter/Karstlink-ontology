@@ -1,0 +1,47 @@
+<https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4>
+        a                   <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Entrée V4"@fr ;
+        <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
+                "5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
+                "1625"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "6.77962"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "46.10222"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://ontology.uis-speleo.org/ontology/#pointType>
+                <https://ontology.uis-speleo.org/ontology/#entry> ;
+        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                <https://ontology.uis-speleo.org/example/#V4> ;
+        <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+            <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";   
+         ];
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].
