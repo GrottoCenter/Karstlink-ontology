@@ -51,6 +51,7 @@ karstlink:length
 karstlink:extentAboveEntrance
 karstlink:extentBelowEntrance
 karstlink:verticalExtent
+schema:containedInPlace
 karstlink:discoveredBy
 karstlink:hasDescriptionDocument
 karstlink:hasAccessDocument
