@@ -12,3 +12,16 @@
                 "Jo" ;
         <https://ontology.uis-speleo.org/ontology/#visited>
                 <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> .
+
+              
+        a                   <http://purl.org/dc/terms/LicenseDocument> ;
+        <http://creativecommons.org/ns#attributionName>
+                "Frédéric_Urien" ;
+        <http://creativecommons.org/ns#attributionURL>
+                <https://ontology.uis-speleo.org/example/> ;
+        <http://purl.org/dc/terms/created>
+                "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+        <http://purl.org/dc/terms/modified>
+                "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+        <https://ontology.uis-speleo.org/ontology/#licenseType>
+                <https://ontology.uis-speleo.org/ontology/#ODC-By> .
