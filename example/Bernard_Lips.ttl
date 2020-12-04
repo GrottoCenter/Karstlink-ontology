@@ -1,0 +1,26 @@
+<https://ontology.uis-speleo.org/example/#Bernard_Lips>
+        a                   <http://xmlns.com/foaf/0.1/Person> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://xmlns.com/foaf/0.1/firstName>
+                "Bernard" ;
+        <http://xmlns.com/foaf/0.1/lastName>
+                "Lips" ;
+        <http://xmlns.com/foaf/0.1/member>
+                <https://ontology.uis-speleo.org/example/#Vulcains> , <https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie> ;
+        <http://xmlns.com/foaf/0.1/nick>
+                "Pernard" ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> ;
+
+         <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#ODC-By> ].
