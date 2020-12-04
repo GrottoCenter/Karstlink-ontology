@@ -1,0 +1,58 @@
+<https://ontology.uis-speleo.org/example/#V4>
+        a                   <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "V4"@fr ;
+        <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
+                "5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.geonames.org/ontology#alternateName>
+                "V04"@fr ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
+                "1625"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "46.10222"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "6.77962"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://ontology.uis-speleo.org/ontology/#discoveredBy>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance>
+                399 ;
+        <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance>
+                -1466 ;
+        <https://ontology.uis-speleo.org/ontology/#length>
+                25819 ;
+         <https://schema.org/containedInPlace>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard>;
+         <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+            <http://purl.org/dc/terms/creator>
+                "vincent";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "	A partir du refuge, prendre la direction du lac des Chambres. Un peu avant le lac, prendre sur la gauche. L'entrée V4 est un petit porche. Compter 1h30 de marche entre le refuge et l'entrée.";   
+         ];
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "BTH";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "Du V4 à la cascade Jean Dupont (équipement et balisage en place) ";
+            <http://purl.org/dc/terms/description>
+                "	Les premiers -100m se font dans une conduite forcé ponctuée de quelques ressauts équipés jusqu'au puit des Savoyard (-25 m). Juste après le puits, descendre dans les éboulis. On enchaine les Puits Alain (2 -15 m). On suit un méandre jusqu'à un affluent du Jean-Bernard. 3 ressauts dans l'affluent permettent d'atteindre la cascade Jean Dupont.A partir de Samoëns, aller se garer sur le parking qui permet d'accéder au Lac des Chambres et au refuge du Folly. Monter au refuge ; il faut compter 1h30 de marche (600 mètres de dénivelé). ";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "vincent, BTH" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://www.grottocenter.org/html/file_Fr.php?lang=Fr&check_lang_auto=false&category=entry&id=1> ;
+                <http://purl.org/dc/terms/created>
+                    "2008-07-29"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2018-09-26"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> ].
+

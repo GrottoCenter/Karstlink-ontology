@@ -1,20 +1,26 @@
-<https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4>
-        a                   <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+<https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard>
+        a                   <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Entrée V4"@fr ;
+                "Gouffre Jean Bernard"@fr ;
         <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
-                "5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+                "-1"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.geonames.org/ontology#alternateName>
+                "Jean Bernard (Réseau)"@fr ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
-                "1625"^^<http://www.w3.org/2001/XMLSchema#float> ;
+                "1600"^^<http://www.w3.org/2001/XMLSchema#float> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                "6.77962"^^<http://www.w3.org/2001/XMLSchema#float> ;
+                "46.1030"^^<http://www.w3.org/2001/XMLSchema#float> ;
         <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                "46.10222"^^<http://www.w3.org/2001/XMLSchema#float> ;
-        <https://ontology.uis-speleo.org/ontology/#pointType>
-                <https://ontology.uis-speleo.org/ontology/#entry> ;
-        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
-                <https://ontology.uis-speleo.org/example/#V4> ;
-        <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+                "6.78"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://ontology.uis-speleo.org/ontology/#discoveredBy>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <https://ontology.uis-speleo.org/ontology/#length>
+                25819 ;
+        <https://ontology.uis-speleo.org/ontology/#verticalExtent>
+                1625 ;
+         <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
             <http://purl.org/dc/terms/creator>
                 "";
             <http://purl.org/dc/elements/1.1/language>
@@ -36,12 +42,12 @@
         ];
         <http://purl.org/dc/terms/rights>[
                 <http://creativecommons.org/ns#attributionName>
-                    "Frédéric_Urien" ;
+                    "Grottocenter" ;
                 <http://creativecommons.org/ns#attributionURL>
-                    <https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4> ;
+                    <https://grottocenter.org/> ;
                 <http://purl.org/dc/terms/created>
                     "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
                 <http://purl.org/dc/terms/modified>
                     "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
                 <https://ontology.uis-speleo.org/ontology/#licenseType>
-                        <http://dbpedia.org/resource/CC_BY> ].
+                        <https://ontology.uis-speleo.org/ontology/#ODBL> ].

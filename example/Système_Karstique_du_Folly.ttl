@@ -1,18 +1,11 @@
-<https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4>
-        a                   <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+<https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly>
+        a                            <https://ontology.uis-speleo.org/ontology/#Area> ;
         <http://www.w3.org/2000/01/rdf-schema#label>
-                "Entrée V4"@fr ;
-        <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
-                "5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
-                "1625"^^<http://www.w3.org/2001/XMLSchema#float> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
-                "6.77962"^^<http://www.w3.org/2001/XMLSchema#float> ;
-        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
-                "46.10222"^^<http://www.w3.org/2001/XMLSchema#float> ;
-        <https://ontology.uis-speleo.org/ontology/#pointType>
-                <https://ontology.uis-speleo.org/ontology/#entry> ;
-        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                "Système Karstique du Folly"@fr ;
+        <http://schema.org/polygon>  "46.101384, 6.754327 46.131629, 6.814437 46.125330, 6.810705 46.102908, 6.816373 46.083045, 6.736484" ;
+        <https://ontology.uis-speleo.org/ontology/#areaType>
+                <http://www.geonames.org/ontology#T.KRST> ;
+        <https://ontology.uis-speleo.org/example/#relatedToUndergroundCavity>
                 <https://ontology.uis-speleo.org/example/#V4> ;
         <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
             <http://purl.org/dc/terms/creator>
@@ -38,7 +31,7 @@
                 <http://creativecommons.org/ns#attributionName>
                     "Frédéric_Urien" ;
                 <http://creativecommons.org/ns#attributionURL>
-                    <https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4> ;
+                    <https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly> ;
                 <http://purl.org/dc/terms/created>
                     "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
                 <http://purl.org/dc/terms/modified>
