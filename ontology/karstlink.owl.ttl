@@ -193,6 +193,7 @@ karstlink:DocumentType a owl:Class ;
    marcgt:cal
    marcgt:cat
    marcgt:cpb
+   marcgt:iss
    marcgt:jou
    marcgt:let
    marcgt:man
