@@ -127,7 +127,7 @@ dct:format
 dct:identifier
 dct:source
 dct:relation
-dct:isReferencedBy
+dct:references
 dct:isPartOf
 dct:hasPart
 dct:rights
