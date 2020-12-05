@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:ns0="http://www.geonames.org/ontology#"
+         xmlns:ns1="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <foaf:Person rdf:about="https://ontology.uis-speleo.org/example/#Josiane_Lips">
+    <ns0:countryCode>FR</ns0:countryCode>
+    <foaf:firstName>Josiane</foaf:firstName>
+    <foaf:lastName>Lips</foaf:lastName>
+    <foaf:member rdf:resource="https://ontology.uis-speleo.org/example/#Vulcains"/>
+    <foaf:member rdf:resource="https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie"/>
+    <foaf:nick>Jo</foaf:nick>
+    <ns1:visited rdf:resource="https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard"/>
+    <ns1:visited rdf:resource="https://ontology.uis-speleo.org/example/#V4"/>
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric_Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/#Josiane_Lips"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:modified>
+        <ns1:licenseType rdf:resource="https://ontology.uis-speleo.org/ontology/#ODC-By"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </foaf:Person>
+
+</rdf:RDF>

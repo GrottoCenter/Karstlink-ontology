@@ -1,0 +1,49 @@
+<https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67>
+        a                   <http://purl.org/dc/terms/BibliographicResource> ;
+        <http://purl.org/dc/elements/1.1/language>
+                "FR" ;
+        <http://purl.org/dc/terms/creator>
+                "" ;
+        <http://purl.org/dc/terms/date>
+                "2010-03-01"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+        <http://purl.org/dc/terms/format>
+                "application-pdf" ;
+        <http://purl.org/dc/terms/isPartOf>
+                <https://ontology.uis-speleo.org/example/#Echo_des_Vulcains> ;
+        <http://purl.org/dc/terms/references>
+                <https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4> ;
+        <http://purl.org/dc/terms/publisher>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <http://purl.org/dc/terms/subject>
+                <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> ;
+        <http://purl.org/dc/terms/title>
+                "Echo des Vulcains n°67"@fr ;
+        <http://purl.org/dc/terms/source>
+                <https://www.groupe-speleo-vulcain.com/echo_des_vulcains/download.php?fichier=EV67.pdf>;
+        <http://purl.org/dc/terms/type>
+                <http://id.loc.gov/vocabulary/marcgt/iss> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR"@fr ;
+        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "EN";
+            <http://purl.org/dc/terms/title>
+                "Read the firt november 2020 for Karstlink example";
+            <http://purl.org/dc/terms/description>
+                "Very interesting";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].

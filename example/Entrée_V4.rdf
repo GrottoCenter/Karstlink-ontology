@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://rs.tdwg.org/dwc/terms/"
+         xmlns:ns1="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <geo:Point rdf:about="https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4">
+    <rdfs:label xml:lang="fr">Entrée V4</rdfs:label>
+    <ns0:coordinatePrecision rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns0:coordinatePrecision>
+    <geo:alt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1625</geo:alt>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.77962</geo:lat>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.10222</geo:long>
+    <ns1:pointType rdf:resource="https://ontology.uis-speleo.org/ontology/#entry"/>
+    <ns1:relatedToUndergroundCavity rdf:resource="https://ontology.uis-speleo.org/example/#V4"/>
+    <ns1:hasAccessDocument>
+      <rdf:Description>
+        <dc:creator></dc:creator>
+        <dc11:language></dc11:language>
+        <dc:title></dc:title>
+        <dc:description></dc:description>
+      </rdf:Description>
+    </ns1:hasAccessDocument>
+
+    <ns1:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator></dc:creator>
+        <dc11:language></dc11:language>
+        <dc:title></dc:title>
+        <dc:description></dc:description>
+      </rdf:Description>
+    </ns1:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric_Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-30</dc:modified>
+        <ns1:licenseType rdf:resource="http://dbpedia.org/resource/CC_BY"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </geo:Point>
+
+</rdf:RDF>

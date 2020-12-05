@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/"
+         xmlns:ns0="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:ns1="https://ontology.uis-speleo.org/example/#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <rdf:Description rdf:about="https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly">
+    <rdf:type rdf:resource="https://ontology.uis-speleo.org/ontology/#Area"/>
+    <rdfs:label xml:lang="fr">Système Karstique du Folly</rdfs:label>
+    <schema:polygon>46.101384, 6.754327 46.131629, 6.814437 46.125330, 6.810705 46.102908, 6.816373 46.083045, 6.736484</schema:polygon>
+    <ns0:areaType rdf:resource="http://www.geonames.org/ontology#T.KRST"/>
+    <ns1:relatedToUndergroundCavity rdf:resource="https://ontology.uis-speleo.org/example/#V4"/>
+    <ns0:hasAccessDocument>
+      <rdf:Description>
+        <dc:creator></dc:creator>
+        <dc11:language></dc11:language>
+        <dc:title></dc:title>
+        <dc:description></dc:description>
+      </rdf:Description>
+    </ns0:hasAccessDocument>
+
+    <ns0:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator></dc:creator>
+        <dc11:language></dc11:language>
+        <dc:title></dc:title>
+        <dc:description></dc:description>
+      </rdf:Description>
+    </ns0:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric_Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-30</dc:modified>
+        <ns0:licenseType rdf:resource="http://dbpedia.org/resource/CC_BY"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </rdf:Description>
+
+</rdf:RDF>

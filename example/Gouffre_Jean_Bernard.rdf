@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://rs.tdwg.org/dwc/terms/"
+         xmlns:ns1="http://www.geonames.org/ontology#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:ns2="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <rdf:Description rdf:about="https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard">
+    <rdf:type rdf:resource="https://ontology.uis-speleo.org/ontology/#UndergroundCavity"/>
+    <rdfs:label xml:lang="fr">Gouffre Jean Bernard</rdfs:label>
+    <ns0:coordinatePrecision rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</ns0:coordinatePrecision>
+    <ns1:alternateName xml:lang="fr">Jean Bernard (Réseau)</ns1:alternateName>
+    <ns1:countryCode>FR</ns1:countryCode>
+    <geo:alt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1600</geo:alt>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.1030</geo:lat>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.78</geo:long>
+    <ns2:discoveredBy rdf:resource="https://ontology.uis-speleo.org/example/#Vulcains"/>
+    <ns2:length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25819</ns2:length>
+    <ns2:verticalExtent rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1625</ns2:verticalExtent>
+    <ns2:hasAccessDocument>
+      <rdf:Description>
+        <dc:creator></dc:creator>
+        <dc11:language></dc11:language>
+        <dc:title></dc:title>
+        <dc:description></dc:description>
+      </rdf:Description>
+    </ns2:hasAccessDocument>
+
+    <ns2:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator></dc:creator>
+        <dc11:language></dc11:language>
+        <dc:title></dc:title>
+        <dc:description></dc:description>
+      </rdf:Description>
+    </ns2:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Grottocenter</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://grottocenter.org/"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-30</dc:modified>
+        <ns2:licenseType rdf:resource="https://ontology.uis-speleo.org/ontology/#ODBL"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </rdf:Description>
+
+</rdf:RDF>

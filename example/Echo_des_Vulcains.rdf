@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:ns0="http://www.geonames.org/ontology#"
+         xmlns:ns1="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <dc:BibliographicResource rdf:about="https://ontology.uis-speleo.org/example/#Echo_des_Vulcains">
+    <dc11:language>FR</dc11:language>
+    <dc:creator></dc:creator>
+    <dc:date></dc:date>
+    <dc:format>text/html</dc:format>
+    <dc:isPartOf></dc:isPartOf>
+    <dc:references></dc:references>
+    <dc:publisher rdf:resource="https://ontology.uis-speleo.org/example/#Vulcains"/>
+    <dc:subject rdf:resource="https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology"/>
+    <dc:title>Echo des Vulcains</dc:title>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/Collection"/>
+    <ns0:countryCode xml:lang="fr">FR</ns0:countryCode>
+    <ns1:relatedToUndergroundCavity></ns1:relatedToUndergroundCavity>
+    <ns1:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator>Frédéric Urien</dc:creator>
+        <dc11:language>EN</dc11:language>
+        <dc:title>History</dc:title>
+        <dc:description>The first issue of Echo des Vulcains was published in 1960</dc:description>
+      </rdf:Description>
+    </ns1:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/#Echo_des_Vulcains"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-30</dc:modified>
+        <ns1:licenseType rdf:resource="http://dbpedia.org/resource/CC_BY"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </dc:BibliographicResource>
+
+</rdf:RDF>

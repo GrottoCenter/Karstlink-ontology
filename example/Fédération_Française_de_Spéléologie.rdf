@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:schema="http://schema.org/"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:ns0="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <foaf:Organization rdf:about="https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie">
+    <rdfs:label xml:lang="fr">Fédération Française de Spéléologie</rdfs:label>
+    <schema:addressCountry>FR</schema:addressCountry>
+    <schema:addressLocality>Lyon</schema:addressLocality>
+    <schema:postalCode>69002</schema:postalCode>
+    <schema:streetAddress>28 rue Delandine</schema:streetAddress>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.7449798</geo:lat>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.825638799999979</geo:long>
+    <foaf:homepage rdf:resource="https://ffspeleo.fr/"/>
+    <foaf:mbox rdf:resource="https://medias.ffspeleo.fr/courriel/secretariat/"/>
+    <foaf:member></foaf:member>
+    <ns0:visited></ns0:visited>
+    <ns0:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator>Frédéric Urien</dc:creator>
+        <dc11:language>FR</dc11:language>
+        <dc:title>Présentation</dc:title>
+        <dc:description>La Fédération Française de Spéléologie a été créée en 1963. Reconnue par le Ministère chargé des sports pour l’organisation des activités liées à la spéléologie en France.</dc:description>
+      </rdf:Description>
+    </ns0:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-30</dc:modified>
+        <ns0:licenseType rdf:resource="http://dbpedia.org/resource/ODbL"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </foaf:Organization>
+
+</rdf:RDF>

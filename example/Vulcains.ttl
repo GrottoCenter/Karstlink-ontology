@@ -1,0 +1,44 @@
+<https://ontology.uis-speleo.org/example/#Vulcains>
+        a                               <http://xmlns.com/foaf/0.1/Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Groupe Spéléologique des Vulcains"@fr ;
+        <http://schema.org/addressCountry>
+                "FR" ;
+        <http://schema.org/addressLocality>
+                "Lyon" ;
+        <http://schema.org/postalCode>  "69009" ;
+        <http://schema.org/streetAddress>
+                "36 Avenue Sidoine Apollinaire" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "45.77392"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "4.795062"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <https://www.groupe-speleo-vulcain.com/> ;
+        <http://xmlns.com/foaf/0.1/mbox>
+                <mailto:contact@groupe-speleo-vulcain.com> ;
+        <http://xmlns.com/foaf/0.1/member>
+                <https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie> ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "Activités";
+            <http://purl.org/dc/terms/description>
+                "Le groupe spéléo des Vulcains est basé à Lyon et vous propose de découvrir la spéléo, le canyonisme, de participer à des camps ou à des congrès.";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/ODbL> ].

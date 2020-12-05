@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://rs.tdwg.org/dwc/terms/"
+         xmlns:ns1="http://www.geonames.org/ontology#"
+         xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+         xmlns:ns2="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:ns3="https://schema.org/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <rdf:Description rdf:about="https://ontology.uis-speleo.org/example/#V4">
+    <rdf:type rdf:resource="https://ontology.uis-speleo.org/ontology/#UndergroundCavity"/>
+    <rdfs:label xml:lang="fr">V4</rdfs:label>
+    <ns0:coordinatePrecision rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</ns0:coordinatePrecision>
+    <ns1:alternateName xml:lang="fr">V04</ns1:alternateName>
+    <ns1:countryCode>FR</ns1:countryCode>
+    <geo:alt rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1625</geo:alt>
+    <geo:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#float">46.10222</geo:lat>
+    <geo:long rdf:datatype="http://www.w3.org/2001/XMLSchema#float">6.77962</geo:long>
+    <ns2:discoveredBy rdf:resource="https://ontology.uis-speleo.org/example/#Vulcains"/>
+    <ns2:extentAboveEntrance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">399</ns2:extentAboveEntrance>
+    <ns2:extentBelowEntrance rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-1466</ns2:extentBelowEntrance>
+    <ns2:length rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25819</ns2:length>
+    <ns3:containedInPlace rdf:resource="https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard"/>
+    <ns2:hasAccessDocument>
+      <rdf:Description>
+        <dc:creator>vincent</dc:creator>
+        <dc11:language>FR</dc11:language>
+        <dc:title></dc:title>
+        <dc:description>	A partir du refuge, prendre la direction du lac des Chambres. Un peu avant le lac, prendre sur la gauche. L'entrèe V4 est un petit porche. Compter 1h30 de marche entre le refuge et l'entrèe.</dc:description>
+      </rdf:Description>
+    </ns2:hasAccessDocument>
+
+    <ns2:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator>BTH</dc:creator>
+        <dc11:language>FR</dc11:language>
+        <dc:title>Du V4 à la cascade Jean Dupont (équipement et balisage en place) </dc:title>
+        <dc:description>	Les premiers -100m se font dans une conduite forcée ponctué de quelques ressauts équipés jusqu'au puit des Savoyard (-25 m). Juste après le puits, descendre dans les éboulis. On enchaine les Puits Alain (2 -15 m). On suit un méandre jusqu'à un affluent du Jean-Bernard. 3 ressauts dans l'affluent permettent d'atteindre la cascade Jean Dupont.A partir de Samoens, aller se garer sur le parking qui permet d'accéder au Lac des Chambres et au refuge du Folly. Monter au refuge ; il faut compter 1h30 de marche (600 mètres de dénivelé). </dc:description>
+      </rdf:Description>
+    </ns2:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>vincent, BTH</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://www.grottocenter.org/html/file_Fr.php?lang=Fr&amp;check_lang_auto=false&amp;category=entry&amp;id=1"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2008-07-29</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2018-09-26</dc:modified>
+        <ns2:licenseType rdf:resource="https://ontology.uis-speleo.org/ontology/#CC-BY-SA"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </rdf:Description>
+
+</rdf:RDF>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:ns0="http://rs.tdwg.org/dwc/terms/"
+         xmlns:ns1="https://ontology.uis-speleo.org/example/#"
+         xmlns:ns2="https://ontology.uis-speleo.org/example/#http://purl.org/dc/terms/"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:cc="http://creativecommons.org/ns#"
+         xmlns:ns3="https://ontology.uis-speleo.org/ontology/#">
+
+  <rdf:Description rdf:about="https://ontology.uis-speleo.org/example/#A12y2016">
+    <rdf:type rdf:resource="http://rs.tdwg.org/dwc/terms/Occurrence"/>
+    <rdfs:label xml:lang="fr">A12y2016</rdfs:label>
+    <ns0:recordedBy rdf:resource="https://ontology.uis-speleo.org/example/#Bernard_Lips"/>
+    <ns0:recordedBy>https://ontology.uis-speleo.org/example/#Bernard_Lips</ns0:recordedBy>
+    <ns0:associatedTaxa>https://species.wikimedia.org/wiki/Barbastella_barbastellus</ns0:associatedTaxa>
+    <ns0:dateIdentified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-14</ns0:dateIdentified>
+    <ns0:eventDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-10</ns0:eventDate>
+    <ns0:identifiedBy>https://ontology.uis-speleo.org/example/#Josiane_Lips</ns0:identifiedBy>
+    <ns0:individualCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns0:individualCount>
+    <ns1:relatedToUndergroundCavity></ns1:relatedToUndergroundCavity>
+    <ns2:spatial>https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4</ns2:spatial>
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric_Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/#A12y2016"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:modified>
+        <ns3:licenseType rdf:resource="https://ontology.uis-speleo.org/ontology/#ODC-By"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </rdf:Description>
+
+</rdf:RDF>
+        

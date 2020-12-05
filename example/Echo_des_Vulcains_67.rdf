@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:dc11="http://purl.org/dc/elements/1.1/"
+         xmlns:ns0="http://www.geonames.org/ontology#"
+         xmlns:ns1="https://ontology.uis-speleo.org/ontology/#"
+         xmlns:cc="http://creativecommons.org/ns#">
+
+  <dc:BibliographicResource rdf:about="https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67">
+    <dc11:language>FR</dc11:language>
+    <dc:creator></dc:creator>
+    <dc:date rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2010-03-01</dc:date>
+    <dc:format>application-pdf</dc:format>
+    <dc:isPartOf rdf:resource="https://ontology.uis-speleo.org/example/#Echo_des_Vulcains"/>
+    <dc:references rdf:resource="https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4"/>
+    <dc:publisher rdf:resource="https://ontology.uis-speleo.org/example/#Vulcains"/>
+    <dc:subject rdf:resource="https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology"/>
+    <dc:title xml:lang="fr">Echo des Vulcains n°67</dc:title>
+    <dc:source rdf:resource="https://www.groupe-speleo-vulcain.com/echo_des_vulcains/download.php?fichier=EV67.pdf"/>
+    <dc:type rdf:resource="http://id.loc.gov/vocabulary/marcgt/iss"/>
+    <ns0:countryCode xml:lang="fr">FR</ns0:countryCode>
+    <ns1:relatedToUndergroundCavity rdf:resource="https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard"/>
+    <ns1:hasDescriptionDocument>
+      <rdf:Description>
+        <dc:creator>Frédéric Urien</dc:creator>
+        <dc11:language>EN</dc11:language>
+        <dc:title>Read the firt november 2020 for Karstlink example</dc:title>
+        <dc:description>Very interesting</dc:description>
+      </rdf:Description>
+    </ns1:hasDescriptionDocument>
+
+    <dc:rights>
+      <rdf:Description>
+        <cc:attributionName>Frédéric Urien</cc:attributionName>
+        <cc:attributionURL rdf:resource="https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67"/>
+        <dc:created rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-23</dc:created>
+        <dc:modified rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">2020-10-30</dc:modified>
+        <ns1:licenseType rdf:resource="http://dbpedia.org/resource/CC_BY"/>
+      </rdf:Description>
+    </dc:rights>
+
+  </dc:BibliographicResource>
+
+</rdf:RDF>

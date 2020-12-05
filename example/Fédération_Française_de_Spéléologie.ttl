@@ -1,0 +1,44 @@
+<https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie>
+        a                               <http://xmlns.com/foaf/0.1/Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fédération Française de Spéléologie"@fr ;
+        <http://schema.org/addressCountry>
+                "FR" ;
+        <http://schema.org/addressLocality>
+                "Lyon" ;
+        <http://schema.org/postalCode>  "69002" ;
+        <http://schema.org/streetAddress>
+                "28 rue Delandine" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "45.7449798"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "4.825638799999979"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <https://ffspeleo.fr/> ;
+        <http://xmlns.com/foaf/0.1/mbox>
+                <https://medias.ffspeleo.fr/courriel/secretariat/> ;
+        <http://xmlns.com/foaf/0.1/member>
+                "" ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                "" ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "Présentation";
+            <http://purl.org/dc/terms/description>
+                "La Fédération Française de Spéléologie a été créée en 1963. Reconnue par le Ministère chargé des sports pour l’organisation des activités liées à la spéléologie en France.";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/ODbL> ].
