@@ -1,0 +1,527 @@
+<https://ontology.uis-speleo.org/example/#Vulcains>
+        a                               <http://xmlns.com/foaf/0.1/Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Groupe Spéléologique des Vulcains"@fr ;
+        <http://schema.org/addressCountry>
+                "FR" ;
+        <http://schema.org/addressLocality>
+                "Lyon" ;
+        <http://schema.org/postalCode>  "69009" ;
+        <http://schema.org/streetAddress>
+                "36 Avenue Sidoine Apollinaire" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "45.77392"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "4.795062"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <https://www.groupe-speleo-vulcain.com/> ;
+        <http://xmlns.com/foaf/0.1/mbox>
+                <mailto:contact@groupe-speleo-vulcain.com> ;
+        <http://xmlns.com/foaf/0.1/member>
+                <https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie> ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "Activités";
+            <http://purl.org/dc/terms/description>
+                "Le groupe spéléo des Vulcains est basé à Lyon et vous propose de découvrir la spéléo, le canyonisme, de participer à des camps ou à des congrès.";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/ODbL> ].
+
+<https://ontology.uis-speleo.org/example/#V4>
+        a                   <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "V4"@fr ;
+        <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
+                "5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.geonames.org/ontology#alternateName>
+                "V04"@fr ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
+                "1625"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "46.10222"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "6.77962"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://ontology.uis-speleo.org/ontology/#discoveredBy>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance>
+                399 ;
+        <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance>
+                -1466 ;
+        <https://ontology.uis-speleo.org/ontology/#length>
+                25819 ;
+         <https://schema.org/containedInPlace>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard>;
+         <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+            <http://purl.org/dc/terms/creator>
+                "vincent";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "	A partir du refuge, prendre la direction du lac des Chambres. Un peu avant le lac, prendre sur la gauche. L'entrée V4 est un petit porche. Compter 1h30 de marche entre le refuge et l'entrée.";   
+         ];
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "BTH";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "Du V4 à la cascade Jean Dupont (équipement et balisage en place) ";
+            <http://purl.org/dc/terms/description>
+                "	Les premiers -100m se font dans une conduite forcé ponctuée de quelques ressauts équipés jusqu'au puit des Savoyard (-25 m). Juste après le puits, descendre dans les éboulis. On enchaine les Puits Alain (2 -15 m). On suit un méandre jusqu'à un affluent du Jean-Bernard. 3 ressauts dans l'affluent permettent d'atteindre la cascade Jean Dupont.A partir de Samoëns, aller se garer sur le parking qui permet d'accéder au Lac des Chambres et au refuge du Folly. Monter au refuge ; il faut compter 1h30 de marche (600 mètres de dénivelé). ";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "vincent, BTH" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://www.grottocenter.org/html/file_Fr.php?lang=Fr&check_lang_auto=false&category=entry&id=1> ;
+                <http://purl.org/dc/terms/created>
+                    "2008-07-29"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2018-09-26"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#CC-BY-SA> ].
+
+<https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly>
+        a                            <https://ontology.uis-speleo.org/ontology/#Area> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Système Karstique du Folly"@fr ;
+        <http://schema.org/polygon>  "46.101384, 6.754327 46.131629, 6.814437 46.125330, 6.810705 46.102908, 6.816373 46.083045, 6.736484" ;
+        <https://ontology.uis-speleo.org/ontology/#areaType>
+                <http://www.geonames.org/ontology#T.KRST> ;
+        <https://ontology.uis-speleo.org/example/#relatedToUndergroundCavity>
+                <https://ontology.uis-speleo.org/example/#V4> ;
+        <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+            <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";   
+         ];
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].
+
+<https://ontology.uis-speleo.org/example/#Prospection>
+        a                   <http://purl.org/dc/terms/BibliographicResource> ;
+        <http://purl.org/dc/elements/1.1/language>
+                "FR" ;
+        <http://purl.org/dc/terms/creator>
+                <https://ontology.uis-speleo.org/example/#Bernard_Lips> ;
+        <http://purl.org/dc/terms/date>
+                "2010-03-01"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+        <http://purl.org/dc/terms/format>
+                "application-pdf" ;
+        <http://purl.org/dc/terms/isPartOf>
+                <https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67> ;
+        <http://purl.org/dc/terms/references>
+                <https://ontology.uis-speleo.org/example/#Syst%C3%A8me_Karstique_du_Folly> , <https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4> ;
+        <http://purl.org/dc/terms/publisher>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <http://purl.org/dc/terms/subject>
+                <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> ;
+        <http://purl.org/dc/terms/title>
+                "Prospection"@fr ;
+        <http://purl.org/dc/terms/type>
+                <http://id.loc.gov/vocabulary/marcgt/art> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR"@fr ;
+        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "EN";
+            <http://purl.org/dc/terms/title>
+                "article read the firt november 2020 for Karstlink example";
+            <http://purl.org/dc/terms/description>
+                "Summary of the prospecting work carried out during the 2009 camp in the Jean Bernard syncline and in the BA LP and LS areas with description and topography of the underground cavities";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Prospection> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].
+
+<https://ontology.uis-speleo.org/example/#Josiane_Lips>
+        a                   <http://xmlns.com/foaf/0.1/Person> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://xmlns.com/foaf/0.1/firstName>
+                "Josiane" ;
+        <http://xmlns.com/foaf/0.1/lastName>
+                "Lips" ;
+        <http://xmlns.com/foaf/0.1/member>
+                <https://ontology.uis-speleo.org/example/#Vulcains> , <https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie> ;
+        <http://xmlns.com/foaf/0.1/nick>
+                "Jo" ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> ;
+
+         <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Josiane_Lips> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#ODC-By> ].
+
+<https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard>
+        a                   <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Gouffre Jean Bernard"@fr ;
+        <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
+                "-1"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.geonames.org/ontology#alternateName>
+                "Jean Bernard (Réseau)"@fr ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
+                "1600"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "46.1030"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "6.78"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://ontology.uis-speleo.org/ontology/#discoveredBy>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <https://ontology.uis-speleo.org/ontology/#length>
+                25819 ;
+        <https://ontology.uis-speleo.org/ontology/#verticalExtent>
+                1625 ;
+         <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+            <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";   
+         ];
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Grottocenter" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://grottocenter.org/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#ODBL> ].
+
+
+<https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie>
+        a                               <http://xmlns.com/foaf/0.1/Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Fédération Française de Spéléologie"@fr ;
+        <http://schema.org/addressCountry>
+                "FR" ;
+        <http://schema.org/addressLocality>
+                "Lyon" ;
+        <http://schema.org/postalCode>  "69002" ;
+        <http://schema.org/streetAddress>
+                "28 rue Delandine" ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "45.7449798"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "4.825638799999979"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://xmlns.com/foaf/0.1/homepage>
+                <https://ffspeleo.fr/> ;
+        <http://xmlns.com/foaf/0.1/mbox>
+                <https://medias.ffspeleo.fr/courriel/secretariat/> ;
+        <http://xmlns.com/foaf/0.1/member>
+                "" ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                "" ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "FR";
+            <http://purl.org/dc/terms/title>
+                "Présentation";
+            <http://purl.org/dc/terms/description>
+                "La Fédération Française de Spéléologie a été créée en 1963. Reconnue par le Ministère chargé des sports pour l’organisation des activités liées à la spéléologie en France.";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/ODbL> ].
+
+<https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4>
+        a                   <http://www.w3.org/2003/01/geo/wgs84_pos#Point> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Entrée V4"@fr ;
+        <http://rs.tdwg.org/dwc/terms/coordinatePrecision>
+                "5"^^<http://www.w3.org/2001/XMLSchema#decimal> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#alt>
+                "1625"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#lat>
+                "6.77962"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <http://www.w3.org/2003/01/geo/wgs84_pos#long>
+                "46.10222"^^<http://www.w3.org/2001/XMLSchema#float> ;
+        <https://ontology.uis-speleo.org/ontology/#pointType>
+                <https://ontology.uis-speleo.org/ontology/#entry> ;
+        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                <https://ontology.uis-speleo.org/example/#V4> ;
+        <https://ontology.uis-speleo.org/ontology/#hasAccessDocument>[
+            <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";   
+         ];
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "";
+            <http://purl.org/dc/elements/1.1/language>
+                "";
+            <http://purl.org/dc/terms/title>
+                "";
+            <http://purl.org/dc/terms/description>
+                "";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].
+
+<https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67>
+        a                   <http://purl.org/dc/terms/BibliographicResource> ;
+        <http://purl.org/dc/elements/1.1/language>
+                "FR" ;
+        <http://purl.org/dc/terms/creator>
+                "" ;
+        <http://purl.org/dc/terms/date>
+                "2010-03-01"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+        <http://purl.org/dc/terms/format>
+                "application-pdf" ;
+        <http://purl.org/dc/terms/isPartOf>
+                <https://ontology.uis-speleo.org/example/#Echo_des_Vulcains> ;
+        <http://purl.org/dc/terms/references>
+                <https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4> ;
+        <http://purl.org/dc/terms/publisher>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <http://purl.org/dc/terms/subject>
+                <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> ;
+        <http://purl.org/dc/terms/title>
+                "Echo des Vulcains n°67"@fr ;
+        <http://purl.org/dc/terms/source>
+                <https://www.groupe-speleo-vulcain.com/echo_des_vulcains/download.php?fichier=EV67.pdf>;
+        <http://purl.org/dc/terms/type>
+                <http://id.loc.gov/vocabulary/marcgt/iss> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR"@fr ;
+        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "EN";
+            <http://purl.org/dc/terms/title>
+                "Read the firt november 2020 for Karstlink example";
+            <http://purl.org/dc/terms/description>
+                "Very interesting";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Echo_des_Vulcains_67> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].
+
+<https://ontology.uis-speleo.org/example/#Echo_des_Vulcains>
+        a                   <http://purl.org/dc/terms/BibliographicResource> ;
+        <http://purl.org/dc/elements/1.1/language>
+                "FR" ;
+        <http://purl.org/dc/terms/creator>
+                "" ;
+        <http://purl.org/dc/terms/date>
+                "" ;
+        <http://purl.org/dc/terms/format>
+                "text/html" ;
+        <http://purl.org/dc/terms/isPartOf>
+                "" ;
+        <http://purl.org/dc/terms/references>
+                "" ;
+        <http://purl.org/dc/terms/publisher>
+                <https://ontology.uis-speleo.org/example/#Vulcains> ;
+        <http://purl.org/dc/terms/subject>
+                <https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> ;
+        <http://purl.org/dc/terms/title>
+                "Echo des Vulcains" ;
+        <http://purl.org/dc/terms/type>
+                <http://purl.org/dc/dcmitype/Collection> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR"@fr ;
+        <https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity>
+                "" ;
+        <https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument>[
+             <http://purl.org/dc/terms/creator>
+                "Frédéric Urien";
+            <http://purl.org/dc/elements/1.1/language>
+                "EN";
+            <http://purl.org/dc/terms/title>
+                "History";
+            <http://purl.org/dc/terms/description>
+                "The first issue of Echo des Vulcains was published in 1960";         
+        ];
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Echo_des_Vulcains> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-30"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <http://dbpedia.org/resource/CC_BY> ].
+
+
+<https://ontology.uis-speleo.org/example/#Bernard_Lips>
+        a                   <http://xmlns.com/foaf/0.1/Person> ;
+        <http://www.geonames.org/ontology#countryCode>
+                "FR" ;
+        <http://xmlns.com/foaf/0.1/firstName>
+                "Bernard" ;
+        <http://xmlns.com/foaf/0.1/lastName>
+                "Lips" ;
+        <http://xmlns.com/foaf/0.1/member>
+                <https://ontology.uis-speleo.org/example/#Vulcains> , <https://ontology.uis-speleo.org/example/#F%C3%A9d%C3%A9ration_Fran%C3%A7aise_de_Sp%C3%A9l%C3%A9ologie> ;
+        <http://xmlns.com/foaf/0.1/nick>
+                "Pernard" ;
+        <https://ontology.uis-speleo.org/ontology/#visited>
+                <https://ontology.uis-speleo.org/example/#Gouffre_Jean_Bernard> , <https://ontology.uis-speleo.org/example/#V4> ;
+
+         <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#Bernard_Lips> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#ODC-By> ].
+
+<https://ontology.uis-speleo.org/example/#A12y2016>
+        a                   <http://rs.tdwg.org/dwc/terms/Occurrence> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "A12y2016"@fr ;
+        <http://rs.tdwg.org/dwc/terms/recordedBy>
+                <https://ontology.uis-speleo.org/example/#Bernard_Lips> ;
+        <http://rs.tdwg.org/dwc/terms/associatedTaxa>
+                "https://species.wikimedia.org/wiki/Barbastella_barbastellus" ;
+        <http://rs.tdwg.org/dwc/terms/dateIdentified>
+                "2019-07-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://rs.tdwg.org/dwc/terms/eventDate>
+                "2019-07-10"^^<http://www.w3.org/2001/XMLSchema#date> ;
+        <http://rs.tdwg.org/dwc/terms/identifiedBy>
+                "https://ontology.uis-speleo.org/example/#Josiane_Lips" ;
+        <http://rs.tdwg.org/dwc/terms/individualCount>
+                2 ;
+        <https://ontology.uis-speleo.org/example/#relatedToUndergroundCavity>
+            "";
+        <https://ontology.uis-speleo.org/example/#http://purl.org/dc/terms/spatial>
+            "https://ontology.uis-speleo.org/example/#Entr%C3%A9e_V4" ;
+        <http://rs.tdwg.org/dwc/terms/recordedBy>
+                "https://ontology.uis-speleo.org/example/#Bernard_Lips" ;
+        <http://purl.org/dc/terms/rights>[
+                <http://creativecommons.org/ns#attributionName>
+                    "Frédéric_Urien" ;
+                <http://creativecommons.org/ns#attributionURL>
+                    <https://ontology.uis-speleo.org/example/#A12y2016> ;
+                <http://purl.org/dc/terms/created>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <http://purl.org/dc/terms/modified>
+                    "2020-10-23"^^<http://www.w3.org/2000/01/rdf-schema#Literal> ;
+                <https://ontology.uis-speleo.org/ontology/#licenseType>
+                        <https://ontology.uis-speleo.org/ontology/#ODC-By> ].
+        
