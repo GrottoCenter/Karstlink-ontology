@@ -17,6 +17,7 @@
 
   "UndergroundCavity": "karstlink:UndergroundCavity" ,
 
+
   "DatatypeProperty":
   "urn:================" ,
   "name": "rdfs:label",
@@ -48,16 +49,26 @@
 
   "ObjectProperty":
   "urn:==============" ,
-  "author": {"@id": "dct:creator" , "@type": "@id"  ,
-    "@context": { "@base": "../cavers/" }
+  "author": {"@id": "dct:creator" , "@type": "@id" ,
+    "@context": { "@base": "../cavers/"
+    , "id": "@id"
+    }
    } ,
-  "cave": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
-  "entrance": {"@id": "dct:spatial" , "@type": "@id" } ,
+  "cave": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" ,
+    "@context": { "@base": "../caves/"
+    , "id": "@id"
+    }
+ } ,
+  "entrance": {"@id": "dct:spatial" , "@type": "@id" ,
+    "@context": { "@base": "../entrances/"
+    , "id": "@id"
+    }
+  } ,
 
-  "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" } ,
   "cavers": {"@id": "karstlink:visited" , "@type": "@id" ,
       "@context": {
       "@base": "../cavers/"
+    , "id": "@id"
     }
   } ,
   "exploredCaves": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
@@ -73,12 +84,17 @@
   "caves": {
     "@id": "karstlink:relatedToUndergroundCavity" ,
     "@type": "karstlink:UndergroundCavity" ,
-    "@context": { "@base": "../caves/" }
+    "@context": { "@base": "../caves/"
+    , "id": "@id"
+    }
   } ,
   "documents": {"@id": "foaf:page" , "@type": "@id"  ,
-    "@context": { "@base": "../documents/" }
+    "@context": { "@base": "../documents/"
+    , "id": "@id"
+    }
    } ,
-   "reviewer": {"@id": "http://purl.org/stuff/rev#reviewer" , "@type": "@id" }
+  "reviewer": {"@id": "http://purl.org/stuff/rev#reviewer" , "@type": "@id" } ,
+  "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" }
    }
 }}
 
