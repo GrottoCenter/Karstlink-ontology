@@ -35,16 +35,17 @@
   "city": "schema:addressLocality" ,
   "country": "schema:addressCountry" ,
   "postalCode": "schema:postalCode" ,
-  "county": "urn:TODO" ,
-  "region": "urn:TODO" ,
-  "village":"urn:TODO" ,
+  "county": "urn:TODO:county:departement" ,
+  "region": "schema:addressRegion" ,
+  "village":"urn:TODO:village" ,
 
-  "yearBirth" : "urn:TODO" ,
-  "dateInscription" : "urn:TODO" ,
-  "dateReviewed" : "urn:TODO" ,
-  "customMessage" : "urn:TODO" ,
-  "isOfficialPartner" : "urn:TODO" ,
-  "pictureFileName" : "urn:TODO" ,
+  "yearBirth" : "schema:birthDate" ,
+  "dateInscription" : "dct:created" ,
+
+  "dateReviewed" : "dct:modified" ,
+  "customMessage" : "urn:TODO:customMessage" ,
+  "isOfficialPartner" : "urn:TODO:isOfficialPartner" ,
+  "pictureFileName" : "urn:TODO:pictureFileName" ,
   "associatedTaxa": "karstlink:associatedTaxa" ,
 
   "ObjectProperty":
@@ -95,6 +96,5 @@
    } ,
   "reviewer": {"@id": "http://purl.org/stuff/rev#reviewer" , "@type": "@id" } ,
   "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" }
-   }
 }}
 
