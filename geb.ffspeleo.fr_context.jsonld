@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "karstlink": "https://ontology.uis-speleo.org/ontology/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "dwciri": "http://rs.tdwg.org/dwc/iri/",
+    "UndergroundCavity": "karstlink:UndergroundCavity",
+    "name": "rdfs:label",
+    "latitude": "https://www.w3.org/2003/01/geo/wgs84_pos#lat",
+    "longitude": "https://www.w3.org/2003/01/geo/wgs84_pos#long",
+    "altitude": "https://www.w3.org/2003/01/geo/wgs84_pos#alt",
+    "recordedBy": "http://rs.tdwg.org/dwc/terms/recordedBy",
+    "identifiedBy": "http://rs.tdwg.org/dwc/terms/identifiedBy",
+    "Occurence": "https://dwc.tdwg.org/list/#dwc_Occurence",
+    "Point": "https://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "dsw": "http://purl.org/dsw/",
+    "locates": "dsw:locates",
+    "event date": "http://rs.tdwg.org/dwc/terms/eventDate",
+    "recorded by": "http://rs.tdwg.org/dwc/terms/recordedBy",
+    "identified by": "http://rs.tdwg.org/dwc/terms/identifiedBy",
+    "associated taxa": "http://rs.tdwg.org/dwc/terms/associatedTaxa",
+    "@base": "https://geb.ffspeleo.fr/api/api/v2/"
+  }
+}
