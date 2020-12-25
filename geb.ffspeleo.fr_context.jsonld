@@ -6,21 +6,25 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dwc": "http://rs.tdwg.org/dwc/terms/",
     "dwciri": "http://rs.tdwg.org/dwc/iri/",
-    "UndergroundCavity": "karstlink:UndergroundCavity",
-    "name": "rdfs:label",
-    "latitude": "https://www.w3.org/2003/01/geo/wgs84_pos#lat",
-    "longitude": "https://www.w3.org/2003/01/geo/wgs84_pos#long",
-    "altitude": "https://www.w3.org/2003/01/geo/wgs84_pos#alt",
-    "recordedBy": "http://rs.tdwg.org/dwc/terms/recordedBy",
-    "identifiedBy": "http://rs.tdwg.org/dwc/terms/identifiedBy",
-    "Occurence": "https://dwc.tdwg.org/list/#dwc_Occurence",
-    "Point": "https://www.w3.org/2003/01/geo/wgs84_pos#Point",
     "dsw": "http://purl.org/dsw/",
+    "geo": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+
+    "UndergroundCavity": "karstlink:UndergroundCavity",
+    "Point": "geo:Point",
+    "Occurence": "dwc:Occurence",
+
+    "name": "rdfs:label",
+    "latitude": "geo:lat",
+    "longitude": "geo:long",
+    "altitude": "geo:alt",
+    "recordedBy": "dwc:recordedBy",
+    "identifiedBy": "dwc:identifiedBy",
     "locates": "dsw:locates",
-    "event date": "http://rs.tdwg.org/dwc/terms/eventDate",
-    "recorded by": "http://rs.tdwg.org/dwc/terms/recordedBy",
-    "identified by": "http://rs.tdwg.org/dwc/terms/identifiedBy",
-    "associated taxa": "http://rs.tdwg.org/dwc/terms/associatedTaxa",
+    "event date": "dwc:eventDate",
+    "recorded by": "dwc:recordedBy",
+    "identified by": "dwc:identifiedBy",
+    "associated taxa": "dwc:associatedTaxa",
+
     "@base": "https://geb.ffspeleo.fr/api/api/v2/"
   }
 }
