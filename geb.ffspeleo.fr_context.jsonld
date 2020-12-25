@@ -1,0 +1,33 @@
+{
+  "@context": {
+    "karstlink": "https://ontology.uis-speleo.org/ontology/#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "dwc": "http://rs.tdwg.org/dwc/terms/",
+    "dwciri": "http://rs.tdwg.org/dwc/iri/",
+    "dwci": "http://rs.tdwg.org/dwc/iri/",
+    "dsw": "http://purl.org/dsw/",
+    "geo": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+
+    "UndergroundCavity": "karstlink:UndergroundCavity",
+    "Point": "geo:Point",
+    "Occurence": "dwc:Occurence",
+
+    "name": "rdfs:label",
+    "latitude": "geo:lat",
+    "longitude": "geo:long",
+    "altitude": "geo:alt",
+    "recordedBy": "dwc:recordedBy",
+    "identifiedBy": "dwc:identifiedBy",
+    "locates": "dsw:locates",
+    "event date": "dwc:eventDate",
+    "recorded by": "dwc:recordedBy",
+    "identified by": "dwc:identifiedBy",
+    "associated taxa": "dwc:associatedTaxa",
+    "dwciri:toTaxon" : { "@type": "@id" },
+    "dwci:toTaxon" : { "@type": "@id" },
+
+    "@base": "https://geb.ffspeleo.fr/api/api/v2/"
+  }
+}

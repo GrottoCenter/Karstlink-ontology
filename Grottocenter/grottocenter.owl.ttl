@@ -1,0 +1,20 @@
+@prefix grotto: <https://ontology.uis-speleo.org/Grottocenter/grottocenter.owl.tt#l> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+grotto: a owl:Ontology ;
+  foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> ;
+  foaf:maker <http://semantic-forms.cc:1952/ldp/1605547206825-8408338104416701> ;
+  dct:description """Propriétés présentes dans l'API https://beta.grottocenter.org/ui/swagger/1 ,
+  que nous n'avons pas pu associer à des vocabulaires connus.
+  """ ;
+  dct:subject dbpedia:Biospeleology , dbpedia:Karst
+  .
+
+grotto:county a owl:DatatypeProperty .
+grotto:village a owl:DatatypeProperty .
+grotto:customMessage a owl:DatatypeProperty .
+grotto:isOfficialPartner a owl:DatatypeProperty .
+grotto:pictureFileName a owl:DatatypeProperty .

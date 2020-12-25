@@ -1,6 +1,7 @@
 { "@context": {
 
   "karstlink": "https://ontology.uis-speleo.org/ontology/#" ,
+  "grotto": "https://ontology.uis-speleo.org/Grottocenter/grottocenter.owl.tt#l",
   "@vocab" : "https://ontology.uis-speleo.org/ontology/#" ,
   "@base" : "https://beta.grottocenter.org/api/v1/entrances/",
 
@@ -10,12 +11,13 @@
   "xsd": "http://www.w3.org/2001/XMLSchema#" ,
   "dwc" : "http://rs.tdwg.org/dwc/terms/" ,
   "dwciri": "http://rs.tdwg.org/dwc/iri/" ,
-  "dwciri:inDescribedPlace": { "@type": "@id" } ,
   "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
   "sioc": "http://rdfs.org/sioc/ns#c",
-
+  "dct": "http://purl.org/dc/terms/",
+  "schema": "http://schema.org/",
 
   "UndergroundCavity": "karstlink:UndergroundCavity" ,
+
 
   "DatatypeProperty":
   "urn:================" ,
@@ -34,30 +36,42 @@
   "city": "schema:addressLocality" ,
   "country": "schema:addressCountry" ,
   "postalCode": "schema:postalCode" ,
-  "county": "urn:TODO" ,
-  "region": "urn:TODO" ,
-  "village":"urn:TODO" ,
+  "county": "grotto:county" ,
+  "region": "schema:addressRegion" ,
+  "village":"grotto:village" ,
 
-  "yearBirth" : "urn:TODO" ,
-  "dateInscription" : "urn:TODO" ,
-  "dateReviewed" : "urn:TODO" ,
-  "customMessage" : "urn:TODO" ,
-  "isOfficialPartner" : "urn:TODO" ,
-  "pictureFileName" : "urn:TODO" ,
+  "yearBirth" : "schema:birthDate" ,
+  "dateInscription" : "dct:created" ,
+
+  "dateReviewed" : "dct:modified" ,
+  "customMessage" : "grotto:customMessage" ,
+  "isOfficialPartner" : "grotto:isOfficialPartner" ,
+  "pictureFileName" : "grotto:pictureFileName" ,
   "associatedTaxa": "karstlink:associatedTaxa" ,
 
   "ObjectProperty":
   "urn:==============" ,
-  "author": {"@id": "dct:creator" , "@type": "@id"  ,
-    "@context": { "@base": "../cavers/" }
+  "dwciri:inDescribedPlace": { "@type": "@id" } ,
+  "author": {"@id": "dct:creator" , "@type": "@id" ,
+    "@context": { "@base": "../cavers/"
+    , "id": "@id"
+    }
    } ,
-  "cave": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
-  "entrance": {"@id": "dct:spatial" , "@type": "@id" } ,
+  "cave": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" ,
+    "@context": { "@base": "../caves/"
+    , "id": "@id"
+    }
+ } ,
+  "entrance": {"@id": "dct:spatial" , "@type": "@id" ,
+    "@context": { "@base": "../entrances/"
+    , "id": "@id"
+    }
+  } ,
 
-  "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" } ,
   "cavers": {"@id": "karstlink:visited" , "@type": "@id" ,
       "@context": {
       "@base": "../cavers/"
+    , "id": "@id"
     }
   } ,
   "exploredCaves": {"@id": "karstlink:relatedToUndergroundCavity" , "@type": "@id" } ,
@@ -73,12 +87,16 @@
   "caves": {
     "@id": "karstlink:relatedToUndergroundCavity" ,
     "@type": "karstlink:UndergroundCavity" ,
-    "@context": { "@base": "../caves/" }
+    "@context": { "@base": "../caves/"
+    , "id": "@id"
+    }
   } ,
   "documents": {"@id": "foaf:page" , "@type": "@id"  ,
-    "@context": { "@base": "../documents/" }
+    "@context": { "@base": "../documents/"
+    , "id": "@id"
+    }
    } ,
-   "reviewer": {"@id": "http://purl.org/stuff/rev#reviewer" , "@type": "@id" }
-   }
+  "reviewer": {"@id": "http://purl.org/stuff/rev#reviewer" , "@type": "@id" } ,
+  "reviewer": {"@id": "http://id.loc.gov/vocabulary/relators/rev" , "@type": "@id" }
 }}
 
