@@ -18,7 +18,7 @@
 karstlink: a owl:Ontology ;
   foaf:maker <http://jmvanel.free.fr/jmv.rdf#me> ;
   foaf:maker <http://semantic-forms.cc:1952/ldp/1605547206825-8408338104416701> ;
-  dc:description """L'ontologie a pour objectif de décrire tous les objets liés au karst : cavités, personnes, groupes, zones, observations de différentes nature, documents.""" ;
+  dct:description """L'ontologie a pour objectif de décrire tous les objets liés au karst : cavités, personnes, groupes, zones, observations de différentes nature, documents.""" ;
   dct:subject dbpedia:Biospeleology , dbpedia:Karst ;
   rdfs:seeAlso <http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Underground_cavity_-_Cavité> ;
   rdfs:seeAlso <https://github.com/GrottoCenter/Karstlink-ontology> ;
