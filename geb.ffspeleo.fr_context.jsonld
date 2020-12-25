@@ -6,6 +6,7 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "dwc": "http://rs.tdwg.org/dwc/terms/",
     "dwciri": "http://rs.tdwg.org/dwc/iri/",
+    "dwci": "http://rs.tdwg.org/dwc/iri/",
     "dsw": "http://purl.org/dsw/",
     "geo": "https://www.w3.org/2003/01/geo/wgs84_pos#",
 
@@ -24,6 +25,8 @@
     "recorded by": "dwc:recordedBy",
     "identified by": "dwc:identifiedBy",
     "associated taxa": "dwc:associatedTaxa",
+    "dwciri:toTaxon" : { "@type": "@id" },
+    "dwci:toTaxon" : { "@type": "@id" },
 
     "@base": "https://geb.ffspeleo.fr/api/api/v2/"
   }
