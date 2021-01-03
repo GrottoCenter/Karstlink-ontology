@@ -20,14 +20,24 @@
     "altitude": "geo:alt",
     "recordedBy": "dwc:recordedBy",
     "identifiedBy": "dwc:identifiedBy",
-    "locates": "dsw:locates",
+    "locates": {
+       "@id": "dsw:locates",
+       "@type": "@id",
+       "@context": { "@base": "../occurences/" }
+    } ,
     "event date": "dwc:eventDate",
     "recorded by": "dwc:recordedBy",
     "identified by": "dwc:identifiedBy",
+    " identified by": "dwc:identifiedBy",
     "associated taxa": "dwc:associatedTaxa",
     "dwciri:toTaxon" : { "@type": "@id" },
     "dwci:toTaxon" : { "@type": "@id" },
-
+    "dwciri:identifiedBy" : { "@type": "@id",
+       "@context": { "@base": "persons/" }
+    } ,
+    "dct:hasPart": {
+       "@context": { "@base": "stations/" }
+    } ,
     "@base": "https://geb.ffspeleo.fr/api/api/v2/"
   }
 }
