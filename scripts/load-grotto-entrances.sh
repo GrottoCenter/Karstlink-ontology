@@ -4,8 +4,9 @@
 
 SERVER=http://localhost:9000
 API=https://beta.grottocenter.org/api/v1/entrances
-COUNT=10000 # 80000
-OFFSET=1795 # 1773 # 1628 # 1
+API=https://beta.grottocenter.org/api/v1/massifs
+COUNT=600 # 80000
+OFFSET=1
 
 declare -i END
 END=$OFFSET+$COUNT
