@@ -1,7 +1,7 @@
 { "@context": {
 
   "karstlink": "https://ontology.uis-speleo.org/ontology/#" ,
-  "grotto": "https://ontology.uis-speleo.org/Grottocenter/grottocenter.owl.tt#l",
+  "grotto": "https://ontology.uis-speleo.org/Grottocenter/grottocenter.owl.ttl#",
   "@vocab" : "https://ontology.uis-speleo.org/ontology/#" ,
   "@base" : "https://beta.grottocenter.org/api/v1/entrances/",
 
