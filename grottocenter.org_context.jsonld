@@ -16,6 +16,8 @@
   "dct": "http://purl.org/dc/terms/",
   "schema": "http://schema.org/",
 
+  "datagc": "https://data.grottocenter.org/ldp/" ,
+
   "UndergroundCavity": "karstlink:UndergroundCavity" ,
 
 
