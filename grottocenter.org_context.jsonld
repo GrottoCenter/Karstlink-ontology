@@ -90,7 +90,6 @@
     "@id": "karstlink:relatedToUndergroundCavity" ,
     "@type": "karstlink:UndergroundCavity" ,
     "@context": { "@base": "../caves/"
-    , "id": "@id"
     }
   } ,
   "documents": {"@id": "foaf:page" , "@type": "@id"  ,
