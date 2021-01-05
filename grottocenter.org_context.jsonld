@@ -1,7 +1,7 @@
 { "@context": {
 
   "karstlink": "https://ontology.uis-speleo.org/ontology/#" ,
-  "grotto": "https://ontology.uis-speleo.org/Grottocenter/grottocenter.owl.tt#l",
+  "grotto": "https://ontology.uis-speleo.org/Grottocenter/grottocenter.owl.ttl#",
   "@vocab" : "https://ontology.uis-speleo.org/ontology/#" ,
   "@base" : "https://beta.grottocenter.org/api/v1/entrances/",
 
@@ -15,6 +15,8 @@
   "sioc": "http://rdfs.org/sioc/ns#c",
   "dct": "http://purl.org/dc/terms/",
   "schema": "http://schema.org/",
+
+  "datagc": "https://data.grottocenter.org/ldp/" ,
 
   "UndergroundCavity": "karstlink:UndergroundCavity" ,
 
@@ -88,7 +90,6 @@
     "@id": "karstlink:relatedToUndergroundCavity" ,
     "@type": "karstlink:UndergroundCavity" ,
     "@context": { "@base": "../caves/"
-    , "id": "@id"
     }
   } ,
   "documents": {"@id": "foaf:page" , "@type": "@id"  ,
