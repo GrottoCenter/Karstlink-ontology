@@ -13,7 +13,6 @@
 
     "UndergroundCavity": "karstlink:UndergroundCavity",
     "Point": "geo:Point",
-    "Occurence": "dwc:Occurence",
 
     "name": "rdfs:label",
     "latitude": "geo:lat",
