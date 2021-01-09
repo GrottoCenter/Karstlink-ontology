@@ -2,12 +2,12 @@
 <https://ontology.uis-speleo.org/ontology/#UndergroundCavity> <http://www.w3.org/2000/01/rdf-schema#comment> "Una cavità sotterranea può essere naturale o artificiale (la mia , cava, fognatura, tunnel, ecc.), penetrabile o no, carsico o no (vulcanico, ecc.), o essere certi tipi di fenomeni carsici superficiali (sorgente, drenaggio, polje, mega-dolina, ecc.)"@it.
 <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "height above Entrance"@it.
 <https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> <http://www.w3.org/2000/01/rdf-schema#comment> "La distanza verticale tra l'ingresso della cavità \ne il punto più alto espresso in metri ".
-<https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "height below Entrance"@it.
+<https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "altezza sotto l'ingresso"@it.
 <https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> <http://www.w3.org/2000/01/rdf-schema#comment> "La distanza verticale tra l'ingresso della cavità e il punto più basso espresso in metri "@it.
-<https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity> <http://www.w3.org/2000/01/rdf-schema#label> "about the cavity"@it.
-<https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument> <http://www.w3.org/2000/01/rdf-schema#label> "document de Description"@it.
+<https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity> <http://www.w3.org/2000/01/rdf-schema#label> "sulla cavità"@it.
+<https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument> <http://www.w3.org/2000/01/rdf-schema#label> "Documento di descrizione"@it.
 <https://ontology.uis-speleo.org/ontology/#hasAccessDocument> <http://www.w3.org/2000/01/rdf-schema#label> "cavity access document"@it.
-<https://ontology.uis-speleo.org/ontology/#length> <http://www.w3.org/2000/01/rdf-schema#label> "longueur"@it.
+<https://ontology.uis-speleo.org/ontology/#length> <http://www.w3.org/2000/01/rdf-schema#label> "lunghezza"@it.
 <https://ontology.uis-speleo.org/ontology/#length> <http://www.w3.org/2000/01/rdf-schema#comment> "Il vero sviluppo di tutte le gallerie di la cavità in metri "@it.
 <https://ontology.uis-speleo.org/ontology/#verticalExtent> <http://www.w3.org/2000/01/rdf-schema#label> "vertical extension"@it.
 <https://ontology.uis-speleo.org/ontology/#verticalExtent> <http://www.w3.org/2000/01/rdf-schema#comment> "La distanza verticale tra il punto più alto e il punto più basso della cavità espresso in metri "@it.
