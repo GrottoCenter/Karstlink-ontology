@@ -1,0 +1,63 @@
+# Used as starting point for translation.
+# Was obtained by:
+# rapper -i guess -o ntriples karstlink.owl.ttl | egrep 'label|comment' | egrep @fr > karstlink.i18n.fr.ttl
+
+<https://ontology.uis-speleo.org/ontology/#UndergroundCavity> <http://www.w3.org/2000/01/rdf-schema#label> "Cavité"@fr .
+<https://ontology.uis-speleo.org/ontology/#UndergroundCavity> <http://www.w3.org/2000/01/rdf-schema#comment> "Une cavité souterraine peut être naturelle ou artificielle (mine, carrière, égout, tunnel, etc.), pénétrable ou non, karstique ou non (volcanique, etc.), ou être certains types de phénomènes karstiques superficiels (source, drain, polje, méga -doline, etc.). "@fr .
+<https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "hauteur au-dessus Entrée"@fr .
+<https://ontology.uis-speleo.org/ontology/#extentAboveEntrance> <http://www.w3.org/2000/01/rdf-schema#comment> "La distance verticale entre l'entrée de la cavité\n            et le point le plus haut exprimé en mètres"@fr .
+<https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "hauteur en-dessous Entrée"@fr .
+<https://ontology.uis-speleo.org/ontology/#extentBelowEntrance> <http://www.w3.org/2000/01/rdf-schema#comment> "La distance verticale entre l'entrée de la cavité et le point le plus bas exprimé en mètres"@fr .
+<https://ontology.uis-speleo.org/ontology/#relatedToUndergroundCavity> <http://www.w3.org/2000/01/rdf-schema#label> "à propos de la cavité"@fr .
+<https://ontology.uis-speleo.org/ontology/#hasDescriptionDocument> <http://www.w3.org/2000/01/rdf-schema#label> "document de Description"@fr .
+<https://ontology.uis-speleo.org/ontology/#hasAccessDocument> <http://www.w3.org/2000/01/rdf-schema#label> "document d'accès à la cavité"@fr .
+<https://ontology.uis-speleo.org/ontology/#length> <http://www.w3.org/2000/01/rdf-schema#label> "longueur "@fr .
+<https://ontology.uis-speleo.org/ontology/#length> <http://www.w3.org/2000/01/rdf-schema#comment> "Le développement réel de l'ensemble des galeries de la cavité en mètres"@fr .
+<https://ontology.uis-speleo.org/ontology/#verticalExtent> <http://www.w3.org/2000/01/rdf-schema#label> "extension verticale"@fr .
+<https://ontology.uis-speleo.org/ontology/#verticalExtent> <http://www.w3.org/2000/01/rdf-schema#comment> "La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"@fr .
+<https://ontology.uis-speleo.org/ontology/#discoveredBy> <http://www.w3.org/2000/01/rdf-schema#label> "découvert par"@fr .
+<https://ontology.uis-speleo.org/ontology/#discoveredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Agent (personne ou organisation) ayant découvert la cavité"@fr .
+<https://ontology.uis-speleo.org/ontology/#visited> <http://www.w3.org/2000/01/rdf-schema#label> "a visité "@fr .
+<https://ontology.uis-speleo.org/ontology/#visited> <http://www.w3.org/2000/01/rdf-schema#comment> "\n   cavité visitée par l'Agent (personne ou organisation)"@fr .
+<https://ontology.uis-speleo.org/ontology/#pointType> <http://www.w3.org/2000/01/rdf-schema#label> "type de point"@fr .
+<https://ontology.uis-speleo.org/ontology/#pointType> <http://www.w3.org/2000/01/rdf-schema#comment> "Lien vers un type de point défini dans une collection d'expressions"@fr .
+<https://ontology.uis-speleo.org/ontology/#Area> <http://www.w3.org/2000/01/rdf-schema#label> "zone (polygone)"@fr .
+<https://ontology.uis-speleo.org/ontology/#Area> <http://www.w3.org/2000/01/rdf-schema#comment> "Une zone est un polygone correspondant à une unité géographique que l'on souhaite identifier."@fr .
+<https://ontology.uis-speleo.org/ontology/#areaType> <http://www.w3.org/2000/01/rdf-schema#label> "type de zone"@fr .
+<https://ontology.uis-speleo.org/ontology/#areaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Lien vers un type de zone défini dans une collection d'expressions"@fr .
+<https://ontology.uis-speleo.org/ontology/#Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Une Observation."@fr .
+<https://ontology.uis-speleo.org/ontology/#licenseType> <http://www.w3.org/2000/01/rdf-schema#label> " type de licence"@fr .
+<https://ontology.uis-speleo.org/ontology/#licenseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Une liste contrôlée de licences pouvant être utilisées"@fr .
+<https://ontology.uis-speleo.org/ontology/#DocumentType> <http://www.w3.org/2000/01/rdf-schema#label> "type de document"@fr .
+<https://ontology.uis-speleo.org/ontology/#DocumentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Liste contrôlée de type pour les documents"@fr .
+<https://ontology.uis-speleo.org/ontology/#topographicData> <http://www.w3.org/2000/01/rdf-schema#label> "données topographiques"@fr .
+<https://ontology.uis-speleo.org/ontology/#topographicData> <http://www.w3.org/2000/01/rdf-schema#comment> "Ensemble de données correspondant à la topographie d'une cavité souterraine."@fr .
+<https://ontology.uis-speleo.org/ontology/#topography> <http://www.w3.org/2000/01/rdf-schema#label> "topographie"@fr .
+<https://ontology.uis-speleo.org/ontology/#topography> <http://www.w3.org/2000/01/rdf-schema#comment> "Une représentation graphique d'une cavité souterraine"@fr .
+<https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> <http://www.w3.org/2000/01/rdf-schema#label> "Autorisation de publier"@fr .
+<https://ontology.uis-speleo.org/ontology/#AutorizationToPublish> <http://www.w3.org/2000/01/rdf-schema#comment> "Document attestant l'autorisation de publier d'autres documents sous une licence définie"@fr .
+<https://ontology.uis-speleo.org/ontology/#reefnet> <http://www.w3.org/2000/01/rdf-schema#comment> "Un document produit par un appareil de marque Reefnet"@fr .
+<https://ontology.uis-speleo.org/ontology/#DocumentSubject> <http://www.w3.org/2000/01/rdf-schema#label> "sujets du Document"@fr .
+<https://ontology.uis-speleo.org/ontology/#DocumentSubject> <http://www.w3.org/2000/01/rdf-schema#comment> "Liste contrôlée de sujets pour les documents, issus du BBS"@fr .
+<https://ontology.uis-speleo.org/ontology/#geospeleologyAndKarstology> <http://www.w3.org/2000/01/rdf-schema#comment> "Morphologie et morphogenèse karstiques, hydrologie,\n            géologie et pédologie, climatologie et biologie des\n            régions karstiques, karst fossile, karst hydrothermal,\n            morphologie et spéléogenèse dans les roches\n            carbonatiques, para-, pseudo- et / et hypokarst, dépôts\n            et remblais souterrains, climatologie souterraine,\n            géophysique , chronologie des remblais souterrains,\n            karsts spéciaux, parakarst dans les évaporites,\n            parakarst dans les roches siliceuses, pseudokarst,\n            hypokarst de glace; thermokarst, hypo- et pseudokarst\n            dans les roches volcaniques."@fr .
+<https://ontology.uis-speleo.org/ontology/#regionalSpeleologyAndKarstology> <http://www.w3.org/2000/01/rdf-schema#comment> "Exemple : descriptions, rapports d'expéditions,\n            restrictions d'accès, historique d'exploration, statut\n            d'exploration de sites spécifiques. Histoire régionale\n            de la spéléologie. Listes régionales, catalogues, bases\n            de données, inventaires. Accidents régionaux et\n            sauvetages. Karstologie régionale. Spéléologie\n            appliquée régionale. Spéléologie technique régionale.\n            Spéléologie documentaire régionale."@fr .
+<https://ontology.uis-speleo.org/ontology/#biospeleology> <http://www.w3.org/2000/01/rdf-schema#comment> "Sytématique, crustacés, hexapodes, arachnides,\n            mollusques, onychophores, vermes, autres invertébrés,\n            vertébrés, microbiologie sol-air-eau, flore hypogée,\n            champignons, algues, biospéléologie régionale"@fr .
+<https://ontology.uis-speleo.org/ontology/#anthropospeleology> <http://www.w3.org/2000/01/rdf-schema#comment> "Archéologie; cultures préhistoriques et historiques."@fr .
+<https://ontology.uis-speleo.org/ontology/#palaeonthospeleology> <http://www.w3.org/2000/01/rdf-schema#comment> "Paléonthospéléologie, faunes et flores fossiles et subfossiles (quaternaire)"@fr .
+<https://ontology.uis-speleo.org/ontology/#appliedSpeleology> <http://www.w3.org/2000/01/rdf-schema#comment> "Environnement et hygiène, mines, ingénierie, droit,\n            protection, loisirs, tourisme, géosystème, thérapie\n            souterraine, gestion de la recherche."@fr .
+<https://ontology.uis-speleo.org/ontology/#technicalSpeleology> <http://www.w3.org/2000/01/rdf-schema#comment> "Techniques et matériaux d'exploration, plongée,\n            prospection, accidents et sauvetage, médecine, éducation, activités."@fr .
+<https://ontology.uis-speleo.org/ontology/#documentarySpeleology> <http://www.w3.org/2000/01/rdf-schema#comment> "Topographie, terminologie, toponymie,\n            bibliographie, photo et film, méthodes et matériels\n            photographiques, films et dispositifs audiovisuels,\n            cadastres, cartes, archives, inventaires, levés,\n            cartes, archives"@fr .
+<https://ontology.uis-speleo.org/ontology/#other> <http://www.w3.org/2000/01/rdf-schema#label> "Autres"@fr .
+<https://ontology.uis-speleo.org/ontology/#other> <http://www.w3.org/2000/01/rdf-schema#comment> "Autres sujets"@fr .
+<https://ontology.uis-speleo.org/ontology/#PointType> <http://www.w3.org/2000/01/rdf-schema#label> "type de point"@fr .
+<https://ontology.uis-speleo.org/ontology/#PointType> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection de termes pouvant être utilisés pour décrire le type de point lié au Karst"@fr .
+<https://ontology.uis-speleo.org/ontology/#entry> <http://www.w3.org/2000/01/rdf-schema#label> "entrée"@fr .
+<https://ontology.uis-speleo.org/ontology/#entry> <http://www.w3.org/2000/01/rdf-schema#comment> "Point correspondant à l'entrée d'une cavité souterraine"@fr .
+<https://ontology.uis-speleo.org/ontology/#AreaType> <http://www.w3.org/2000/01/rdf-schema#label> "type de zone"@fr .
+<https://ontology.uis-speleo.org/ontology/#AreaType> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection de termes pouvant être utilisés pour décrire le type de zone liée au Karst"@fr .
+<http://www.geonames.org/ontology#L.AREA> <http://www.w3.org/2000/01/rdf-schema#label> "zone"@fr .
+<http://www.geonames.org/ontology#L.RESN> <http://www.w3.org/2000/01/rdf-schema#label> "réserve naturelle"@fr .
+<http://www.geonames.org/ontology#L.BSND> <http://www.w3.org/2000/01/rdf-schema#comment> "Point correspondant à l'entrée d'une cavité souterraine"@fr .
+<https://ontology.uis-speleo.org/ontology/#LicenseType> <http://www.w3.org/2000/01/rdf-schema#label> "type de licence"@fr .
+<https://ontology.uis-speleo.org/ontology/#LicenseType> <http://www.w3.org/2000/01/rdf-schema#comment> "Collection de termes pouvant être utilisés pour\n            décrire le type de licence"@fr .
+<https://ontology.uis-speleo.org/ontology/#ODC-By> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribution des données / bases de données"@fr .
