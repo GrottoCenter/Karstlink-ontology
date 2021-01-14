@@ -29,7 +29,6 @@
     "event date": "dwc:eventDate",
     "recorded by": "dwc:recordedBy",
     "identified by": "dwc:identifiedBy",
-    " identified by": "dwc:identifiedBy",
     "associated taxa": "dwc:associatedTaxa",
     "dwciri:toTaxon" : { "@type": "@id" },
     "dwci:toTaxon" : { "@type": "@id" },
