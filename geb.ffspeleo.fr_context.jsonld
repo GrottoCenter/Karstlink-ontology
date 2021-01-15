@@ -9,11 +9,11 @@
     "dwci": "http://rs.tdwg.org/dwc/iri/",
     "dsw": "http://purl.org/dsw/",
     "geo": "https://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dct": "http://purl.org/dc/terms/",
     "datagc": "https://data.grottocenter.org/ldp/" ,
 
     "UndergroundCavity": "karstlink:UndergroundCavity",
     "Point": "geo:Point",
-    "Occurence": "dwc:Occurence",
 
     "name": "rdfs:label",
     "latitude": "geo:lat",
@@ -29,7 +29,6 @@
     "event date": "dwc:eventDate",
     "recorded by": "dwc:recordedBy",
     "identified by": "dwc:identifiedBy",
-    " identified by": "dwc:identifiedBy",
     "associated taxa": "dwc:associatedTaxa",
     "dwciri:toTaxon" : { "@type": "@id" },
     "dwci:toTaxon" : { "@type": "@id" },
