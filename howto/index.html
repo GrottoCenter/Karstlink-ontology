@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 		<meta name="description" content="Ontologies developed by the International Union of Speleology as part of the Karstlink project" />
 		<meta name="author" content="Frédéric Urien" />
+		<meta name="author" content="J.M. Vanel" />
 		<title>Karstlink: How To</title>
 		<!-- Favicon-->
 		<link rel="icon" type="../image/x-icon" href="../assets/img/favicon.ico" />
@@ -47,12 +48,45 @@
 		<!-- About Section-->
 		<section class="page-section bg-primary text-white mb-0" id="Csv">
 			<div class="container">
+
+				<!-- Introduction Section-->
+				<h2 class="page-section-heading text-center text-uppercase text-white">Introduction</h2>
+				 the basics of semantic web:
+				<ul>
+					<li> atomic data = subject property value </li>
+					<il> subject and property are URL's (more genrally URI, IRI's) </li>
+					<li> </li>
+					<li> </li>
+					<li> </li>
+					<li> </li>
+				</ul>
+
+				!!!!!!!!!!!!! A SUIVRE
+				
+				Depending on the data export or dump that you may already have, the concrete formats can be one the following:
+				<ul>
+					<li> CSV with specified column headers
+					<li> JSON-LD
+					<li> N-Triples
+					<li> RDF/XML
+					<li> Turtle
+					<li> direct mapping from SQL using R2RML
+				</ul>
+
+
+				You may send us a sample of the data or data structure (e.g. SQL DDL) in any format easily obtained, so that the technical work can start on concrete things.
+
+				The data site, that aggregates 4 datasets is here: <a href="https://data.grottocenter.org/display?displayuri=http%3A%2F%2F34.245.167.95%2Fldp%2F1610440611422-1873759897954594#scroll-nav__1"> data.grottocenter.org </a>
+				(at the moment 4 datasets).
+
+				<p/> <p/>
+
 				<!-- csv Section-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Share datas with a .csv file</h2>
+				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a .csv file</h2>
 				<!-- Icon Divider-->
-				<p>You can put your data in a csv file. this file must respect the model given on the <a href="../example">example page </a>. Indicate on the <a href="http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Database_-_Base_de_donn%C3%A9es" target="_blank">wiki </a>the existence of this csv file.
-The files are different but there are some common elements. they are all presented in the table below</p>
-<p>When we speak of "resource" in the table, it is the information available in a row of the table. If an external file is specified, the license for that document is not known.</p>
+				<p>You can put your data in a csv file. this file must respect one of the models given on the <a href="../example">example page </a>. Please indicate on the <a href="http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Database_-_Base_de_donn%C3%A9es" target="_blank"> wiki </a> the existence of this CSV file.
+The files are different for each data types (cavity, area, ...), but there are some common elements. They are all presented in the table below</p>
+<p>When we speak of "resource" in the table, it is the information available in a cell of the table. If an external file is specified, the license for that document is not known.</p>
 <p>If in a field you have several values, separate them with a |. For example "Peter | Eric"</p>				
 <table class="table table-sm table-bordered">
 				<tbody>
@@ -123,12 +157,38 @@ The files are different but there are some common elements. they are all present
 			</div>
 		</section>
 
-				<!-- dump Section-->
+		<!-- dump Section-->
 		<section class="page-section bg-primary text-white mb-0" id="Dump">
 			<div class="container">
 				<!-- About Section Heading-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Share datas with rdf Dump</h2>
+				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with RDF dump</h2>
 				<!-- Icon Divider-->
+				The different concrete formats (syntaxes) for RDF are the following
+				<ul>
+					<li> JSON-LD </li>
+					<li> RDF/XML </li>
+					<li> N-Triples </li>
+					<li> direct mapping from SQL using R2RML </li>
+					<li> Turtle </li>
+				</ul>
+				If you already have a JSON dump, it as possible to upgrade it as JSON-LD, without impacting the current users.
+				If you already have an XML dump, it can be the starting point for a RDF/XML dump, without too much structural change.
+
+				If you have no dump or API whatsoever, and do not want to go the CSV way, there are 2 ways: <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> and direct mapping from SQL using R2RML.
+
+				<p/>
+				N-Triples is easy to generate, because it presents any data in the most atomic way, in line with the basics of semantic web:
+				<ul>
+					<li> atomic data = subject property value </li>
+					<li> one atomic data per line, so easy to generate by concatenation </li>
+					<li> no abreviated URL's </li>
+				</ul>
+				Here is a line exemple:
+				<pre>&lt;http://myssite.org/person/111&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "Frédéric Urien" . </pre>
+				<p/>
+				If you have an SQL database, 
+				direct mapping from SQL using R2RML.
+				!!!!!!!!!!!!! A SUIVRE
 			</div>
 		</section>
 
@@ -136,8 +196,9 @@ The files are different but there are some common elements. they are all present
 		<section class="page-section bg-primary text-white mb-0" id="Jsonld">
 			<div class="container">
 				<!-- About Section Heading-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Share datas with a Json-ld Api</h2>
+				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a Json-ld Api</h2>
 				<!-- Icon Divider-->
+				!!!!!!!!!!!!! A SUIVRE
 			</div>
 		</section>
 		
