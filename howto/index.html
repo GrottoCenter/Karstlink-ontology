@@ -45,50 +45,58 @@
 				<!-- Masthead Subheading-->
 			</div>
 		</header>
+
 		<!-- About Section-->
-		<section class="page-section bg-primary text-white mb-0" id="Csv">
+		<section class="page-section bg-primary text-white mb-0" id="Introduction">
 			<div class="container">
 
 				<!-- Introduction Section-->
-				<h2 id="Introduction" class="page-section-heading text-center text-uppercase text-white">Introduction</h2>
-				Semantic Web (SW) is more than a set of data formats.
+				<h2 class="page-section-heading text-center text-uppercase text-white">Introduction</h2>
+				<a href="https://en.wikipedia.org/wiki/Semantic_Web"> Semantic Web</a>
+				(SW) is more than a set of data formats.
 				If you are accustomed to a classical data format like spreadsheets and CSV, JSON, XML, or YAML, you are used to data in isolation.
 				The Semantic Web is designed to facitate links between individual documents.
 
 				The key feature is the use of global identifiers instead of local ones like database keys, XML ID's, etc.
 				This enables to refer and thus enrich to data available elsewhere.
-				These global identifiers are generally HTTP URL's . When sharing data whith the SW, the good practice is to use a URL prefix starting with your organization's URL; this way one is shure that no other organization will use these identifiers.
-				For example, suppose your organization has web site <code> https://myorg.org/</code> , and you have an SQL table for persons that you want to share, the identifiers will be <code>https://myorg.org/persons/111</code> for person number 111 . It could be <code>https://myorg.org/data/persons/111</code> , or <code>https://data.myorg.org/persons/111</code> , you can choose any scheme you want .
+				<p/>
+				These global identifiers are generally HTTP URL's . When sharing data whith the SW, the good practice is to use a URL prefix starting with your organization's URL; this way one is sure that no other organization will use these identifiers.
+				For example, suppose your organization has web site <code> https://myorg.org/</code> , and you have an SQL table for persons that you want to share, the identifier will be <code>https://myorg.org/persons/111</code> for person number 111 . It could be <code>https://myorg.org/data/persons/111</code> , or <code>https://data.myorg.org/persons/111</code> , you can choose any scheme you want .
 
+				These URL's can later provide RDF data in one of the formats below, but this is not mandatory.
 				<p/>
 
-				In SW, the atomic data is "triple" subject - property - value.
+				In SW, the atomic data is a "triple" subject - property - value.
 				Subject and property are URL's (more generally URI, IRI's).
 
 				Depending on the data export or dump that you may already have, the concrete formats can be one of the following (<a href="#RDF">see below</a>):
 				<ul>
-					<li> CSV with specified column headers
-					<li> JSON-LD
-					<li> N-Triples
-					<li> RDF/XML
-					<li> Turtle
-					<li> direct mapping from SQL using R2RML
+					<li> CSV with specified column headers</li>
+					<li> JSON-LD</li>
+					<li> N-Triples</li>
+					<li> RDF/XML</li>
+					<li> Turtle</li>
+					<li> direct mapping from SQL, or using R2RML</li>
 				</ul>
 
 
-				You may send us a sample of your data or data structure (e.g. SQL DDL) in any format easily obtained, so that the technical work can start on concrete things.
+				You may send us a sample of your data or data structure (e.g. SQL DDL) in any format easily obtained, so that the technical discussion can start on concrete things.
 
+				<p/>
 				The data site, that aggregates speleology data is here: <a href="https://data.grottocenter.org/display?displayuri=http%3A%2F%2F34.245.167.95%2Fldp%2F1610440611422-1873759897954594#scroll-nav__1"> data.grottocenter.org </a>
 				(at the moment 4 datasets).
 
-				<p/> <p/>
+			</div>
+		</section>
 
-				<!-- csv Section-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a .csv file</h2>
+		<!-- csv Section-->
+		<section class="page-section bg-primary text-white mb-0" id="Csv">
+			<div class="container">
+		<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a .csv file</h2>
 				<!-- Icon Divider-->
-				<p>You can put your data in a csv file. this file must respect one of the models given on the <a href="../example">example page </a>. Please indicate on the <a href="http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Database_-_Base_de_donn%C3%A9es" target="_blank"> wiki </a> the existence of this CSV file.
-The files are different for each data types (cavity, area, ...), but there are some common elements. They are all presented in the table below</p>
-<p>When we speak of "resource" in the table, it is the information available in a cell of the table. If an external file is specified, the license for that document is not known.</p>
+				<p>You can put your data in a CSV file. This file must respect one of the models given on the <a href="../example">example page </a>. Please indicate on the <a href="http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Database_-_Base_de_donn%C3%A9es" target="_blank"> wiki </a> the existence of this CSV file.
+The files are different for each data type (cavity, area, ...), but there are some common elements. They are all presented in the table below</p>
+<p>When we speak of "resource" in the table, it is the information available in a cell of the table. If an external resource is specified, the license for that document is not known.</p>
 <p>If in a field you have several values, separate them with a |. For example "Peter | Eric"</p>				
 <table class="table table-sm table-bordered">
 				<tbody>
@@ -97,7 +105,7 @@ The files are different for each data types (cavity, area, ...), but there are s
 				<tr><td>rdf:type</td><td>The type of resource: document, underground cavity, bio-speleo observation. Look at the ontology and the examples to find the list of labels</td><td>yes</td><td>URI or string</td></tr>
 				<tr><td>dct:rights/karstlink:licenceType</td><td>Indicate the license attached to the resource from the values present in the ontology</td><td>yes</td><td>URI or string</td></tr>
 				<tr><td>dct:rights/dct:created</td><td>Resource creation date</td><td>no</td><td>date AAAA-MM-JJ</td></tr>
-				<tr><td>dct:rights/dct:modified</td><td>Resource modification date. This information is useful for managing the updating of data on the SPARQL servers that collect the data.</td><td>>no<td>date AAAA-MM-JJ</td></tr>
+				<tr><td>dct:rights/dct:modified</td><td>Resource modification date. This information is useful for managing the updating of data on the SPARQL servers that collect the data.</td><td>no</td><td>date AAAA-MM-JJ</td></tr>
 				<tr><td>dct:rights/cc:attributionURL</td><td>URL that points to the organization or person (an agent) making the resource available. This agent plays a publisher role and has the rights allowing him to make the resource available under the specified license</td><td>yes</td><td>URI</td></tr>
 				<tr><td>karstlink:documentType</td><td>The type of document: collection, number, article, database. Choose among the types offered by the ontology</td><td>yes</td><td>URI or String</td></tr>
 				<tr><td>rdfs:label</td><td>the name of the resource</td><td>yes</td><td>string</td></tr>
@@ -165,15 +173,15 @@ The files are different for each data types (cavity, area, ...), but there are s
 				<!-- About Section Heading-->
 				<h2 id="RDF" class="page-section-heading text-center text-uppercase text-white">Share data with RDF dump</h2>
 				<!-- Icon Divider-->
-				The different concrete formats (syntaxes) for RDF are the following
+				The different concrete formats (syntaxes) for RDF are the following (see 
+				<a href="https://en.wikipedia.org/wiki/Resource_Description_Framework#Serialization_formats "> RDF Serialization_formats </a> )
 				<ul>
 					<li> JSON-LD </li>
 					<li> RDF/XML </li>
-					<li> N-Triples </li>
-					<li> direct mapping from SQL using R2RML </li>
+					<li> <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> </li>
 					<li> Turtle </li>
 				</ul>
-				If you already have a JSON dump, it is possible to upgrade it as JSON-LD, without impacting the current users.
+				If you already have a JSON dump, it is possible to upgrade it as JSON-LD, without impacting the current users (see paragraph below).
 				If you already have an XML dump, it can be the starting point for a RDF/XML dump, without too much structural change.
 
 				If you have no dump or API whatsoever, and do not want to go the CSV way, there are 2 ways: <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> and direct mapping from SQL using R2RML.
@@ -187,12 +195,17 @@ The files are different for each data types (cavity, area, ...), but there are s
 				</ul>
 				Here is a line exemple:
 				<pre>&lt;http://myssite.org/person/111&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "Frédéric Urien" . </pre>
-				<p/>
-				If you have an SQL database, 
 
-				<a href="https://www.w3.org/TR/rdb-direct-mapping/"> direct mapping</a>
-				from SQL using R2RML.
-				!!!!!!!!!!!!! A SUIVRE
+				<p/>
+				If you have an <bold>SQL database</bold>, 
+				a so-called <a href="https://www.w3.org/TR/rdb-direct-mapping/"> direct mapping</a>
+				from SQL is possible by using dedicated tools.
+
+				There is even a W3C standard for mapping an SQL database to RDF,
+				<a href="https://en.wikipedia.org/wiki/R2RML"> R2RML </a> .
+				Leveraging this mapping language, several tools can either generate an RDF dump, or even provide a SPARQL server that wraps the source SQL database as a 
+				<a href="https://en.wikipedia.org/wiki/SPARQL"> SPARQL </a>
+				database.
 
 
 				<p/>
@@ -206,7 +219,44 @@ The files are different for each data types (cavity, area, ...), but there are s
 				<!-- About Section Heading-->
 				<h2 id="API" class="page-section-heading text-center text-uppercase text-white">Share data with a Json-LD API</h2>
 				<!-- Icon Divider-->
-				!!!!!!!!!!!!! A SUIVRE
+
+				If you already have a JSON API, it is possible to use the JSON-LD technology, to extends the existing JSON returned by the API, without impacting the current users.
+
+				JSON-LD provides a way to interpret a key-value pair in the original data as an RDF triple.
+				It can work even with no modification at all in the JSON API.
+				But it works best by adding a few dedicated special keys: @id, @type, @context . 
+
+				<p/>
+
+				An @context is a special declaration JSON document that describes the mapping.
+				We can write one for you.
+
+				Here are examples of @context JSON documents recently writen for Kartslink:
+				<ul>
+					<li>
+						<a href="
+							 ../geb.ffspeleo.fr_context.jsonld"> 
+						@context for 
+						geb.ffspeleo.fr
+						</a>
+						, and <a href="">GEB data </a>
+					</li>
+					<li> 
+						<a href="
+							 ../grottocenter.org_context.jsonld">
+						@context for grottocenter.org
+						</a>
+						; data: see link belowœ
+					</li>
+				</ul>
+			And here is an example of a JSON API augmented with the JSON-LD special keys:
+			<a href="
+			https://beta.grottocenter.org/api/v1/massifs/555
+				"> 
+			https://beta.grottocenter.org/api/v1/massifs/555
+			</a> .
+
+			It should be noted that JSON-LD documents are 100% syntactically correct JSON documents.
 			</div>
 		</section>
 		
