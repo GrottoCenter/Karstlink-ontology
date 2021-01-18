@@ -50,20 +50,22 @@
 			<div class="container">
 
 				<!-- Introduction Section-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Introduction</h2>
-				 the basics of semantic web:
-				<ul>
-					<li> atomic data = subject property value </li>
-					<il> subject and property are URL's (more genrally URI, IRI's) </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
-					<li> </li>
-				</ul>
+				<h2 id="Introduction" class="page-section-heading text-center text-uppercase text-white">Introduction</h2>
+				Semantic Web (SW) is more than a set of data formats.
+				If you are accustomed to a classical data format like spreadsheets and CSV, JSON, XML, or YAML, you are used to data in isolation.
+				The Semantic Web is designed to facitate links between individual documents.
 
-				!!!!!!!!!!!!! A SUIVRE
-				
-				Depending on the data export or dump that you may already have, the concrete formats can be one the following:
+				The key feature is the use of global identifiers instead of local ones like database keys, XML ID's, etc.
+				This enables to refer and thus enrich to data available elsewhere.
+				These global identifiers are generally HTTP URL's . When sharing data whith the SW, the good practice is to use a URL prefix starting with your organization's URL; this way one is shure that no other organization will use these identifiers.
+				For example, suppose your organization has web site <code> https://myorg.org/</code> , and you have an SQL table for persons that you want to share, the identifiers will be <code>https://myorg.org/persons/111</code> for person number 111 . It could be <code>https://myorg.org/data/persons/111</code> , or <code>https://data.myorg.org/persons/111</code> , you can choose any scheme you want .
+
+				<p/>
+
+				In SW, the atomic data is "triple" subject - property - value.
+				Subject and property are URL's (more generally URI, IRI's).
+
+				Depending on the data export or dump that you may already have, the concrete formats can be one of the following (<a href="#RDF">see below</a>):
 				<ul>
 					<li> CSV with specified column headers
 					<li> JSON-LD
@@ -74,9 +76,9 @@
 				</ul>
 
 
-				You may send us a sample of the data or data structure (e.g. SQL DDL) in any format easily obtained, so that the technical work can start on concrete things.
+				You may send us a sample of your data or data structure (e.g. SQL DDL) in any format easily obtained, so that the technical work can start on concrete things.
 
-				The data site, that aggregates 4 datasets is here: <a href="https://data.grottocenter.org/display?displayuri=http%3A%2F%2F34.245.167.95%2Fldp%2F1610440611422-1873759897954594#scroll-nav__1"> data.grottocenter.org </a>
+				The data site, that aggregates speleology data is here: <a href="https://data.grottocenter.org/display?displayuri=http%3A%2F%2F34.245.167.95%2Fldp%2F1610440611422-1873759897954594#scroll-nav__1"> data.grottocenter.org </a>
 				(at the moment 4 datasets).
 
 				<p/> <p/>
@@ -161,7 +163,7 @@ The files are different for each data types (cavity, area, ...), but there are s
 		<section class="page-section bg-primary text-white mb-0" id="Dump">
 			<div class="container">
 				<!-- About Section Heading-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with RDF dump</h2>
+				<h2 id="RDF" class="page-section-heading text-center text-uppercase text-white">Share data with RDF dump</h2>
 				<!-- Icon Divider-->
 				The different concrete formats (syntaxes) for RDF are the following
 				<ul>
@@ -171,7 +173,7 @@ The files are different for each data types (cavity, area, ...), but there are s
 					<li> direct mapping from SQL using R2RML </li>
 					<li> Turtle </li>
 				</ul>
-				If you already have a JSON dump, it as possible to upgrade it as JSON-LD, without impacting the current users.
+				If you already have a JSON dump, it is possible to upgrade it as JSON-LD, without impacting the current users.
 				If you already have an XML dump, it can be the starting point for a RDF/XML dump, without too much structural change.
 
 				If you have no dump or API whatsoever, and do not want to go the CSV way, there are 2 ways: <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> and direct mapping from SQL using R2RML.
@@ -187,16 +189,22 @@ The files are different for each data types (cavity, area, ...), but there are s
 				<pre>&lt;http://myssite.org/person/111&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "Frédéric Urien" . </pre>
 				<p/>
 				If you have an SQL database, 
-				direct mapping from SQL using R2RML.
+
+				<a href="https://www.w3.org/TR/rdb-direct-mapping/"> direct mapping</a>
+				from SQL using R2RML.
 				!!!!!!!!!!!!! A SUIVRE
+
+
+				<p/>
+				Turtle is widely used in the Semantic Web; it is based on N-Triples, meaning that every N-Triples document is a Turtle document. It comes with several syntactic features to make it more human readable and shorter, and hence much more complex. So I would not recommend to use it for data sharing from scratch.
 			</div>
 		</section>
 
-				<!-- jsonld Section-->
+		<!-- jsonld Section-->
 		<section class="page-section bg-primary text-white mb-0" id="Jsonld">
 			<div class="container">
 				<!-- About Section Heading-->
-				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a Json-ld Api</h2>
+				<h2 id="API" class="page-section-heading text-center text-uppercase text-white">Share data with a Json-LD API</h2>
 				<!-- Icon Divider-->
 				!!!!!!!!!!!!! A SUIVRE
 			</div>
