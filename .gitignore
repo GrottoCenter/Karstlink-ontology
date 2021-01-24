@@ -1,7 +1,7 @@
 # jmvanel
 
 # Ignore Visual Studio directory
-.vs/
+.vs
 # Ignore Vim backup file
 .*.swp
 
