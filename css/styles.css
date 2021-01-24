@@ -160,7 +160,7 @@ sup {
 
 a {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
   background-color: transparent;
 }
 a:hover {
@@ -363,7 +363,10 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
+  /* white-space: pre-line; */   
 }
+
+/* h2:before { content: '\A'; } */
 
 h1, .h1 {
   font-size: 2.5rem;
@@ -10258,4 +10261,12 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+.saut {
+  margin-bottom: 10em;
+}
+
+.saut2 {
+  margin-bottom: 5em;
 }
