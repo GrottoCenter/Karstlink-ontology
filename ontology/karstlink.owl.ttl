@@ -97,13 +97,13 @@ karstlink:hasAccessDocument a owl:ObjectProperty ;
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """The real development of all the galleries of the underground cavity in meters"""@en .
  <https://ontology.uis-speleo.org/ontology/#length> rdfs:comment """Le développement réel de l'ensemble des galeries de la cavité en mètres"""@fr .
 
- <https://ontology.uis-speleo.org/ontology/#verticalextend> a owl:DatatypeProperty ;
+ <https://ontology.uis-speleo.org/ontology/#verticalExtend> a owl:DatatypeProperty ;
   rdfs:domain karstlink:UndergroundCavity ;
   rdfs:range xsd:integer .
- <https://ontology.uis-speleo.org/ontology/#verticalextend> rdfs:label """vertical extend """@en .
- <https://ontology.uis-speleo.org/ontology/#verticalextend> rdfs:label """extension verticale"""@fr .
- <https://ontology.uis-speleo.org/ontology/#verticalextend> rdfs:comment """The vertical distance between the highest point and the lowest point of the underground cavity in meters"""@en .
- <https://ontology.uis-speleo.org/ontology/#verticalextend> rdfs:comment """La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtend> rdfs:label """vertical extend """@en .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtend> rdfs:label """extension verticale"""@fr .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtend> rdfs:comment """The vertical distance between the highest point and the lowest point of the underground cavity in meters"""@en .
+ <https://ontology.uis-speleo.org/ontology/#verticalExtend> rdfs:comment """La distance verticale entre le point le plus haut et le point le plus bas de la cavité exprimé en mètres"""@fr .
 
 karstlink:discoveredBy a owl:ObjectProperty ;
   rdfs:isDefinedBy karstlink: ;
