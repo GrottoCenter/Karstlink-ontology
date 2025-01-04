@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg969"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="penetrable_vertical-spring-vauclusian.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview971"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#ffffff"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showborder="true"
+     inkscape:zoom="1.9506277"
+     inkscape:cx="226.85005"
+     inkscape:cy="144.05619"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs966">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter2651"
+       x="-0.27223599"
+       y="-0.26076112"
+       width="1.5995772"
+       height="1.6736698">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood2641" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite2643" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur2645" />
+      <feOffset
+         dx="1"
+         dy="1"
+         result="offset"
+         id="feOffset2647" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite2649" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:2.3;stroke-dasharray:none;filter:url(#filter2651)"
+       d="M 5.0110851,6.1659814 13.609396,19.779974 21.491182,6.1659814 Z"
+       id="path5784" />
+    <path
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:4.45647;stroke-dasharray:none"
+       d="M 39.280921,46.797837 27.383606,27.939724 50.042231,27.80617 C 62.504475,27.73272 72.79404,27.7658 72.90793,27.87969 73.093416,28.065176 52.379641,64.275248 51.528481,65.253436 51.335846,65.474819 45.824445,57.1698 39.280921,46.797837 Z"
+       id="path12236"
+       transform="scale(0.26458333)" />
+  </g>
+</svg>

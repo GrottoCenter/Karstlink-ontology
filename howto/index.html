@@ -59,12 +59,12 @@
 
 				The key feature is the use of global identifiers instead of local ones like database keys, XML ID's, etc.
 				This enables to refer and thus enrich to data available elsewhere.
-				<p/>
+				<p />
 				These global identifiers are generally HTTP URL's . When sharing data whith the SW, the good practice is to use a URL prefix starting with your organization's URL; this way one is sure that no other organization will use these identifiers.
 				For example, suppose your organization has web site <code> https://myorg.org/</code> , and you have an SQL table for persons that you want to share, the identifier will be <code>https://myorg.org/persons/111</code> for person number 111 . It could be <code>https://myorg.org/data/persons/111</code> , or <code>https://data.myorg.org/persons/111</code> , you can choose any scheme you want .
 
 				These URL's can later provide RDF data in one of the formats below, but this is not mandatory.
-				<p/>
+				<p />
 
 				In SW, the atomic data is a "triple" subject - property - value.
 				Subject and property are URL's (more generally URI, IRI's).
@@ -82,7 +82,7 @@
 
 				You may send us a sample of your data or data structure (e.g. SQL DDL) in any format easily obtained, so that the technical discussion can start on concrete things.
 
-				<p/>
+				<p />
 				The data site, that aggregates speleology data is here: <a href="https://data.grottocenter.org/display?displayuri=http%3A%2F%2F34.245.167.95%2Fldp%2F1610440611422-1873759897954594#scroll-nav__1"> data.grottocenter.org </a>
 				(at the moment 4 datasets).
 
@@ -92,78 +92,80 @@
 		<!-- csv Section-->
 		<section class="page-section bg-primary text-white mb-0" id="Csv">
 			<div class="container">
-		<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a .csv file</h2>
+				<h2 class="page-section-heading text-center text-uppercase text-white">Share data with a .csv file</h2>
 				<!-- Icon Divider-->
-				<p>You can put your data in a CSV file. This file must respect one of the models given on the <a href="../example">example page </a>. Please indicate on the <a href="http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Database_-_Base_de_donn%C3%A9es" target="_blank"> wiki </a> the existence of this CSV file.
-The files are different for each data type (cavity, area, ...), but there are some common elements. They are all presented in the table below</p>
-<p>When we speak of "resource" in the table, it is the information available in a cell of the table. If an external resource is specified, the license for that document is not known.</p>
-<p>If in a field you have several values, separate them with a |. For example "Peter | Eric"</p>				
-<table class="table table-sm table-bordered">
-				<tbody>
-				<tr class="table-secondary"><th>Column</th><th>explanations</th><th>mandatory</th><th>Data type</th></tr>
-				<tr><td>id</td><td>Unique identifier, if possible the one that the resource has in your database</td><td>yes</td><td>string</td></tr>
-				<tr><td>rdf:type</td><td>The type of resource: document, underground cavity, bio-speleo observation. Look at the ontology and the examples to find the list of labels</td><td>yes</td><td>URI or string</td></tr>
-				<tr><td>dct:rights/karstlink:licenceType</td><td>Indicate the license attached to the resource from the values present in the ontology</td><td>yes</td><td>URI or string</td></tr>
-				<tr><td>dct:rights/dct:created</td><td>Resource creation date</td><td>no</td><td>date AAAA-MM-JJ</td></tr>
-				<tr><td>dct:rights/dct:modified</td><td>Resource modification date. This information is useful for managing the updating of data on the SPARQL servers that collect the data.</td><td>no</td><td>date AAAA-MM-JJ</td></tr>
-				<tr><td>dct:rights/cc:attributionURL</td><td>URL that points to the organization or person (an agent) making the resource available. This agent plays a publisher role and has the rights allowing him to make the resource available under the specified license</td><td>yes</td><td>URI</td></tr>
-				<tr><td>dct:rights/cc:attributionName</td><td>The name the creator of a Work would like used when attributing re-use.</td><td>yes</td><td>String</td></tr>
-				<tr><td>karstlink:documentType</td><td>The type of document: collection, number, article, database. Choose among the types offered by the ontology</td><td>yes</td><td>URI or String</td></tr>
-				<tr><td>rdfs:label</td><td>the name of the resource</td><td>yes</td><td>string</td></tr>
-				<tr><td>dct:subject</td><td>The subject of the resource. Choose among the subjects appearing in the ontology</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>dc:langage</td><td>The primary language used in the resource</td><td>no</td><td>controlled vocabulary ISO 639-2</td></tr>
-				<tr><td>gn:countryCode</td><td>The country linked to the resource</td><td>no</td><td>iso country code, 2 characters</td></tr>
-				<tr><td>dct:date</td><td>Use to indicate the date on which the document that is described in the resource was published</td><td>no</td><td>String</td></tr>
-				<tr><td>dct:format</td><td>File format that is described in the resource</td><td>no</td><td>use the list of Internet Media Types [MIME]</td></tr>
-				<tr><td>dct:identifier</td><td>An unambiguous reference to the resource</td><td>no</td><td>ISBN, ISSN, DOI, URI</td></tr>
-				<tr><td>dct:source</td><td>A link to the file described in the resource</td><td>not</td><td>URI</td></tr>
-				<tr><td>dct:creator</td><td>the author of the document described in the resource</td><td>yes</td><td>String or URI</td></tr>
-				<tr><td>dct:publisher</td><td>The organization that published the document described in the resource</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>dct:isPartOf</td><td>Indicates that the document described in the resource is part of another document. For example an article is part of a journal, an issue is part of a collection</td><td>no</td><td>An URI is better</td></tr>
-				<tr><td>dct:references</td><td>Link to another resource which is related to the document described in the resource: Point, Observation, Area, Organization</td><td>no</td><td>An URI is better</td></tr>
-				<tr><td>karstlink:relatedToUndergoundCavity</td><td>Link to Underground cavity which is related to the document described in the resource</td><td>no</td><td>An URI is better</td></tr>
-				<tr><td>karstlink:hasDescriptionDocument/dct:creator</td><td>author of the resource description</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>karstlink:hasDescriptionDocument/dc:language</td><td>language of the resource description</td><td>no</td><td>controlled vocabulary ISO 639-2</td></tr>
-				<tr><td>karstlink:hasDescriptionDocument/dct:title</td><td>resource description title</td><td>no</td><td>String</td></tr>
-				<tr><td>karstlink:hasDescriptionDocument/dct:description</td><td>Resource Description</td><td>no</td><td>String</td></tr>
-				<tr><td>gn:alternateName</td><td>Used to indicate another name when the resource is a underground cavity</td><td>no</td><td>string or URI</td></tr>
-				<tr><td>schema:containedInPlace</td><td>Used to indicate when the resource is an underground cavity, that it is part of another underground cavity (a network)</td><td>no</td><td>URI is better</td></tr>
-				<tr><td>w3geo:latitude </td><td>The WGS84 latitude of the resource</td><td>yes</td><td>decimal degrees</td></tr>
-				<tr><td>w3geo:longitude</td><td>The WGS84 longitude of the resource</td><td>yes</td><td>decimal degrees</td></tr>
-				<tr><td>w3geo:altitude</td><td>The altitude of the resource</td><td>no</td><td>integer</td></tr>
-				<tr><td>dwc:coordinatePrecision </td><td>A decimal representation of the precision of the coordinates given in the Latitude and Longitude. Use -1 for falses coordinate</td><td>no</td><td>integer</td></tr>
-				<tr><td>karstlink:length </td><td>The real development of all the galleries of the underground cavity</td><td>no</td><td>integer</td></tr>
-				<tr><td>karstlink:verticalExtent</td><td>The vertical distance between the entrance to the underground cavity and the highest point</td><td>no</td><td>integer</td></tr>
-				<tr><td>karstlink:extentBelowEntrance</td><td>The vertical distance between the entrance of the cavity and the lowest point</td><td>no</td><td>integer</td></tr>
-				<tr><td>karstlink:extentAboveEntrance</td><td>The vertical distance between the highest point and the lowest point of the underground cavity</td><td>no</td><td>integer</td></tr>
-				<tr><td>karstlink:discoveredBy</td><td>Agent (person or organization) who discovered the underground cavity</td><td>no</td><td>URI or String</td></tr>
-				<tr><td>karstlink:hasAccessDocument/dct:creator</td><td>author of the description of the access to the resource</td><td>no</td><td>URI or String</td></tr>
-				<tr><td>karstlink:hasAccessDocument/dc:language</td><td>Language of the description of the access to the resource</td><td></td><td>controlled vocabulary ISO 639-2</td></tr>
-				<tr><td>karstlink:hasAccessDocument/dct:title</td><td>Title of the description of the access to the resource</td><td>no</td><td>String</td></tr>
-				<tr><td>karstlink:hasAccessDocument/dct:description</td><td>Description of access to the resource</td><td>no</td><td>String</td></tr>
-				<tr><td>dwc:recordedBy</td><td>Person who carried out the observation</td><td></td><td></td></tr>
-				<tr><td>dwc:eventDate</td><td>Date of observation</td><td></td><td></td></tr>
-				<tr><td>dwc:identifiedBy</td><td>Person who determined the Taxon</td><td></td><td></td></tr>
-				<tr><td>dwc:dateIdentified</td><td>date of Taxon determination</td><td></td><td></td></tr>
-				<tr><td>dwc:individualCount</td><td>Number of individuals of a taxon</td><td></td><td></td></tr>
-				<tr><td>dwc:associatedTaxa</td><td>Taxon name</td><td>yes</td><td>String or URI</td></tr>
-				<tr><td>karstlink:relatedToUndergroundCavity</td><td>Underground cavity connected to the resource</td><td>no</td><td></td></tr>
-				<tr><td>dct:spatial</td><td>Location of the observation (link to a point or area, not to a underground cavity)</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>foaf:firstName</td><td>First name of the person described in the resource</td><td>yes</td><td>String or URI</td></tr>
-				<tr><td>foaf:lastName</td><td>Last name of the person described in the resource</td><td>yes</td><td>String or URI</td></tr>
-				<tr><td>foaf:nick</td><td>Nickname of the person described in the resource</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>foaf:member</td><td>Link to an organization of which the person or organization described in the resource is a member</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>karstlink:visited</td><td>Link to a cavity visited by the organization or the person described in the resource</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>karstlink:pointType</td><td>Used to indicate the type of resource. Choose among the types of points existing in the ontology</td><td>no</td><td>String or URI</td></tr>
-				<tr><td>foaf:mbox</td><td>An Internet mailbox.</td><td>no</td><td>mail or URI</td></tr>
-				<tr><td>foaf:homepage</td><td> 	A Homepage is a public Web document with an URI.</td><td>no</td><td>URI</td></tr>
-				<tr><td>schema:streetAddress</td><td>The street address</td><td>no</td><td>String</td></tr>
-				<tr><td>schema:postalCode</td><td>The postal code</td><td>no</td><td></td></tr>
-				<tr><td>schema:addressLocality</td><td>The locality in which the street address is</td><td>no</td><td>String</td></tr>
-				<tr><td>schema:addressCountry</td><td> 	The country code</td><td>no</td><td>the two-letter ISO 3166-1 alpha-2 country code</td></tr>
-				<tr><td>karstlink:areaType</td><td>Used to indicate the type of resource. Choose among the types ofareas existing in the ontology</td><td>no</td><td>URI or String</td></tr>
-				<tr><td>schema:polygon</td><td>A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.</td><td>no</td><td></td></tr>
-				</tbody>
+				<p>
+					You can put your data in a CSV file. This file must respect one of the models given on the <a href="../example">example page </a>. Please indicate on the <a href="http://uisic.uis-speleo.org/wiki/karstlink/index.php?title=Database_-_Base_de_donn%C3%A9es" target="_blank"> wiki </a> the existence of this CSV file.
+					The files are different for each data type (cavity, area, ...), but there are some common elements. They are all presented in the table below
+				</p>
+				<p>When we speak of "resource" in the table, it is the information available in a cell of the table. If an external resource is specified, the license for that document is not known.</p>
+				<p>If in a field you have several values, separate them with a |. For example "Peter | Eric"</p>
+				<table class="table table-sm table-bordered">
+					<tbody>
+						<tr class="table-secondary"><th>Column</th><th>explanations</th><th>mandatory</th><th>Data type</th></tr>
+						<tr><td>id</td><td>Unique identifier, if possible the one that the resource has in your database</td><td>yes</td><td>string</td></tr>
+						<tr><td>rdf:type</td><td>The type of resource: document, underground cavity, bio-speleo observation. Look at the ontology and the examples to find the list of labels</td><td>yes</td><td>URI or string</td></tr>
+						<tr><td>dct:rights/karstlink:licenceType</td><td>Indicate the license attached to the resource from the values present in the ontology</td><td>yes</td><td>URI or string</td></tr>
+						<tr><td>dct:rights/dct:created</td><td>Resource creation date</td><td>no</td><td>date AAAA-MM-JJ</td></tr>
+						<tr><td>dct:rights/dct:modified</td><td>Resource modification date. This information is useful for managing the updating of data on the SPARQL servers that collect the data.</td><td>no</td><td>date AAAA-MM-JJ</td></tr>
+						<tr><td>dct:rights/cc:attributionURL</td><td>URL that points to the organization or person (an agent) making the resource available. This agent plays a publisher role and has the rights allowing him to make the resource available under the specified license</td><td>yes</td><td>URI</td></tr>
+						<tr><td>dct:rights/cc:attributionName</td><td>The name the creator of a Work would like used when attributing re-use.</td><td>yes</td><td>String</td></tr>
+						<tr><td>karstlink:documentType</td><td>The type of document: collection, number, article, database. Choose among the types offered by the ontology</td><td>yes</td><td>URI or String</td></tr>
+						<tr><td>rdfs:label</td><td>the name of the resource</td><td>yes</td><td>string</td></tr>
+						<tr><td>dct:subject</td><td>The subject of the resource. Choose among the subjects appearing in the ontology</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>dc:langage</td><td>The primary language used in the resource</td><td>no</td><td>controlled vocabulary ISO 639-2</td></tr>
+						<tr><td>gn:countryCode</td><td>The country linked to the resource</td><td>no</td><td>iso country code, 2 characters</td></tr>
+						<tr><td>dct:date</td><td>Use to indicate the date on which the document that is described in the resource was published</td><td>no</td><td>String</td></tr>
+						<tr><td>dct:format</td><td>File format that is described in the resource</td><td>no</td><td>use the list of Internet Media Types [MIME]</td></tr>
+						<tr><td>dct:identifier</td><td>An unambiguous reference to the resource</td><td>no</td><td>ISBN, ISSN, DOI, URI</td></tr>
+						<tr><td>dct:source</td><td>A link to the file described in the resource</td><td>not</td><td>URI</td></tr>
+						<tr><td>dct:creator</td><td>the author of the document described in the resource</td><td>yes</td><td>String or URI</td></tr>
+						<tr><td>dct:publisher</td><td>The organization that published the document described in the resource</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>dct:isPartOf</td><td>Indicates that the document described in the resource is part of another document. For example an article is part of a journal, an issue is part of a collection</td><td>no</td><td>An URI is better</td></tr>
+						<tr><td>dct:references</td><td>Link to another resource which is related to the document described in the resource: Point, Observation, Area, Organization</td><td>no</td><td>An URI is better</td></tr>
+						<tr><td>karstlink:relatedToUndergoundCavity</td><td>Link to Underground cavity which is related to the document described in the resource</td><td>no</td><td>An URI is better</td></tr>
+						<tr><td>karstlink:hasDescriptionDocument/dct:creator</td><td>author of the resource description</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>karstlink:hasDescriptionDocument/dc:language</td><td>language of the resource description</td><td>no</td><td>controlled vocabulary ISO 639-2</td></tr>
+						<tr><td>karstlink:hasDescriptionDocument/dct:title</td><td>resource description title</td><td>no</td><td>String</td></tr>
+						<tr><td>karstlink:hasDescriptionDocument/dct:description</td><td>Resource Description</td><td>no</td><td>String</td></tr>
+						<tr><td>gn:alternateName</td><td>Used to indicate another name when the resource is a underground cavity</td><td>no</td><td>string or URI</td></tr>
+						<tr><td>schema:containedInPlace</td><td>Used to indicate when the resource is an underground cavity, that it is part of another underground cavity (a network)</td><td>no</td><td>URI is better</td></tr>
+						<tr><td>w3geo:latitude </td><td>The WGS84 latitude of the resource</td><td>yes</td><td>decimal degrees</td></tr>
+						<tr><td>w3geo:longitude</td><td>The WGS84 longitude of the resource</td><td>yes</td><td>decimal degrees</td></tr>
+						<tr><td>w3geo:altitude</td><td>The altitude of the resource</td><td>no</td><td>integer</td></tr>
+						<tr><td>dwc:coordinatePrecision </td><td>A decimal representation of the precision of the coordinates given in the Latitude and Longitude. Use -1 for falses coordinate</td><td>no</td><td>integer</td></tr>
+						<tr><td>karstlink:length </td><td>The real development of all the galleries of the underground cavity</td><td>no</td><td>integer</td></tr>
+						<tr><td>karstlink:verticalExtent</td><td>The vertical distance between the entrance to the underground cavity and the highest point</td><td>no</td><td>integer</td></tr>
+						<tr><td>karstlink:extentBelowEntrance</td><td>The vertical distance between the entrance of the cavity and the lowest point</td><td>no</td><td>integer</td></tr>
+						<tr><td>karstlink:extentAboveEntrance</td><td>The vertical distance between the highest point and the lowest point of the underground cavity</td><td>no</td><td>integer</td></tr>
+						<tr><td>karstlink:discoveredBy</td><td>Agent (person or organization) who discovered the underground cavity</td><td>no</td><td>URI or String</td></tr>
+						<tr><td>karstlink:hasAccessDocument/dct:creator</td><td>author of the description of the access to the resource</td><td>no</td><td>URI or String</td></tr>
+						<tr><td>karstlink:hasAccessDocument/dc:language</td><td>Language of the description of the access to the resource</td><td></td><td>controlled vocabulary ISO 639-2</td></tr>
+						<tr><td>karstlink:hasAccessDocument/dct:title</td><td>Title of the description of the access to the resource</td><td>no</td><td>String</td></tr>
+						<tr><td>karstlink:hasAccessDocument/dct:description</td><td>Description of access to the resource</td><td>no</td><td>String</td></tr>
+						<tr><td>dwc:recordedBy</td><td>Person who carried out the observation</td><td></td><td></td></tr>
+						<tr><td>dwc:eventDate</td><td>Date of observation</td><td></td><td></td></tr>
+						<tr><td>dwc:identifiedBy</td><td>Person who determined the Taxon</td><td></td><td></td></tr>
+						<tr><td>dwc:dateIdentified</td><td>date of Taxon determination</td><td></td><td></td></tr>
+						<tr><td>dwc:individualCount</td><td>Number of individuals of a taxon</td><td></td><td></td></tr>
+						<tr><td>dwc:associatedTaxa</td><td>Taxon name</td><td>yes</td><td>String or URI</td></tr>
+						<tr><td>karstlink:relatedToUndergroundCavity</td><td>Underground cavity connected to the resource</td><td>no</td><td></td></tr>
+						<tr><td>dct:spatial</td><td>Location of the observation (link to a point or area, not to a underground cavity)</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>foaf:firstName</td><td>First name of the person described in the resource</td><td>yes</td><td>String or URI</td></tr>
+						<tr><td>foaf:lastName</td><td>Last name of the person described in the resource</td><td>yes</td><td>String or URI</td></tr>
+						<tr><td>foaf:nick</td><td>Nickname of the person described in the resource</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>foaf:member</td><td>Link to an organization of which the person or organization described in the resource is a member</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>karstlink:visited</td><td>Link to a cavity visited by the organization or the person described in the resource</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>karstlink:pointType</td><td>Used to indicate the type of resource. Choose among the types of points existing in the ontology</td><td>no</td><td>String or URI</td></tr>
+						<tr><td>foaf:mbox</td><td>An Internet mailbox.</td><td>no</td><td>mail or URI</td></tr>
+						<tr><td>foaf:homepage</td><td> 	A Homepage is a public Web document with an URI.</td><td>no</td><td>URI</td></tr>
+						<tr><td>schema:streetAddress</td><td>The street address</td><td>no</td><td>String</td></tr>
+						<tr><td>schema:postalCode</td><td>The postal code</td><td>no</td><td></td></tr>
+						<tr><td>schema:addressLocality</td><td>The locality in which the street address is</td><td>no</td><td>String</td></tr>
+						<tr><td>schema:addressCountry</td><td> 	The country code</td><td>no</td><td>the two-letter ISO 3166-1 alpha-2 country code</td></tr>
+						<tr><td>karstlink:areaType</td><td>Used to indicate the type of resource. Choose among the types ofareas existing in the ontology</td><td>no</td><td>URI or String</td></tr>
+						<tr><td>schema:polygon</td><td>A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.</td><td>no</td><td></td></tr>
+					</tbody>
 				</table>
 			</div>
 		</section>
@@ -174,7 +176,7 @@ The files are different for each data type (cavity, area, ...), but there are so
 				<!-- About Section Heading-->
 				<h2 id="RDF" class="page-section-heading text-center text-uppercase text-white">Share data with RDF dump</h2>
 				<!-- Icon Divider-->
-				The different concrete formats (syntaxes) for RDF are the following (see 
+				The different concrete formats (syntaxes) for RDF are the following (see
 				<a href="https://en.wikipedia.org/wiki/Resource_Description_Framework#Serialization_formats "> RDF Serialization_formats </a> )
 				<ul>
 					<li> JSON-LD </li>
@@ -187,7 +189,7 @@ The files are different for each data type (cavity, area, ...), but there are so
 
 				If you have no dump or API whatsoever, and do not want to go the CSV way, there are 2 ways: <a href="https://en.wikipedia.org/wiki/N-Triples">N-Triples</a> and direct mapping from SQL using R2RML.
 
-				<p/>
+				<p />
 				N-Triples is easy to generate, because it presents any data in the most atomic way, in line with the basics of semantic web:
 				<ul>
 					<li> atomic data = subject property value </li>
@@ -197,19 +199,19 @@ The files are different for each data type (cavity, area, ...), but there are so
 				Here is a line exemple:
 				<pre>&lt;http://myssite.org/person/111&gt; &lt;http://www.w3.org/2000/01/rdf-schema#label&gt; "Frédéric Urien" . </pre>
 
-				<p/>
-				If you have an <bold>SQL database</bold>, 
+				<p />
+				If you have an <bold>SQL database</bold>,
 				a so-called <a href="https://www.w3.org/TR/rdb-direct-mapping/"> direct mapping</a>
 				from SQL is possible by using dedicated tools.
 
 				There is even a W3C standard for mapping an SQL database to RDF,
 				<a href="https://en.wikipedia.org/wiki/R2RML"> R2RML </a> .
-				Leveraging this mapping language, several tools can either generate an RDF dump, or even provide a SPARQL server that wraps the source SQL database as a 
+				Leveraging this mapping language, several tools can either generate an RDF dump, or even provide a SPARQL server that wraps the source SQL database as a
 				<a href="https://en.wikipedia.org/wiki/SPARQL"> SPARQL </a>
 				database.
 
 
-				<p/>
+				<p />
 				Turtle is widely used in the Semantic Web; it is based on N-Triples, meaning that every N-Triples document is a Turtle document. It comes with several syntactic features to make it more human readable and shorter, and hence much more complex. So I would not recommend to use it for data sharing from scratch.
 			</div>
 		</section>
@@ -220,14 +222,13 @@ The files are different for each data type (cavity, area, ...), but there are so
 				<!-- About Section Heading-->
 				<h2 id="API" class="page-section-heading text-center text-uppercase text-white">Share data with a Json-LD API</h2>
 				<!-- Icon Divider-->
-
 				If you already have a JSON API, it is possible to use the JSON-LD technology, to extends the existing JSON returned by the API, without impacting the current users.
 
 				JSON-LD provides a way to interpret a key-value pair in the original data as an RDF triple.
 				It can work even with no modification at all in the JSON API.
-				But it works best by adding a few dedicated special keys: @id, @type, @context . 
+				But it works best by adding a few dedicated special keys: @id, @type, @context .
 
-				<p/>
+				<p />
 
 				An @context is a special declaration JSON document that describes the mapping.
 				We can write one for you.
@@ -236,35 +237,39 @@ The files are different for each data type (cavity, area, ...), but there are so
 				<ul>
 					<li>
 						<a href="
-							 ../geb.ffspeleo.fr_context.jsonld"> 
-						@context for 
-						geb.ffspeleo.fr
+							 ../geb.ffspeleo.fr_context.jsonld">
+							@context for
+							geb.ffspeleo.fr
 						</a>
 						, and <a href="">GEB data </a>
 					</li>
-					<li> 
+					<li>
 						<a href="
 							 ../grottocenter.org_context.jsonld">
-						@context for grottocenter.org
+							@context for grottocenter.org
 						</a>
 						; data: see link below
 					</li>
 				</ul>
-			And here is an example of a JSON API augmented with the JSON-LD special keys:
-			<a href="
+				And here is an example of a JSON API augmented with the JSON-LD special keys:
+				<a href="
 			https://beta.grottocenter.org/api/v1/massifs/555
-				"> 
-			https://beta.grottocenter.org/api/v1/massifs/555
-			</a> .
+				">
+					https://beta.grottocenter.org/api/v1/massifs/555
+				</a> .
 
-			It should be noted that JSON-LD documents are 100% syntactically correct JSON documents.
+				It should be noted that JSON-LD documents are 100% syntactically correct JSON documents.
 			</div>
 		</section>
-		
+
 
 		<!-- Copyright Section-->
 		<div class="copyright py-4 text-center text-white">
-			<div class="container"><small>Karstlink documents are licensed under GNU GENERAL PUBLIC LICENSE V3</small></div>
+			<div class="container">
+				<small>
+					<a href="https://ontology.uis-speleo.org/contributors/">UIS Karstlink How to </a>are licensed under <a href="https://creativecommons.org/licenses/by/4.0">CC-BY V 4.0</a> license
+				</small>
+			</div>
 		</div>
 		<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
 		<div class="scroll-to-top d-lg-none position-fixed">
