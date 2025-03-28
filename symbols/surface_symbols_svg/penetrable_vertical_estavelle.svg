@@ -8,7 +8,7 @@
    version="1.1"
    id="svg969"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="Vertical-estavelle.svg"
+   sodipodi:docname="penetrable_vertical_estavelle.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,12 +26,12 @@
      showgrid="false"
      showborder="true"
      inkscape:zoom="4.7908274"
-     inkscape:cx="69.194729"
+     inkscape:cx="39.13729"
      inkscape:cy="103.11371"
      inkscape:window-width="1112"
      inkscape:window-height="993"
-     inkscape:window-x="799"
-     inkscape:window-y="7"
+     inkscape:window-x="792"
+     inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -41,12 +41,13 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#00ffff;stroke:#00ffff;stroke-width:2.3;stroke-dasharray:none"
+       style="fill:#ffffff;stroke:#0000ff;stroke-width:1;stroke-dasharray:none"
        d="M 5.0110851,6.1659814 13.609396,19.779974 21.491182,6.1659814 Z"
        id="path5784" />
     <path
-       style="fill:#0000ff;stroke:#0000ff;stroke-width:1.49852;stroke-dasharray:none"
-       d="m 8.1071301,11.780597 5.5387679,8.971219 5.077207,-8.971219 z"
-       id="path5784-8" />
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:1.55401;stroke-dasharray:none"
+       d="m 14.208634,7.1706835 0.07409,9.2830135 5.276759,-9.2830135 z"
+       id="path5784-8"
+       sodipodi:nodetypes="cccc" />
   </g>
 </svg>

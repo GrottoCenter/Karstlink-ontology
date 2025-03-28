@@ -26,13 +26,13 @@
      showgrid="false"
      showborder="true"
      inkscape:zoom="1.9506277"
-     inkscape:cx="228.90068"
-     inkscape:cy="143.54354"
-     inkscape:window-width="1920"
-     inkscape:window-height="1009"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:cx="141.49292"
+     inkscape:cy="144.05619"
+     inkscape:window-width="1247"
+     inkscape:window-height="993"
+     inkscape:window-x="839"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs966">
@@ -40,10 +40,10 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
        id="filter310"
-       x="-0.2149323"
-       y="-0.24143782"
-       width="1.4876761"
-       height="1.5478165">
+       x="-0.16765345"
+       y="-0.18832852"
+       width="1.3931184"
+       height="1.4415979">
       <feFlood
          flood-opacity="0.498039"
          flood-color="rgb(0,0,0)"
@@ -78,7 +78,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <ellipse
-       style="fill:#00ffff;stroke:#00ffff;stroke-width:2.63562;filter:url(#filter310)"
+       style="fill:#ffffff;stroke:#0000ff;stroke-width:1;filter:url(#filter310);stroke-dasharray:none"
        id="path293"
        cx="13.229167"
        cy="13.229167"

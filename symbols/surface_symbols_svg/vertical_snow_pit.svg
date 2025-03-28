@@ -8,7 +8,7 @@
    version="1.1"
    id="svg969"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="penetrable_vertical_dry_cave.svg"
+   sodipodi:docname="vertical_snow_pit.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      showborder="true"
-     inkscape:zoom="0.73851712"
-     inkscape:cx="-234.93023"
-     inkscape:cy="453.61169"
+     inkscape:zoom="0.84670104"
+     inkscape:cx="-475.3744"
+     inkscape:cy="48.423231"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -42,7 +42,7 @@
        id="filter1576"
        x="-0.2006762"
        y="-0.21301613"
-       width="1.4596082"
+       width="1.4596081"
        height="1.5337007">
       <feFlood
          flood-opacity="0.498039"
@@ -79,7 +79,19 @@
      id="layer1">
     <path
        style="fill:#ffffff;stroke:#ff0000;stroke-width:1;stroke-dasharray:none;filter:url(#filter1576)"
-       d="M 5.0110851,6.1659814 13.609396,19.779974 21.491182,6.1659814 Z"
+       d="M 4.5090877,5.6892716 13.107399,19.303264 20.989185,5.6892716 Z"
        id="path5784" />
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;paint-order:markers fill stroke"
+       id="path2716"
+       sodipodi:type="arc"
+       sodipodi:cx="13.229286"
+       sodipodi:cy="11.092381"
+       sodipodi:rx="1.7186803"
+       sodipodi:ry="1.4061929"
+       sodipodi:start="1.4328271"
+       sodipodi:end="1.3768841"
+       sodipodi:arc-type="slice"
+       d="m 13.46566,12.485211 a 1.7186803,1.4061929 0 0 1 -1.93525,-1.179974 1.7186803,1.4061929 0 0 1 1.414984,-1.5997331 1.7186803,1.4061929 0 0 1 1.974828,1.1352281 1.7186803,1.4061929 0 0 1 -1.359747,1.631486 l -0.331189,-1.379837 z" />
   </g>
 </svg>

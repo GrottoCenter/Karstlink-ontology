@@ -40,10 +40,10 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
        id="filter1876"
-       x="-0.27223599"
-       y="-0.26076112"
-       width="1.5995772"
-       height="1.6736698">
+       x="-0.2006762"
+       y="-0.21301613"
+       width="1.4596082"
+       height="1.5337007">
       <feFlood
          flood-opacity="0.498039"
          flood-color="rgb(0,0,0)"
@@ -78,7 +78,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#00ffff;stroke:#00ffff;stroke-width:2.3;stroke-dasharray:none;filter:url(#filter1876)"
+       style="fill:#ffffff;stroke:#0000ff;stroke-width:1;stroke-dasharray:none;filter:url(#filter1876)"
        d="M 5.0110851,6.1659814 13.609396,19.779974 21.491182,6.1659814 Z"
        id="path5784" />
   </g>
