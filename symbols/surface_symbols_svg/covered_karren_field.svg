@@ -25,14 +25,14 @@
      inkscape:document-units="mm"
      showgrid="false"
      showborder="true"
-     inkscape:zoom="1.8220149"
-     inkscape:cx="40.888798"
-     inkscape:cy="159.16445"
-     inkscape:window-width="1027"
-     inkscape:window-height="993"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:zoom="2.4007726"
+     inkscape:cx="43.527655"
+     inkscape:cy="159.11545"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs966">
@@ -1488,9 +1488,9 @@
        style="color-interpolation-filters:sRGB;"
        inkscape:label="Drop Shadow"
        id="filter15830"
-       x="-0.71322968"
+       x="-0.71322961"
        y="-1.1747313"
-       width="2.6724006"
+       width="2.6724005"
        height="3.7545423">
       <feFlood
          flood-opacity="0.498039"
@@ -1700,35 +1700,6 @@
          result="composite2"
          id="feComposite15888" />
     </filter>
-    <meshgradient
-       inkscape:collect="always"
-       id="meshgradient25824"
-       gradientUnits="userSpaceOnUse"
-       x="0.29042935"
-       y="0.29042935">
-      <meshrow
-         id="meshrow25826">
-        <meshpatch
-           id="meshpatch25828">
-          <stop
-             path="c 8.66448,0  17.329,0  25.9934,0"
-             style="stop-color:#ffffff;stop-opacity:1"
-             id="stop25830" />
-          <stop
-             path="c 0,8.51926  0,17.0385  0,25.5578"
-             style="stop-color:#00ff00;stop-opacity:1"
-             id="stop25832" />
-          <stop
-             path="c -8.66448,0  -17.329,0  -25.9934,0"
-             style="stop-color:#ffffff;stop-opacity:1"
-             id="stop25834" />
-          <stop
-             path="c 0,-8.51926  0,-17.0385  0,-25.5578"
-             style="stop-color:#00ff00;stop-opacity:1"
-             id="stop25836" />
-        </meshpatch>
-      </meshrow>
-    </meshgradient>
   </defs>
   <g
      inkscape:label="Calque 1"
@@ -1774,111 +1745,6 @@
        d="m 19.313554,2.1782204 c 0,0 -0.140986,2.4508522 -0.871288,3.339938 -1.058085,1.2881364 -4.501656,2.1782204 -4.501656,2.1782204"
        id="path11843"
        sodipodi:nodetypes="csc" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15638)"
-       id="path11955-2"
-       cx="12.540156"
-       cy="12.540156"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15650)"
-       id="path11955-61"
-       cx="18.29705"
-       cy="8.422452"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15662)"
-       id="path11955-682"
-       cx="13.650181"
-       cy="16.69969"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15674)"
-       id="path11955-04"
-       cx="18.29705"
-       cy="13.214537"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15686)"
-       id="path11955-5"
-       cx="21.491774"
-       cy="21.056131"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15698)"
-       id="path11955-3"
-       cx="24.396069"
-       cy="15.683187"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15710)"
-       id="path11955-28"
-       cx="8.8580961"
-       cy="22.653492"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15722)"
-       id="path11955-20"
-       cx="15.537972"
-       cy="19.023125"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15734)"
-       id="path11955-35"
-       cx="20.620487"
-       cy="14.666684"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15746)"
-       id="path11955-27"
-       cx="19.749199"
-       cy="3.1947229"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15758)"
-       id="path11955-00"
-       cx="15.537972"
-       cy="6.6798759"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15770)"
-       id="path11955-8"
-       cx="11.181531"
-       cy="2.7590787"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15782)"
-       id="path11955-1"
-       cx="7.2607341"
-       cy="14.085825"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15794)"
-       id="path11955-16"
-       cx="4.0660114"
-       cy="16.69969"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15806)"
-       id="path11955-64"
-       cx="16.844904"
-       cy="21.927418"
-       rx="0.36303675"
-       ry="0.29042935" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15818)"
        d="M 2.9042939,6.6798758 6.5346611,2.9042939"
@@ -1886,51 +1752,69 @@
        sodipodi:nodetypes="cc" />
     <path
        style="fill:none;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15830)"
-       d="M 9.1485256,4.6468701 13.214537,2.1782204"
+       d="M 8.1566572,4.7570777 12.222669,2.288428"
        id="path11901"
        sodipodi:nodetypes="cc" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15842)"
-       id="path11955"
-       cx="5.3003368"
-       cy="3.1947227"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#0000ff;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;fill-opacity:1;filter:url(#filter15854)"
-       id="path11955-0"
-       cx="3.1947238"
-       cy="5.3729439"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15866)"
-       id="path11955-6"
-       cx="8.619359"
-       cy="8.7645741"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15878)"
-       id="path11955-680"
-       cx="11.814083"
-       cy="4.9889922"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <ellipse
-       style="fill:#ff0000;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-dasharray:none;filter:url(#filter15890)"
-       id="path11955-68"
-       cx="5.2794204"
-       cy="10.216722"
-       rx="0.36303675"
-       ry="0.29042935" />
-    <rect
-       style="fill-opacity:1;fill:url(#meshgradient25824);opacity:0.66363636"
-       id="rect25335"
-       width="25.993429"
-       height="25.557787"
-       x="0.29042935"
-       y="0.29042935" />
+    <path
+       style="fill:#00ff00;stroke:#00ff00;stroke-width:0.4;paint-order:markers fill stroke"
+       id="path1665"
+       sodipodi:type="arc"
+       sodipodi:cx="1.4326985"
+       sodipodi:cy="24.355875"
+       sodipodi:rx="0.11020757"
+       sodipodi:ry="0.22041515"
+       sodipodi:start="3.1210445"
+       sodipodi:end="3.1351178"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       d="m 1.3225142,24.360404 a 0.11020757,0.22041515 0 0 1 -2.1e-5,-0.0031" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:9.42415px;line-height:0.4;font-family:'Liberation Sans';-inkscape-font-specification:'Liberation Sans Bold';fill:#00ff00;stroke:#00ff00;stroke-width:0.485712;paint-order:markers fill stroke"
+       x="-0.14701021"
+       y="1.8044446"
+       id="text1827"
+       transform="scale(0.93257584,1.0722988)"><tspan
+         sodipodi:role="line"
+         id="tspan1825"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="1.8044446">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="5.5741034"
+         id="tspan1881">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="9.3437624"
+         id="tspan1883">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="13.113421"
+         id="tspan1885">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="16.88308"
+         id="tspan1887">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="20.652739"
+         id="tspan1889">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="24.422398"
+         id="tspan1891">...........</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.485712"
+         x="-0.14701021"
+         y="28.192055"
+         id="tspan1829" /></text>
   </g>
   <script
      id="mesh_polyfill"
